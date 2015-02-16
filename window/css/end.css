@@ -1,0 +1,118 @@
+.messError{
+    text-align: center;
+    height: 160px;
+    padding: 70px 0;
+}
+.messError .error{
+    font-family: 'HelveticaNeueCyrMedium';
+    color: #495968;
+    font-size: 16px;
+}
+.messError .backBut{
+    margin: 20px 0;
+}
+.end{
+    background: #fefeff;
+    background: -moz-linear-gradient(top,  #fefeff 0%, #eef1f4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefeff), color-stop(100%,#eef1f4));
+    background: -webkit-linear-gradient(top,  #fefeff 0%,#eef1f4 100%);
+    background: -o-linear-gradient(top,  #fefeff 0%,#eef1f4 100%);
+    background: -ms-linear-gradient(top,  #fefeff 0%,#eef1f4 100%);
+    background: linear-gradient(to bottom,  #fefeff 0%,#eef1f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#eef1f4',GradientType=0 );
+    text-align: center;
+    padding: 60px 0;
+}
+.end .name{
+    font-size: 15px;
+    color: #495968;
+    margin: 0 0 40px;
+    font-family: 'HelveticaNeueCyrLight';
+}
+.sendForm{
+    margin-top: 30px;
+}
+.sendForm .group{
+    margin: 20px 0 10px;
+}
+.sendForm .group .label{
+    font-family: 'HelveticaNeueCyrRoman';
+    display: inline-block;
+    vertical-align: middle;
+    color: #546270;
+    font-size: 14px;
+    min-width: 120px;
+    text-align: left;
+}
+.sendForm .group .element{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.sendForm .message{
+    width: 565px;
+    text-align: left;
+    margin: 25px auto;
+    background: #f3f1cb;
+    border-radius: 3px;
+    padding: 15px 20px;
+}
+.sendForm .message .icon{
+    background: url("../img/warning.png") no-repeat;
+    width: 46px;
+    height: 45px;
+    margin: 0 20px;
+}
+.sendForm .message .text{
+    color: #774417;
+    font-size: 12px;
+    font-family: 'HelveticaNeueCyrLightItalic';
+    width: 420px;
+}
+.sendForm .labelCom{
+    width: 340px;
+    text-align: left;
+    margin: 0 auto 10px;
+    color: #495968;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.sendForm .textareaComment{
+    margin: 20px auto;
+    border: solid 1px #879eb3;
+    border-radius: 3px;
+    height: 80px;
+    width: 340px;
+    display: block;
+    color: #879eb3;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+    padding: 10px;
+    outline: solid 1px transparent;
+}
+.sendForm .messageError{
+    color: #879eb3;
+    margin: 15px auto;
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrItalic';
+    width: 350px;
+    text-align: left;
+}
+.sendForm .messageError{
+    opacity: 0;
+}
+.sendForm .submit{
+    color: white;
+    background: #e74446;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border-bottom: solid 2px #e74446;
+    font-size: 15px;
+    margin: 30px 0 0;
+    cursor: pointer;
+    font-family: 'HelveticaNeueCyrLight';
+}
+.sendForm .submit:hover{
+    border-bottom: solid 2px #a53132;
+}

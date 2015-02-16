@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+        <!-- Stylesheet block -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/plugins/smoothDivScroll.css">
+        <link rel="stylesheet" href="css/calc/stages.css">
+        <link rel="stylesheet" href="css/block/slider.css">
+        <link rel="stylesheet" href="css/calc/cut.css">
+        <link rel="stylesheet" href="css/calc/fileComment.css">
+        <link rel="stylesheet" href="css/calc/winInOrder.css">
+        <link rel="stylesheet" href="css/calc/profileBlock.css">
+        <link rel="stylesheet" href="css/calc/modelChoose.css">
+        <link rel="stylesheet" href="css/calc/windowBlock.css">
+        <link rel="stylesheet" href="css/calc/optionBlock.css">
+
+        <link rel="stylesheet" href="css/block/modal.css">
+
+        <!-- JavaScript block -->
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script src="js/plugins/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+        <script src="js/plugins/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="js/plugins/jquery.kinetic.min.js" type="text/javascript"></script>
+        <script src="js/plugins/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/system.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+        <script type="text/javascript" src="js/calc.js"></script>
+
+		<title>Once</title>
+	</head>
+	<body>
+        <div class="overlay">
+            <div class="modal">
+                <div class="close"></div>
+                <p class="text">
+                    Все мы что-нибудь, да и пописываем. Кто-то в стол, кто-то для дела. Кто-то пишет книги,
+                    рефераты и доклады, кто-то статьи, димпломы, для кого-то сочинение рекламы – насущная проблема.
+                    Все мы пишем за свою жизнь множество разных текстов на самые разные темы. Интернет разрастается.
+                    Медийное онлайн пространство захватывает нас, мы погружаемся туда с головой. Появляются огромные
+                    массы новых сайтов. Множество. Кто-то же должен заниматься писательством для всего этого хозяйства?
+                </p>
+                <div class="buttons">
+                    <div class="but red">Продолжить работу</div>
+                    <div class="but blue">Подробнее</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainContent">
+
+            <!-- Header block -->
+            <header class="bs">
+                <p class="name ib">Черновик заявки</p>
+                <div class="button save disable ib bs">Сохранить</div>
+                <div class="button add disable ib bs">+ Добавить окно</div>
+                <!--
+                    Classes for state:
+                     - draft;
+                     - pending;
+                     - ok;
+                     - fail-point;
+                     - call-ok;
+                     - wait;
+                     - performed;
+                     - fail.
+                -->
+                <div class="state draft ib fr">
+                    <div class="icon ib"></div>
+                    <p class="name ib">Черновик</p>
+                </div>
+                <div class="clear"></div>
+            </header>
+
+            <!-- Stages block -->
+            <div class="stages">
+                <ul class="list bs">
+                    <li class="item active form">
+                        <div class="image"></div>
+                        <p class="name">Форма</p>
+                    </li>
+                    <li class="item profile">
+                        <div class="image">
+                            <span class="icon mess">!</span>
+                        </div>
+                        <p class="name">Профиль</p>
+                    </li>
+                    <li class="item window">
+                        <div class="image"></div>
+                        <p class="name">Стеклопакет</p>
+                    </li>
+                    <li class="item options">
+                        <div class="image"></div>
+                        <p class="name">Опции</p>
+                    </li>
+                </ul>
+                <!-- Form tab -->
+                <div class="formStage">
+                    <div class="slider bs">
+                        <img src="img/window-markup/one.png" alt="" title="" class="img">
+                        <img src="img/window-markup/two.png" alt="" title="" class="img">
+                        <img src="img/window-markup/three.png" alt="" title="" class="img">
+                        <img src="img/window-markup/oned.png" alt="" title="" class="img">
+                        <img src="img/window-markup/twod.png" alt="" title="" class="img">
+                        <img src="img/window-markup/three.png" alt="" title="" class="img">
+                    </div>
+                    <div class="scrollbar bs">
+                        <div class="track">
+                            <div class="dragBar">
+                                <div class="bg">
+                                    <div class="smallLine line"></div>
+                                    <div class="bigLine line"></div>
+                                    <div class="smallLine line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sliderArrow"></div>
+                 </div>
+
+                <!-- Profile tab -->
+                <div class="profileBlock">
+                    <div class="frame-material">
+                        <div class="name">Материал рамы:</div>
+                        <ul class="material">
+                            <li class="item wood">
+                                <div class="checkbox">
+                                    <div class="check"></div>
+                                </div>
+                                <p class="label">Дерево</p>
+                                <img src="img/frame-material/wood.png" alt="" title="" class="img">
+                                <div class="help right">
+                                    <p class="icon">?</p>
+                                    <div class="title bs">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                        Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item plastic">
+                                <div class="checkbox checked">
+                                    <div class="check"></div>
+                                </div>
+                                <p class="label">Пластик</p>
+                                <img src="img/frame-material/plastic.png" alt="" title="" class="img">
+                                <div class="help right">
+                                    <p class="icon">?</p>
+                                    <div class="title bs">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                        Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="manufacture">
+                        <div class="plastic manuf">
+                            <p class="name">Выбор производителя</p>
+                            <div class="manSlider">
+                                <ul class="sliderList">
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/plastic/kbe.png" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">KBE</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/plastic/rehau.png" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">REHAU</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/plastic/koning.png" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">Koning</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/plastic/krauss.png" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">KRAUSS</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/plastic/kbe.png" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">KBE</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="scrollbar bs">
+                                <div class="track">
+                                    <div class="dragBar">
+                                        <div class="bg">
+                                            <div class="smallLine line"></div>
+                                            <div class="bigLine line"></div>
+                                            <div class="smallLine line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wood manuf">
+                            <p class="name">Выберите сорт древесины:</p>
+                            <div class="manSlider">
+                                <ul class="sliderList">
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/wood/ash-tree.jpg" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">Ясень</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/wood/oak-tree.jpg" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">Дуб</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/wood/linden-tree.jpg" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">Липа</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/wood/pine-tree.jpg" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">Сосна</p>
+                                    </li>
+                                    <li class="item bs">
+                                        <div class="manLogo">
+                                            <img src="img/frame-material/wood/ash-tree.jpg" alt="" title="" class="img">
+                                        </div>
+                                        <p class="manName">Ясень</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="scrollbar bs">
+                                <div class="track">
+                                    <div class="dragBar">
+                                        <div class="bg">
+                                            <div class="smallLine line"></div>
+                                            <div class="bigLine line"></div>
+                                            <div class="smallLine line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelChoose">
+                        <div class="backBut man ib">
+                            <!--<div class="back">Выбор производителя</div>-->
+                            <p class="name">Выберите модель:</p>
+                        </div>
+                        <div class="backBut model ib">
+                            <div class="back">Выбрать другой</div>
+                            <p class="name">SOFTLINE 87</p>
+                        </div>
+                        <div class="manfact ib">
+                            <p class="name">Производитель:</p>
+                            <img src="img/frame-material/plastic/rehau.png" alt="" title="" class="img">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="allList">
+                            <!-- Update November, 2014 - new buttons -->
+                            <div class="buttons">
+                                <div class="item price">Цена</div>
+                                <div class="item tech">Тех. характеристики</div>
+                                <div class="item design active">Дизайн</div>
+                                <div class="item pop">Популярность</div>
+                            </div>
+                            <!-- End update -->
+                            <div class="modelList">
+                                <ul class="slider">
+                                    <li class="item">
+                                        <div class="manLogo">
+                                            <img src="img/model/plinton.png" alt="" title="" class="modelImg">
+                                        </div>
+                                        <p class="name">Plinton100</p>
+                                        <!-- In all item of modelList block '.rait' was changed to ".options" -->
+                                        <div class="options">
+                                            <div class="line price">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <!--
+                                                     Point can have next classes:
+                                                      - green
+                                                      - lime
+                                                      - yellow
+                                                      - orange
+                                                      - red
+                                                      - grey
+                                                    -->
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point orange"></div>
+                                                    <div class="point red"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line tech">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line design active">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line pop">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <p class="name">Тех. характеристики</p>
+                                            <div class="info">
+                                                <p class="text">Количество камер — 4</p>
+                                                <p class="text">Монтажная глубина — 70 мм</p>
+                                                <p class="text">Теп. сопротивление — 640 ед</p>
+                                            </div>
+                                        </div>
+                                        <!--<div class="rait">
+                                            <div class="point">
+                                                <span class="number">6</span>
+                                                <div class="bg"></div>
+                                            </div>
+                                        </div>-->
+                                    </li>
+                                    <li class="item">
+                                        <div class="manLogo">
+                                            <img src="img/model/plinton.png" alt="" title="" class="modelImg">
+                                        </div>
+                                        <p class="name">ENEOS-X</p>
+                                        <div class="options">
+                                            <div class="line price">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point orange"></div>
+                                                    <div class="point red"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line tech">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line design active">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line pop">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <p class="name">Тех. характеристики</p>
+                                            <div class="info">
+                                                <p class="text">Количество камер — 4</p>
+                                                <p class="text">Монтажная глубина — 70 мм</p>
+                                                <p class="text">Теп. сопротивление — 640 ед</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="manLogo">
+                                            <img src="img/model/plinton.png" alt="" title="" class="modelImg">
+                                        </div>
+                                        <p class="name">ENEOS-X</p>
+                                        <div class="options">
+                                            <div class="line price">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point orange"></div>
+                                                    <div class="point red"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line tech">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line design active">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line pop">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <p class="name">Тех. характеристики</p>
+                                            <div class="info">
+                                                <p class="text">Количество камер — 4</p>
+                                                <p class="text">Монтажная глубина — 70 мм</p>
+                                                <p class="text">Теп. сопротивление — 640 ед</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="manLogo">
+                                            <img src="img/model/plinton.png" alt="" title="" class="modelImg">
+                                        </div>
+                                        <p class="name">Plinton-100</p>
+                                        <div class="options">
+                                            <div class="line price">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point orange"></div>
+                                                    <div class="point red"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line tech">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line design active">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line pop">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <p class="name">Тех. характеристики</p>
+                                            <div class="info">
+                                                <p class="text">Количество камер — 4</p>
+                                                <p class="text">Монтажная глубина — 70 мм</p>
+                                                <p class="text">Теп. сопротивление — 640 ед</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="manLogo">
+                                            <img src="img/model/plinton.png" alt="" title="" class="modelImg">
+                                        </div>
+                                        <p class="name">Plinton-100</p>
+                                        <div class="options">
+                                            <div class="line price">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point orange"></div>
+                                                    <div class="point red"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line tech">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point yellow"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line design active">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point lime"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <div class="line pop">
+                                                <span class="icon"></span>
+                                                <div class="points">
+                                                    <div class="point green"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                    <div class="point grey"></div>
+                                                </div>
+                                            </div>
+                                            <p class="name">Тех. характеристики</p>
+                                            <div class="info">
+                                                <p class="text">Количество камер — 4</p>
+                                                <p class="text">Монтажная глубина — 70 мм</p>
+                                                <p class="text">Теп. сопротивление — 640 ед</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="scrollbar bs">
+                                    <div class="track">
+                                        <div class="dragBar">
+                                            <div class="bg">
+                                                <div class="smallLine line"></div>
+                                                <div class="bigLine line"></div>
+                                                <div class="smallLine line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oneModel">
+                            <div class="left">
+                                <div class="image bs">
+                                    <div class="manLogo">
+                                        <img src="img/model/plinton.png" alt="" title="" class="modelImg">
+                                    </div>
+                                    <p class="name">Рейтинг:</p>
+                                    <div class="rait">
+                                        <div class="point">
+                                            <span class="number">8</span>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about">
+                                    <ul class="list">
+                                        <li class="item">
+                                            <p class="label">Класс энергоэффективности:</p>
+                                            <div class="needMargin">
+                                                <p class="value">
+                                                    <span class="blue">A++</span>
+                                                </p>
+                                                <div class="help right">
+                                                    <p class="icon">?</p>
+                                                    <div class="title bs">
+                                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                        Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <p class="label">Количество камер:</p>
+                                            <p class="value">5</p>
+                                        </li>
+                                        <li class="item">
+                                            <p class="label">Сопротивление теплопередаче:</p>
+                                            <p class="value">0,77 м²С/Вт</p>
+                                        </li>
+                                        <li class="item">
+                                            <p class="label">Исполнение:</p>
+                                            <p class="value">белое, цветное</p>
+                                        </li>
+                                        <li class="item">
+                                            <p class="label">Материал уплотнений:</p>
+                                            <p class="value">АРТК, силикон</p>
+                                        </li>
+                                        <li class="item">
+                                            <p class="label">Количество контуров уплотнениия:</p>
+                                            <p class="value">2</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right bs">
+                                <p class="name">Инновационная энергоэффективная система, соответствующая высоким требованиям будущего</p>
+                                <p class="text">
+                                    Сегодня всё большее значение имеют энергосберегающие свойства окон. Новая профильная
+                                    система VEKA -  Softline  82 -  это инновационная разработка, позволяющая уже сегодня
+                                    проектировать и производить окна, соответствующие высоким требованиям завтрашнего дня.
+                                </p>
+                                <p class="text">
+                                    Системная платформа SOFTLINE 82 предлагает оптимальную базовую монтажную ширину,
+                                    позволяющую эффективно использовать энергоэффективные окна, соответствующие современных
+                                    требованиям в области энергосбережения как в новых постройках, так и в зданиях,
+                                    подвергающихся реновации.  Кроме этого, разработки VEKA в полной мере учитывают
+                                    нормативы по вторичной переработке...
+                                </p>
+                                <div class="more">
+                                    <span class="icon"></span>
+                                    Читать полностью
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sliderArrow"></div>
+                </div>
+
+                <!-- Window tab -->
+                <div class="windowStage">
+                    <p class="name">Выберите стеклопакет:</p>
+                    <div class="packages">
+                        <ul class="slider bs">
+                            <li class="package bs">
+                                <div class="image bs">
+                                    <!--
+                                        All classes for sun and volume:
+                                        - one;
+                                        - two;
+                                        - three;
+                                        - four;
+                                        - five;
+                                    -->
+                                    <div class="sun one"></div>
+                                    <div class="volume one"></div>
+                                    <!--
+                                        All classes for window size:
+                                            - f-s-f;
+                                            - f-s-f-s-f;
+                                            - f-t-f-t-f;
+                                            - s-s-f-t-f;
+                                        -->
+                                    <div class="bg f-s-f"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="namePack">
+                                        <p class="name ib">Однокамерный</p>
+                                        <div class="help bottom">
+                                            <p class="icon">?</p>
+                                            <div class="title bs">
+                                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thermal">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. теплопроводности</p>
+                                            <p class="value">25 Вт/м&sup2;·K</p>
+                                        </div>
+                                    </div>
+                                    <div class="insulation">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. шумоизоляции</p>
+                                            <p class="value">25 дБ</p>
+                                        </div>
+                                    </div>
+                                    <ul class="optionsChoose">
+                                        <li class="item">
+                                            <div class="checkbox">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Энергосберегающий</p>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="checkbox">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Заполнение аргоном</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="package bs">
+                                <div class="image bs">
+                                    <div class="sun two"></div>
+                                    <div class="volume two"></div>
+                                    <!--
+                                        All classes for sun size:
+                                            - f-s-f;
+                                            - f-s-f-s-f;
+                                            - f-t-f-t-f;
+                                            - s-s-f-t-f;
+                                        -->
+                                    <div class="bg f-s-f-s-f"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="namePack">
+                                        <p class="name ib">Двухкамерный</p>
+                                        <div class="help bottom">
+                                            <p class="icon">?</p>
+                                            <div class="title bs">
+                                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thermal">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. теплопроводности</p>
+                                            <p class="value">25 Вт/м&sup2;·K</p>
+                                        </div>
+                                    </div>
+                                    <div class="insulation">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. шумоизоляции</p>
+                                            <p class="value">25 дБ</p>
+                                        </div>
+                                    </div>
+                                    <ul class="optionsChoose">
+                                        <li class="item">
+                                            <div class="checkbox check">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Энергосберегающий</p>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="checkbox">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Заполнение аргоном</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="package bs">
+                                <div class="image bs">
+                                    <div class="sun three"></div>
+                                    <div class="volume three"></div>
+                                    <!--
+                                        All classes for sun size:
+                                            - f-s-f;
+                                            - f-s-f-s-f;
+                                            - f-t-f-t-f;
+                                            - s-s-f-t-f;
+                                        -->
+                                    <div class="bg f-t-f-t-f"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="namePack">
+                                        <p class="name ib">Двухкамерный шумоизоляционный</p>
+                                        <div class="help bottom">
+                                            <p class="icon">?</p>
+                                            <div class="title bs">
+                                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thermal">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. теплопроводности</p>
+                                            <p class="value">25 Вт/м&sup2;·K</p>
+                                        </div>
+                                    </div>
+                                    <div class="insulation">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. шумоизоляции</p>
+                                            <p class="value">25 дБ</p>
+                                        </div>
+                                    </div>
+                                    <ul class="optionsChoose">
+                                        <li class="item">
+                                            <div class="checkbox check">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Энергосберегающий</p>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="checkbox check">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Заполнение аргоном</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="package bs">
+                                <div class="image bs">
+                                    <div class="sun four"></div>
+                                    <div class="volume four"></div>
+                                    <!--
+                                        All classes for sun size:
+                                            - f-s-f;
+                                            - f-s-f-s-f;
+                                            - f-t-f-t-f;
+                                            - s-s-f-t-f;
+                                        -->
+                                    <div class="bg s-s-f-t-f"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="namePack">
+                                        <p class="name ib">Двухкамерный с усиленным стеклом</p>
+                                        <div class="help bottom">
+                                            <p class="icon">?</p>
+                                            <div class="title bs">
+                                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thermal">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. теплопроводности</p>
+                                            <p class="value">25 Вт/м&sup2;·K</p>
+                                        </div>
+                                    </div>
+                                    <div class="insulation">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. шумоизоляции</p>
+                                            <p class="value">25 дБ</p>
+                                        </div>
+                                    </div>
+                                    <ul class="optionsChoose">
+                                        <li class="item">
+                                            <div class="checkbox">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Энергосберегающий</p>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="checkbox check">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Заполнение аргоном</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="package bs">
+                                <div class="image bs">
+                                    <div class="sun five"></div>
+                                    <div class="volume five"></div>
+                                    <!--
+                                        All classes for sun size:
+                                            - f-s-f;
+                                            - f-s-f-s-f;
+                                            - f-t-f-t-f;
+                                            - s-s-f-t-f;
+                                        -->
+                                    <div class="bg f-s-f"></div>
+                                </div>
+                                <div class="info">
+                                    <div class="namePack">
+                                        <p class="name ib">Однокамерный</p>
+                                        <div class="help bottom">
+                                            <p class="icon">?</p>
+                                            <div class="title bs">
+                                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thermal">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. теплопроводности</p>
+                                            <p class="value">25 Вт/м&sup2;·K</p>
+                                        </div>
+                                    </div>
+                                    <div class="insulation">
+                                        <span class="icon"></span>
+                                        <div class="coef">
+                                            <p class="label">Коэф. шумоизоляции</p>
+                                            <p class="value">25 дБ</p>
+                                        </div>
+                                    </div>
+                                    <ul class="optionsChoose">
+                                        <li class="item">
+                                            <div class="checkbox">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Энергосберегающий</p>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="checkbox">
+                                                <div class="round">
+                                                    <span class="icon"></span>
+                                                </div>
+                                                <p class="label">Заполнение аргоном</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scrollbar bs">
+                        <div class="track">
+                            <div class="dragBar">
+                                <div class="bg">
+                                    <div class="smallLine line"></div>
+                                    <div class="bigLine line"></div>
+                                    <div class="smallLine line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sliderArrow"></div>
+                </div>
+
+                <!-- Options tab -->
+                <div class="optionStage">
+                    <ul class="listOptions">
+                        <li class="item">
+                            <p class="name">
+                                Створка
+                                <span class="red">1</span>
+                            </p>
+                            <hr>
+                            <div class="block">
+                                <div class="checkbox checked">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Москитная сетка</p>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Микровентиляция</p>
+                                </div>
+                            </div>
+                            <p class="blockLabel">Ручка</p>
+                            <div class="block">
+                                <div class="radioButton">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">С замком</p>
+                                </div>
+                                <div class="radioButton checked">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Без замка</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="name">
+                                Створка
+                                <span class="red">2</span>
+                            </p>
+                            <hr>
+                            <div class="block">
+                                <div class="checkbox">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Москитная сетка</p>
+                                </div>
+                                <div class="checkbox checked">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Микровентиляция</p>
+                                </div>
+                            </div>
+                            <p class="blockLabel">Ручка</p>
+                            <div class="block">
+                                <div class="radioButton checked">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">С замком</p>
+                                </div>
+                                <div class="radioButton">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Без замка</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="name">
+                                <span class="red">Дверь</span>
+                            </p>
+                            <hr>
+                            <div class="block">
+                                <div class="checkbox">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Москитная сетка</p>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Микровентиляция</p>
+                                </div>
+                            </div>
+                            <p class="blockLabel">Ручка</p>
+                            <div class="block">
+                                <div class="radioButton checked">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">С замком</p>
+                                </div>
+                                <div class="radioButton">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Без замка</p>
+                                </div>
+                            </div>
+                            <p class="blockLabel">Нижняя секция</p>
+                            <div class="choise">
+                                <div class="select">
+                                    <div class="name">Непрозрачный сэндвич</div>
+                                    <div class="arrowBlock">
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <ul class="options">
+                                        <li class="option">Прозрачный сэндвич</li>
+                                        <li class="option">Непрозрачный не сэндвич</li>
+                                        <li class="option">Прозрачный не сэндвич</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="name">Параметры подоконника</p>
+                            <hr>
+                            <div class="block">
+                                <div class="checkbox checked">
+                                    <div class="round">
+                                        <span class="icon"></span>
+                                    </div>
+                                    <p class="label">Подоконник</p>
+                                </div>
+                            </div>
+                            <p class="blockLabel">Материал подоконника</p>
+                            <div class="block">
+                                <div class="choise intellect">
+                                    <div class="select">
+                                        <div class="name">
+                                            <span class="icon"></span>
+                                            Пластик
+                                        </div>
+                                        <div class="arrowBlock">
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <div class="options plastic">
+                                            <div class="item active">
+                                                <span class="icon red"></span>
+                                                Пластик
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon viol"></span>
+                                                Пластик
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon yellow"></span>
+                                                Пластик
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="blockLabel">Цвет ламинирования</p>
+                            <div class="block">
+                                <div class="choise intellect">
+                                    <div class="select">
+                                        <div class="name">
+                                            <span class="icon birch"></span>
+                                            Береза
+                                        </div>
+                                        <div class="arrowBlock">
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <div class="options material">
+                                            <div class="item">
+                                                <span class="icon birch"></span>
+                                                Береза
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon nut"></span>
+                                                Орех
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon cherry"></span>
+                                                Вишня
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon wenge"></span>
+                                                Венге
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon mahogany"></span>
+                                                Махагон
+                                            </div>
+                                            <div class="item">
+                                                <span class="icon oak"></span>
+                                                Дуб
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="sliderArrow"></div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <article>
+                <div class="form">
+
+                    <!-- Wall cut -->
+                    <div class="cut">
+                        <div class="wall ib">
+                            <div class="image">
+                                <!--
+                                    All classes for help:
+                                    - right;
+                                    - bottom.
+                                -->
+                                <div class="help bottom abs">
+                                    <p class="icon">?</p>
+                                    <div class="title bs">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                        Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    </div>
+                                </div>
+                                <div class="abs length top">
+                                    <div class="input yellow" contenteditable></div>
+                                    <div class="label">см</div>
+                                </div>
+                                <div class="scale top"></div>
+                                <div class="window">
+                                    <div class="vent"></div>
+                                    <div class="scale left"></div>
+                                    <img src="img/cut/win1.png" alt="" title="" class="one">
+                                    <div class="one set">1</div>
+                                    <img src="img/cut/win2.png" alt="" title="" class="two">
+                                    <div class="two set">2</div>
+                                    <div class="abs length left">
+                                        <div class="input yellow" contenteditable></div>
+                                        <div class="label">см</div>
+                                    </div>
+                                    <div class="abs length down">
+                                        <div class="input yellow" contenteditable></div>
+                                        <div class="label">см</div>
+                                    </div>
+                                    <div class="scale bottom"></div>
+                                </div>
+                                <div class="door">
+                                    <img src="img/cut/door.png" alt="" title="" class="one">
+                                    <div class="doorSet set">Дверь</div>
+                                </div>
+                                <div class="scale right"></div>
+                                <div class="abs length right">
+                                    <div class="input yellow" contenteditable></div>
+                                    <div class="label">см</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verticalWall ib">
+                            <div class="full">
+                                <!--
+                                    All classes for top * down wall:
+                                        - brick
+                                        - concrete
+                                        - tree
+                                        - aerated
+                                    -->
+                                <div class="top aerated"></div>
+                                <div class="center">
+                                    <!--
+                                        All classes for loupe:
+                                            - one
+                                            - two
+                                            - three
+                                    -->
+                                    <div class="loupe three"></div>
+                                    <div class="choise abs left">
+                                        <div class="select">
+                                            <div class="name">10-25</div>
+                                            <div class="arrowBlock">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <ul class="options">
+                                                <li class="option">1-2</li>
+                                                <li class="option">3-5</li>
+                                                <li class="option">6-9</li>
+                                                <li class="option">10-25</li>
+                                            </ul>
+                                        </div>
+                                        <div class="label">см</div>
+                                    </div>
+                                    <!-- Ebb & windowsill have class - none. -->
+                                    <div class="sill abs">
+                                        <div class="ebb"></div>
+                                        <div class="windowsill"></div>
+                                    </div>
+                                    <div class="scale abs"></div>
+                                    <div class="choise right">
+                                        <div class="select">
+                                            <div class="name">10-25</div>
+                                            <div class="arrowBlock">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <ul class="options">
+                                                <li class="option">1-2</li>
+                                                <li class="option">3-5</li>
+                                                <li class="option">6-9</li>
+                                                <li class="option">10-25</li>
+                                            </ul>
+                                        </div>
+                                        <div class="label">см</div>
+                                    </div>
+                                </div>
+                                <div class="bottom aerated"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File & comment block -->
+                    <div class="fileComment">
+
+                        <!-- Params block on options tab -->
+                        <div class="params">
+                            <ul class="listOptions">
+                                <li class="item allWindow">
+                                    <p class="name">Параметры всего окна</p>
+                                    <hr>
+                                    <div class="block">
+                                        <p class="blockLabel">Цвет внутренней стороны</p>
+                                        <div class="choise intellect">
+                                            <div class="select">
+                                                <div class="name">
+                                                    <span class="icon birch"></span>
+                                                    Береза
+                                                </div>
+                                                <div class="arrowBlock">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <div class="options material">
+                                                    <div class="item">
+                                                        <span class="icon birch"></span>
+                                                        Береза
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon nut"></span>
+                                                        Орех
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon cherry"></span>
+                                                        Вишня
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon wenge"></span>
+                                                        Венге
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon mahogany"></span>
+                                                        Махагон
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon oak"></span>
+                                                        Дуб
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <p class="blockLabel">Цвет наружней стороны</p>
+                                        <div class="choise intellect">
+                                            <div class="select">
+                                                <div class="name">
+                                                    <span class="icon birch"></span>
+                                                    Береза
+                                                </div>
+                                                <div class="arrowBlock">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <div class="options material">
+                                                    <div class="item">
+                                                        <span class="icon birch"></span>
+                                                        Береза
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon nut"></span>
+                                                        Орех
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon cherry"></span>
+                                                        Вишня
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon wenge"></span>
+                                                        Венге
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon mahogany"></span>
+                                                        Махагон
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon oak"></span>
+                                                        Дуб
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <p class="blockLabel">Фальшпереплет</p>
+                                        <div class="choise intellect">
+                                            <div class="select">
+                                                <div class="name">2x3</div>
+                                                <div class="arrowBlock">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <div class="options cover">
+                                                    <div class="item">
+                                                        <span class="icon none"></span>
+                                                        Нет
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon romb"></span>
+                                                        Ромб
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon twotwo"></span>
+                                                        2х2
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon twothree"></span>
+                                                        2х3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <p class="blockLabel">Отделка откосов</p>
+                                        <div class="choise">
+                                            <div class="select">
+                                                <div class="name">Штукатурка</div>
+                                                <div class="arrowBlock">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <ul class="options">
+                                                    <li class="option">Штукатурка</li>
+                                                    <li class="option">Штукатурка</li>
+                                                    <li class="option">Штукатурка</li>
+                                                    <li class="option">Штукатурка</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <p class="name">Параметры монтажа</p>
+                                    <hr>
+                                    <div class="block">
+                                        <p class="blockLabel">Материал стены:</p>
+                                        <div class="choise">
+                                            <div class="select">
+                                                <div class="name">Бетон (несущая стена)</div>
+                                                <div class="arrowBlock">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <ul class="options">
+                                                    <li class="option">Бетон (несущая стена)</li>
+                                                    <li class="option">Бетон (несущая стена)</li>
+                                                    <li class="option">Бетон (несущая стена)</li>
+                                                    <li class="option">Бетон (несущая стена)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <p class="name">Параметры отлива</p>
+                                    <hr>
+                                    <div class="block margin">
+                                        <div class="checkbox">
+                                            <div class="round">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <p class="label">Подоконник</p>
+                                        </div>
+                                    </div>
+                                    <p class="blockLabel">Цвет отлива</p>
+                                    <div class="block">
+                                        <div class="choise intellect">
+                                            <div class="select">
+                                                <div class="name">
+                                                    <span class="icon birch"></span>
+                                                    Береза
+                                                </div>
+                                                <div class="arrowBlock">
+                                                    <div class="arrow"></div>
+                                                </div>
+                                                <div class="options material">
+                                                    <div class="item">
+                                                        <span class="icon birch"></span>
+                                                        Береза
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon nut"></span>
+                                                        Орех
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon cherry"></span>
+                                                        Вишня
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon wenge"></span>
+                                                        Венге
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon mahogany"></span>
+                                                        Махагон
+                                                    </div>
+                                                    <div class="item">
+                                                        <span class="icon oak"></span>
+                                                        Дуб
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="file ib">
+                            <p class="name">Фото места установки:</p>
+                            <ul class="files">
+                                <li class="item noImage">
+                                    <form action="#" method="post">
+                                        <input type="file" class="fileUpload" name="file">
+                                    </form>
+                                    <div class="add">+</div>
+                                    <img src="#" alt="Image" class="downloadImage" title="">
+                                    <div class="hover">
+                                        <div class="loupe"></div>
+                                        <div class="remove"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="messageError">Вы можете загрузить до 3х фото на 1 оконную секцию</p>
+                        </div>
+
+                        <div class="comment ib">
+                            <p class="name">Комментарий</p>
+                            <div class="textarea bs" contenteditable="true"></div>
+                            <p class="messageError">Текст до 1000 знаков</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Window in order -->
+                    <div class="windowInOrder bs">
+                        <p class="title">Окна в заказе:</p>
+                        <div class="sliderArrow"></div>
+                        <ul class="list">
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">3 створки</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/three.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">1 створка + 1 дверь</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/oned.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">2 створки + 1 дверь</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/twod.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">2 створки + 1 дверь</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/oned.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">2 створки + 1 дверь</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/oned.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">2 створки + 1 дверь</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/oned.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">2 створки + 1 дверь</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="img/window-markup/white/twod.png" alt="" title="" class="win">
+                            </li>
+                            <li class="item noImage">
+                                <div class="add">
+                                    <p class="plus">+</p>
+                                    <p class="name">Добавить окно</p>
+                                </div>
+                                <div class="control">
+                                    <p class="name">3 створки</p>
+                                    <div class="remove">&times;</div>
+                                </div>
+                                <img src="" alt="" title="" class="win">
+                            </li>
+                        </ul>
+                        <div class="scrollbar bs">
+                            <div class="track">
+                                <div class="dragBar">
+                                    <div class="bg">
+                                        <div class="smallLine line"></div>
+                                        <div class="bigLine line"></div>
+                                        <div class="smallLine line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Footer block -->
+            <footer class="calcFooter bs">
+                <div class="button bs">Отправить на оценку</div>
+                <div class="error bs">
+                    <p class="label">Для дальнейшего оформления заказа необходимо заполнить все необходимые поля в разделах:</p>
+                    <p class="errors">Форма окна, Профиль, Стеклопакет, Опции</p>
+                </div>
+            </footer>
+
+        </div>
+	</body>
+</html>

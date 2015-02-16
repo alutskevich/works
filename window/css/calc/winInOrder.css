@@ -1,0 +1,99 @@
+.windowInOrder{
+    background: #495968;
+}
+.windowInOrder .title{
+    display: block;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    color: #495968;
+    background: white;
+    font-size: 18px;
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.windowInOrder .list .item{
+    opacity: 1;
+}
+.windowInOrder .list .item.noImage .win,
+.windowInOrder .list .item.noImage .control,
+.windowInOrder .list .item .add{
+    display: none;
+}
+.windowInOrder .list .item.noImage .add{
+    display: block;
+    border: dotted 2px #d0d9e1;
+    width: 140px;
+    height: 105px;
+    text-align: center;
+    margin: 33px 0 0;
+    padding: 10px 0 0;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.windowInOrder .list .item.noImage .add:hover{
+    opacity: 1;
+}
+.windowInOrder .list .item .win{
+    opacity: 0.5;
+}
+.windowInOrder .list .item.active .win,
+.windowInOrder .list .item:hover .win{
+    opacity: 1;
+}
+.windowInOrder .list .item .control{
+    margin: 0 0 15px;
+    text-align: center;
+}
+.windowInOrder .list .item .name{
+    color: white;
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrMedium';
+    display: inline-block;
+    vertical-align: middle;
+}
+.windowInOrder .list .item .control .remove{
+    width: 16px;
+    height: 16px;
+    background: white;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    color: #4d5b66;
+    font-family: 'HelveticaNeueCyrRoman';
+    font-size: 13px;
+    line-height: 15px;
+}
+.windowInOrder .list .item .control .remove:hover{
+    background: #ffc015;
+}
+.windowInOrder .list .item.noImage .add .plus{
+    font-size: 47px;
+    color: #d0d9e1;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.windowInOrder .list .item.noImage .add .name{
+    font-size: 13px;
+    color: #d0d9e1;
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.windowInOrder .sliderArrow{
+    background: url(../../img/slider/arrow-top.png) no-repeat;
+    width: 46px;
+    height: 14px;
+    position: relative;
+    top: -1px;
+    left: 150px;
+}
+.windowInOrder .scrollbar{
+    padding: 0 10px 30px;
+    margin: 0;
+}
+.windowInOrder .track{
+    background: #617383;
+}
+.windowInOrder .dragBar{
+    border: solid 2px #cfd9e3;
+}
+{
+    background-position: 25px 120px;
+}

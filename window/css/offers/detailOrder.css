@@ -1,0 +1,145 @@
+.detailOrder{
+    background: #495968;
+    padding: 10px 15px;
+    color: white;
+}
+.detailOrder .head{
+    position: relative;
+    height: 46px;
+    line-height: 36px;
+    margin: 20px 0;
+}
+.detailOrder .head .name{
+    font-size: 18px;
+    font-family: 'HelveticaNeueCyrMedium';
+    display: inline-block;
+    vertical-align: middle;
+}
+.detailOrder .head .button{
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+    border: solid 1px #a4acb3;
+    padding: 15px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    line-height: normal;
+}
+.detailOrder .info .groupItem{
+    margin: 7px 0;
+}
+.detailOrder .info .groupItem .group,
+.detailOrder .info .groupItem .options,
+.detailOrder .info .groupItem .options .item{
+    display: inline-block;
+    vertical-align: top;
+}
+.detailOrder .info .groupItem .options{
+    width: 740px;
+}
+.detailOrder .info .groupItem .group .value,
+.detailOrder .info .groupItem .options .value{
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.detailOrder .info .groupItem .group{
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.detailOrder .info .groupItem .options .item{
+    font-family: 'HelveticaNeueCyrRoman';
+    font-size: 14px;
+    color: #a7bcd0;
+    margin: 0 11px;
+}
+.detailOrder .listWindow{
+    margin: 35px 0;
+    padding: 0 50px;
+    height: auto;
+}
+.detailOrder .listWindow .itemWindow{
+    float: left;
+    margin: 0 10px;
+    width: 300px;
+    cursor: pointer;
+    background: transparent;
+}
+.detailOrder .listWindow .itemWindow:hover{
+    background: #414f5d;
+}
+.detailOrder .listWindow .itemWindow.active{
+    background: #4f6071;
+}
+.detailOrder .listWindow .itemWindow .image{
+    text-align: center;
+    padding: 10px 0 20px;
+    min-height: 195px;
+    position: relative;
+}
+.detailOrder .listWindow .itemWindow .image:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../../img/separate.png");
+    width: 299px;
+    height: 14px;
+    bottom: -14px;
+    left: 0;
+}
+.detailOrder .listWindow .itemWindow .name{
+    font-size: 14px;
+    color: white;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin: 20px 10px;
+}
+.detailOrder .listWindow .itemWindow .name .count{
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.detailOrder .listWindow .itemWindow .parameters{
+    margin-bottom: 20px;
+}
+.detailOrder .listWindow .itemWindow.active .parameters{
+    background: #59697a;
+    padding: 20px;
+    margin: 0 10px;
+}
+.detailOrder .listWindow .itemWindow .parameters .item{
+    margin: 5px 0;
+    font-size: 13px;
+    color: white;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.detailOrder .listWindow .itemWindow .parameters .item:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 5px;
+    height: 5px;
+    background: white;
+}
+.detailOrder .listWindow .itemWindow .more{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+.detailOrder .listWindow .itemWindow:hover .more{
+    background: #3b4755;
+}
+.detailOrder .listWindow .itemWindow .more .arrow{
+    background: url("../../img/more.png") no-repeat;
+    width: 40px;
+    height: 11px;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+}
+.detailOrder .listWindow .itemWindow.active .more .arrow{
+    background: url("../../img/more-up.png") no-repeat;
+}
+.detailOrder .track{
+    width: 900px;
+}

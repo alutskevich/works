@@ -1,0 +1,224 @@
+.cut{
+    background: url("../../img/cut/cut-bg.png") repeat;
+    padding: 50px 10px 20px;
+}
+.cut .wall .image{
+    background: url("../../img/cut/win-bg.png") no-repeat;
+    width: 679px;
+    height: 540px;
+    position: relative;
+}
+.cut .wall .window,
+.cut .wall .door{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 83px;
+    left: 115px;
+}
+.cut .vent{
+    display: none;
+    position: absolute;
+    width: 134px;
+    height: 13px;
+    background: url("../../img/cut/ventilation.png") no-repeat;
+    top: -13px;
+    left: 149px;
+}
+.cut .scale{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cut .scale.left{
+    width: 28px;
+    height: 251px;
+    left: -24px;
+    background-image: url("../../img/cut/scale/scale-left.png");
+}
+.cut .scale.bottom{
+    width: 284px;
+    height: 28px;
+    left: 2px;
+    bottom: -23px;
+    background-image: url("../../img/cut/scale/scale-down.png");
+}
+.cut .scale.top{
+    width: 431px;
+    height: 28px;
+    background-image: url("../../img/cut/scale/scale-top.png");
+    top: 60px;
+    left: 115px;
+}
+.cut .scale.right{
+    width: 28px;
+    height: 387px;
+    right: 109px;
+    top: 83px;
+    background-image: url("../../img/cut/scale/scale-right.png");
+}
+.cut .length{
+    text-align: center;
+}
+.cut .length.top{
+    left: 306px;
+    top: 32px;
+}
+.cut .length.left{
+    top: 110px;
+    left: -75px;
+}
+.cut .length.down{
+    bottom: -60px;
+    left: 110px;
+}
+.cut .length.right{
+    right: 50px;
+    top: 260px;
+}
+.cut .length .input{
+    width: 42px;
+    height: 21px;
+    line-height: 21px;
+    border: solid 1px #879eb3;
+    border-radius: 5px;
+    color: #879eb3;
+    font-size: 12px;
+    font-family: 'HelveticaNeueCyrRoman';
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+.cut .length .input:focus{
+    outline: 0 solid transparent;
+}
+.cut .length.top .input,
+.cut .length.down .input,
+.cut .length.top .label,
+.cut .length.down .label{
+    display: inline-block;
+    vertical-align: middle;
+}
+.cut .length .label{
+    color: #879eb3;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+
+.cut .verticalWall .full{
+    height: 517px;
+    width: 89px;
+    position: relative;
+    margin: 0 50px 0 105px;
+    background: white;
+    border-left: solid 2px #bbc8d3;
+    border-right: solid 2px #bbc8d3;
+}
+.cut .verticalWall .full .top{
+    width: 92px;
+    height: 104px;
+    position: relative;
+    top: -12px;
+    left: -2px;
+}
+.cut .verticalWall .full .top.brick{
+    background: url("../../img/cut/verticalWall/material/brick-top.png") no-repeat;
+}
+.cut .verticalWall .full .top.concrete{
+    background: url("../../img/cut/verticalWall/material/concrete-top.png") no-repeat;
+}
+.cut .verticalWall .full .top.tree{
+    background: url("../../img/cut/verticalWall/material/tree-top.png") no-repeat;
+}
+.cut .verticalWall .full .top.aerated{
+    background: url("../../img/cut/verticalWall/material/aerated-top.png") no-repeat;
+}
+.cut .verticalWall .full .bottom{
+    width: 91px;
+    height: 189px;
+    position: absolute;
+    bottom: -13px;
+    left: -1px;
+}
+.cut .verticalWall .full .bottom.brick{
+    background: url("../../img/cut/verticalWall/material/brick-bottom.png") no-repeat;
+}
+.cut .verticalWall .full .bottom.concrete{
+    background: url("../../img/cut/verticalWall/material/concrete-bottom.png") no-repeat;
+}
+.cut .verticalWall .full .bottom.tree{
+    background: url("../../img/cut/verticalWall/material/tree-bottom.png") no-repeat;
+}
+.cut .verticalWall .full .bottom.aerated{
+    background: url("../../img/cut/verticalWall/material/aerated-bottom.png") no-repeat;
+}
+.cut .verticalWall .full .center{
+    background: url("../../img/cut/verticalWall/win.png") no-repeat;
+    background-size: contain;
+    height: 262px;
+    position: absolute;
+    top: 79px;
+    width: 100%;
+    background-position: 15px 0px;
+}
+.cut .verticalWall .full .loupe{
+    position: absolute;
+    width: 124px;
+    height: 92px;
+    left: -100px;
+}
+.cut .verticalWall .full .loupe.three{
+    background: url("../../img/cut/verticalWall/loupe/three.png") no-repeat;
+}
+.cut .verticalWall .full .loupe.two{
+    background: url("../../img/cut/verticalWall/loupe/two.png") no-repeat;
+}
+.cut .verticalWall .full .loupe.one{
+    background: url("../../img/cut/verticalWall/loupe/one.png") no-repeat;
+}
+.cut .verticalWall .full .sill .ebb{
+    background: url("../../img/cut/verticalWall/ebb.png") no-repeat;
+    width: 82px;
+    height: 41px;
+    position: absolute;
+}
+.cut .verticalWall .full .sill .windowsill{
+    background: url("../../img/cut/verticalWall/sill.png") no-repeat;
+    width: 112px;
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.cut .verticalWall .full .sill{
+    width: 196px;
+    height: 41px;
+    bottom: -19px;
+    left: -46px;
+}
+.cut .verticalWall .full .sill .ebb.none,
+.cut .verticalWall .full .sill .windowsill.none{
+    opacity: 0.5
+}
+.cut .verticalWall .full .scale{
+    background: url("../../img/cut/verticalWall/scale.png") no-repeat;
+    width: 184px;
+    height: 35px;
+    bottom: -7px;
+    left: -34px;
+}
+.cut .verticalWall .full .scale.none{
+    display: none;
+}
+.cut .verticalWall .choise.left{
+    bottom: 50px;
+    left: -77px;
+}
+.cut .verticalWall .choise.right{
+    top: 189px;
+    left: 50px;
+    position: relative;
+}

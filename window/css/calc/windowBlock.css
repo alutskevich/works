@@ -1,0 +1,165 @@
+.stages .windowStage{
+    padding: 50px 0 15px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: none;
+}
+.stages .windowStage .sliderArrow{
+    top: 28px;
+}
+.stages .windowStage .name{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin: 0 0 0 20px;
+}
+.stages .windowStage .slider{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 55px 0;
+}
+.stages .windowStage .slider .arrow-left.visible{
+    top: 200px;
+}
+.stages .windowStage .slider .arrow-right.visible{
+    background-position: 25px 200px;
+}
+.stages .windowStage .packages{
+    margin-bottom: 40px;
+}
+.stages .windowStage .packages .package{
+    width: 228px;
+    background: #e9eef3;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border: solid 10px transparent;
+    float: left;
+    margin: 0 15px;
+}
+.stages .windowStage .packages .package:hover{
+    border: solid 10px #e1e1e1;
+}
+.stages .windowStage .packages .package .image{
+    width: 196px;
+    height: 170px;
+    background: white;
+    position: relative;
+    margin: 0 auto;
+    padding: 8px;
+}
+.stages .windowStage .packages .package .image .sun,
+.stages .windowStage .packages .package .image .volume{
+    position: relative;
+    text-align: left;
+    margin: 0 0 8px;
+}
+.stages .windowStage .packages .package .image .sun{
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 11px;
+}
+.stages .windowStage .packages .package .image .sun.one{background-image: url("../../img/window-package/sun1.png")}
+.stages .windowStage .packages .package .image .sun.two{background-image: url("../../img/window-package/sun2.png")}
+.stages .windowStage .packages .package .image .sun.three{background-image: url("../../img/window-package/sun3.png")}
+.stages .windowStage .packages .package .image .sun.four{background-image: url("../../img/window-package/sun4.png")}
+.stages .windowStage .packages .package .image .sun.five{background-image: url("../../img/window-package/sun5.png")}
+.stages .windowStage .packages .package .image .volume{
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 20px;
+}
+.stages .windowStage .packages .package .image .volume.one{background-image: url("../../img/window-package/volume1.png")}
+.stages .windowStage .packages .package .image .volume.two{background-image: url("../../img/window-package/volume2.png")}
+.stages .windowStage .packages .package .image .volume.three{background-image: url("../../img/window-package/volume3.png")}
+.stages .windowStage .packages .package .image .volume.four{background-image: url("../../img/window-package/volume4.png")}
+.stages .windowStage .packages .package .image .volume.five{background-image: url("../../img/window-package/volume5.png")}
+.stages .windowStage .packages .package .image .bg{
+    position: absolute;
+    top: 5px;
+    left: 55px;
+}
+.stages .windowStage .packages .package .image .bg.f-s-f{
+    background: url("../../img/window-package/f-s-f.png") no-repeat;
+    width: 106px;
+    height: 160px;
+}
+.stages .windowStage .packages .package .image .bg.f-s-f-s-f{
+    background: url("../../img/window-package/f-s-f-s-f.png") no-repeat;
+    width: 107px;
+    height: 160px;
+}
+.stages .windowStage .packages .package .image .bg.f-t-f-t-f{
+    background: url("../../img/window-package/f-t-f-t-f.png") no-repeat;
+    width: 125px;
+    height: 160px;
+}
+.stages .windowStage .packages .package .image .bg.s-s-f-t-f{
+    background: url("../../img/window-package/s-s-f-t-f.png") no-repeat;
+    width: 124px;
+    height: 160px;
+}
+.stages .windowStage .packages .package .info{
+    margin: 20px 0;
+}
+.stages .windowStage .packages .package .info .namePack .name{
+    margin: 0;
+    max-width: 145px;
+    word-break: break-word;
+    line-height: 20px;
+}
+.stages .windowStage .packages .package .info .namePack .help{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.stages .windowStage .packages .package .info .namePack .help .title{
+    position: absolute;
+    top: 30px;
+    left: -103px;
+}
+.stages .windowStage .packages .package .info .thermal,
+.stages .windowStage .packages .package .info .insulation{
+    margin: 15px 0;
+}
+.stages .windowStage .packages .package .info .thermal .coef,
+.stages .windowStage .packages .package .info .insulation .coef{
+    display: inline-block;
+}
+.stages .windowStage .packages .package .info .thermal .label,
+.stages .windowStage .packages .package .info .insulation .label,
+.stages .windowStage .packages .package .info .optionsChoose .label{
+    color: #444444;
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.stages .windowStage .packages .package .info .thermal .value,
+.stages .windowStage .packages .package .info .insulation .value{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrBold';
+}
+.stages .windowStage .packages .package .info .thermal .icon,
+.stages .windowStage .packages .package .info .insulation .icon{
+    background-repeat: no-repeat;
+    margin: 1px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.stages .windowStage .packages .package .info .thermal .icon{
+    background-image: url("../../img/window-package/sun.png");
+    width: 10px;
+    height: 10px;
+}
+.stages .windowStage .packages .package .info .insulation .icon{
+    background-image: url("../../img/window-package/volume.png");
+    width: 7px;
+    height: 12px;
+}

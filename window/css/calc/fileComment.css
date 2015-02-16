@@ -1,0 +1,113 @@
+.fileComment{
+    background: white;
+    box-shadow: 0 -12px 13px white;
+    margin: 0 0 20px;
+}
+.fileComment .name{
+    font-size: 14px;
+    color: #495968;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin-bottom: 30px;
+}
+.fileComment .messageError{
+    color: #879eb3;
+    margin: 15px 0;
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrItalic';
+}
+.fileComment .file{
+    margin: 0 105px 0 30px;
+}
+.fileComment .file .files .item{
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    border: dotted 3px white;
+    position: relative;
+}
+.fileComment .file .files .item .hover{
+    display: none;
+}
+.fileComment .file .files .item:not(.noImage):hover .hover{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(73,84,109,0.9);
+    top: 0;
+    line-height: 82px;
+    text-align: center;
+}
+.fileComment .file .files .item:not(.noImage) .hover .loupe{
+    background: url("../../img/preview.png") no-repeat;
+}
+.fileComment .file .files .item:not(.noImage) .hover .remove{
+    background: url("../../img/close.png") no-repeat;
+}
+.fileComment .file .files .item:not(.noImage) .hover .loupe,
+.fileComment .file .files .item:not(.noImage) .hover .remove{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.fileComment .file .files .item.noImage{
+    border: dotted 3px #d1dae2;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 72px;
+}
+.fileComment .file .files .item.noImage:hover{
+    border: dotted 3px #8aa0b4;
+}
+.fileComment .file .files .item.noImage .downloadImage{
+    display: none;
+}
+.fileComment .file .files .item .downloadImage{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.fileComment .file .files .item .fileUpload{
+    opacity: 0;
+    position: absolute;
+    width: 2px;
+}
+.fileComment .file .files .item .add{
+    display: none;
+}
+.fileComment .file .files .item.noImage .add{
+    color: #879eb3;
+    font-size: 48px;
+    display: block;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.fileComment .comment{
+    vertical-align: top;
+}
+.fileComment .comment .wallMaterial{
+    margin-bottom: 40px;
+    display: none;
+}
+.fileComment .comment .textarea{
+    border: solid 1px #879eb3;
+    border-radius: 5px;
+    width: 461px;
+    height: 84px;
+    padding: 10px;
+    color: #879eb3;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+    overflow: auto;
+}
+.fileComment .comment .textarea:focus{
+    outline: 0 solid transparent;
+}
+.fileComment .comment .messageError{
+    opacity: 0;
+}

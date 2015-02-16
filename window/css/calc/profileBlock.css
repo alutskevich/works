@@ -1,0 +1,123 @@
+.stages .profileBlock{
+    padding: 50px 0 35px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: none;
+}
+.stages .profileBlock .name,
+.stages .profileBlock .material,
+.stages .profileBlock .material .item .checkbox,
+.stages .profileBlock .material .item .label,
+.stages .profileBlock .material .item .img,
+.stages .profileBlock .material .item .help{
+    display: inline-block;
+    vertical-align: middle;
+}
+.stages .profileBlock .name{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin: 0 30px 10px 20px;
+    min-width: 150px;
+}
+.stages .profileBlock .material{
+    max-width: 620px;
+}
+.stages .profileBlock .material .item{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin: 0 0 10px;
+    cursor: pointer;
+}
+.stages .profileBlock .material .item .label{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.stages .profileBlock .material .item .checkbox,
+.stages .profileBlock .material .item .label,
+.stages .profileBlock .material .item .img,
+.stages .profileBlock .material .item .help{
+    margin: 0 5px;
+}
+.stages .profileBlock .material .item .checkbox{
+    background: white;
+    border-radius: 50%;
+    border: solid 1px #91a0af;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.stages .profileBlock .material .item .checkbox .check{
+    display: none;
+}
+.stages .profileBlock .material .item .checkbox.checked .check{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #91a0af;
+    border-radius: 50%;
+    margin: 2px 2px;
+}
+.stages .profileBlock .sliderArrow{
+    position: absolute;
+    bottom: -13px;
+    top: auto;
+}
+.stages .profileBlock .manufacture .wood,
+.stages .profileBlock .manufacture .plastic{
+    display: none;
+    margin: 20px 0 0;
+}
+.stages .profileBlock .manufacture .manSlider{
+    margin: 15px 0 30px;
+    position: relative;
+    padding: 0 45px;
+}
+.stages .profileBlock .manufacture .manSlider .item,
+.modelChoose .allList .modelList .slider .item{
+    width: 228px;
+    height: 193px;
+    float: left;
+    background: #e9eef3;
+    margin: 0 15px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    border: solid 10px transparent;
+    cursor: pointer;
+}
+.stages .profileBlock .manufacture .manSlider .item:hover,
+.stages .profileBlock .manufacture .manSlider .item.active,
+.modelChoose .allList .modelList .slider .item:hover,
+.modelChoose .allList .modelList .slider .item.active{
+    border: solid 10px #879eb3; /* change color */
+}
+.stages .profileBlock .manufacture .manSlider .arrow-left.visible{
+    top: 60px;
+    left: 10px;
+}
+.stages .profileBlock .manufacture .manSlider .arrow-right.visible{
+    background-position: 30px 65px;
+}
+.stages .profileBlock .manufacture .manSlider .item .manLogo{
+    width: 195px;
+    height: 117px;
+    background: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+.stages .profileBlock .manufacture .wood .manSlider .item .manLogo{
+    display: block;
+    margin-bottom: 25px;
+}
+.stages .profileBlock .manufacture .manSlider .item .manName{
+    font-size: 14px;
+    color: #546270;
+    margin: 15px 0;
+    font-family: 'HelveticaNeueCyrMedium';
+}

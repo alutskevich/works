@@ -1,0 +1,214 @@
+.fullOffer{
+    background: #fafafa;
+    width: 929px;
+    margin: 20px 0;
+    padding: 0 20px 20px;
+    display: none;
+}
+.fullOffer .slider{
+    padding: 40px 50px;
+    height: auto;
+}
+.fullOffer .slider .item{
+    float: left;
+    width: 290px;
+    margin: 0 10px;
+}
+.fullOffer .slider .item .image{
+    min-height: 160px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fullOffer .slider .item .price,
+.fullOffer .slider .item .name,
+.fullOffer .slider .item .about{
+    color: #546270;
+}
+.fullOffer .slider .item .price{
+    font-family: 'HelveticaNeueCyrMedium';
+    text-align: center;
+    font-size: 30px;
+}
+.fullOffer .slider .item .price .count{
+    margin: 0 10px;
+    font-size: 20px;
+    font-family: 'HelveticaNeueCyrLight';
+}
+.fullOffer .slider .item .name{
+    margin: 20px 0;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.fullOffer .slider .item .name .count{
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.fullOffer .slider .item .about{
+    font-size: 13px;
+    line-height: 17px;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.fullOffer .scrollBar{
+    margin-bottom: 40px;
+}
+.fullOffer .track{
+    width: 900px;
+}
+.fullOffer hr{
+    background: #dadfe3;
+    border: none;
+    height: 1px;
+    margin: 40px 0;
+}
+.fullOffer .details .name,
+.fullOffer .question .name{
+    color: #546270;
+    font-size: 18px;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin: 0 0 10px;
+}
+.fullOffer .details .container{
+    margin: 8px 0;
+    position: relative;
+    text-align: right;
+    white-space: nowrap;
+}
+.fullOffer .details .filler{
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px dashed #333;
+    height: 50%;
+}
+.fullOffer .details .label{
+    font-family: 'HelveticaNeueCyrRoman';
+    font-size: 14px;
+    color: #546270;
+    background: #fafafa;
+    float: left;
+    margin-right: 20px;
+    padding-right: 4px;
+    position: relative;
+}
+.fullOffer .details .text{
+    font-family: 'HelveticaNeueCyrMedium';
+    font-size: 14px;
+    color: #546270;
+    padding-left: 4px;
+    position: relative;
+    background: #fafafa;
+    display: inline;
+}
+.fullOffer .details .text .cur{
+    font-family: 'HelveticaNeueCyrLight';
+    font-size: 13px;
+    margin: 0 5px;
+}
+.fullOffer .warning,
+.fullOffer .information{
+    line-height: 20px;
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrRoman';
+    color: #546270;
+}
+.fullOffer .warning{
+    background: #f6f0de;
+    padding: 15px;
+    margin: 20px 0;
+}
+.fullOffer .information{
+    margin-top: 40px;
+}
+.fullOffer .question .item{
+    margin: 25px 0;
+}
+.fullOffer .question .item .logotype{
+    font-family: 'HelveticaNeueCyrLight';
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    color: #fafafa;
+    font-size: 26px;
+    background: #cacdd1;
+    line-height: 75px;
+}
+.fullOffer .question .item .quest{
+    width: 790px;
+    background: #eeeeee;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 20px;
+    position: relative;
+}
+.fullOffer .question .item.left .quest{
+    margin-left: 20px;
+}
+.fullOffer .question .item.right .quest{
+    margin-right: 20px;
+}
+.fullOffer .question .item.left .quest:before{
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 15px solid #eeeeee;
+    border-bottom: 8px solid transparent;
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 30px;
+}
+.fullOffer .question .item.right .quest:after{
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 15px solid #eeeeee;
+    border-bottom: 8px solid transparent;
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: 30px;
+}
+.fullOffer .quest .fio,
+.fullOffer .quest .text{
+    color: #546270;
+    font-size: 13px;
+}
+.fullOffer .quest .fio{
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.fullOffer .quest .text{
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.addQuestion label{
+    display: block;
+    font-size: 13px;
+    color: #546270;
+    margin: 10px 0;
+    font-family: 'HelveticaNeueCyrMedium';
+}
+.addQuestion .msg{
+    width: 755px;
+    height: 80px;
+    border: solid 1px #879eb3;
+    display: inline-block;
+}
+.addQuestion .send{
+    background: #e74447;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 31px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    top: -28px;
+    margin: 0 15px;
+    cursor: pointer;
+    border-bottom: solid 3px #e74447;
+}
+.addQuestion .send:hover{
+    border-bottom: solid 3px #b63b3d;
+}

@@ -1,0 +1,92 @@
+header{
+    height: 80px;
+    background: #495968;
+    color: white;
+    line-height: 75px;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrBold';
+    padding: 0 30px;
+}
+header .name{
+    margin-right: 16px;
+    overflow: hidden;
+    max-width: 220px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+header .button{
+    border-radius: 25px;
+    height: 38px;
+    line-height: 15px;
+    padding: 11px 20px;
+    font-family: 'HelveticaNeueCyrMedium';
+    cursor: pointer;
+    margin: 0 9px;
+}
+header .button.save{
+    background: #e74447;
+    border: solid 1px #e74447;
+    box-shadow: 0 3px 2px #b63b3d;
+}
+header .button.add{
+    color: white;
+    background: #56ce65;
+    border: solid 1px #34863e;
+    box-shadow: 0 3px 2px #34863e;
+}
+header .button.add.disable{
+    color: #56ce65;
+}
+header .button.disable{
+    border: solid 1px #a4acb3;
+    cursor: default;
+    background: transparent;
+    box-shadow: none;
+}
+header .state{
+    height: 100%;
+    max-width: 400px;
+}
+header .state .name{
+    margin: 0;
+    max-width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+header .state .icon{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+header .state.draft .icon{
+    background: #989ea3;
+}
+header .state.pending .icon{
+    background: #f9ca64;
+}
+header .state.ok .icon{
+    background: #a1d03d;
+}
+header .state.fail-point .icon{
+    background: url("../../img/header/state/fail-point.png");
+}
+header .state.call-ok .icon{
+    background: url("../../img/header/state/call-confirmed.png");
+}
+header .state.wait .icon{
+    background: url("../../img/header/state/aw-exec.png");
+}
+header .state.performed .icon{
+    background: url("../../img/header/state/performed.png");
+}
+header .state.fail .icon{
+    background: url("../../img/header/state/fail.png");
+}
+
+header .search .field{
+    box-shadow: 0 0 0 transparent;
+    border-radius: 20px 0 0 20px;
+    padding: 0 10px;
+}

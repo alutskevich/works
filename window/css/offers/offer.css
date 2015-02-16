@@ -1,0 +1,156 @@
+.offerContent{
+    padding-top: 17px;
+}
+.offerContent .head{
+    padding: 0 15px;
+    margin: 0 0 20px;
+    position: relative;
+}
+.offerContent .head .name{
+    color: #546270;
+    font-size: 18px;
+    font-family: 'HelveticaNeueCyrMedium';
+    position: absolute;
+    bottom: 5px;
+}
+.offerContent .head .sort .label{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin-bottom: 8px;
+}
+.offerContent .head .sort .choise .select .name{
+    color: #444444;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+    position: relative;
+    bottom: 0;
+}
+.offers .list{
+    padding: 0 7px;
+}
+.offer{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    min-height: 300px;
+    margin: 0 5px 15px;
+}
+.offer .head,
+.offer .body{
+    background: #e9eef3;
+    padding: 20px;
+    margin: 0;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+.offer.active .head,
+.offer.active .body,
+.offer.active .more,
+.offer:hover .head,
+.offer:hover .body{
+    background: #fafafa;
+}
+.offer .body{
+    height: 220px;
+}
+.offer .head{
+    height: 80px;
+    margin-bottom: 1px;
+}
+.offer .head .logo{
+    width: 120px;
+    margin-right: 12px;
+}
+.offer .head .logo .logoImage{
+    max-width: 120px;
+}
+.offer .head .price{
+    position: absolute;
+    right: 20px;
+}
+.offer .head .price .number{
+    color: #546270;
+    font-size: 30px;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin-bottom: 5px;
+}
+.offer .head .price .number .currency{
+    margin-left: 17px;
+    font-size: 20px;
+    font-family: 'HelveticaNeueCyrLight';
+}
+.offer .head .price .production{
+    color: #546270;
+    font-size: 12px;
+    font-family: 'HelveticaNeueCyrLight';
+    opacity: 0.6;
+    text-align: right;
+}
+.offer .body .name{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrMedium';
+    max-width: 195px;
+    line-height: 20px;
+}
+.offer .body .success{
+    margin: 20px 0 25px;
+}
+.offer .body .success .url{
+    vertical-align: bottom;
+}
+.offer .body .info{
+    line-height: 20px;
+}
+.offer .body .info .phone{
+    font-size: 13px;
+    color: #546270;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.offer .body .message{
+    margin: 15px 0 0;
+    cursor: pointer;
+}
+.offer .body .message .icon{
+    background: url("../../img/message.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.offer .body .message .notice{
+    color: #5bacf6;
+    font-size: 13px;
+    font-family: 'HelveticaNeueCyrRoman';
+}
+.offer .more{
+    width: 100%;
+    height: 50px;
+    background: #e9eef3;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.offer.active .more:after{
+    background: #fafafa;
+    height: 20px;
+    width: 300px;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+}
+.offer .more:hover{
+    background: #dae2ea;
+}
+.offer .more .arrow{
+    background: url("../../img/more.png") no-repeat;
+    width: 40px;
+    height: 11px;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+}

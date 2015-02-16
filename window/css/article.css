@@ -1,0 +1,147 @@
+.article{
+    padding: 20px;
+    border-bottom: solid 1px #BDC1C6;
+    margin: 0 auto;
+    width: 900px;
+}
+.images{
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.images .item{
+    width: 180px;
+    margin: 10px auto;
+}
+.images .item img{
+    width: 100%;
+    margin: 11px 0;
+    max-height: 180px;
+}
+.images .item .caption{
+    font-family: 'HelveticaNeueCyrMedium';
+    color: #495968;
+}
+.body{
+    width: 560px;
+    margin: 0 25px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.article .body{
+    width: 531px;
+    margin: 0 0 20px 25px;
+}
+.body .name{
+    color: #546270;
+    font-size: 23px;
+    font-family: 'HelveticaNeueCyrMedium';
+    margin: 0 0 20px;
+    display: block;
+    text-decoration: none;
+    opacity: 1;
+}
+.body a.name:hover{
+    opacity: 0.8;
+}
+.shortInfo{
+    margin: 0 0 20px;
+}
+.body .date .calendar{
+    background: url("../img/calendar.png") no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: middle;
+}
+.body .date .curdate,
+.body .author .name{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'HelveticaNeueCyrMedium';
+    color: #546270;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.body .author{
+    margin: 0 40px;
+}
+.body .author .avatar{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    background: url("../img/avatar.png") no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+.body .text p{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+    line-height: 20px;
+    margin: 15px 0;
+    text-align: justify;
+}
+.body .text ul,
+.body .text li{
+    list-style: disc outside none;
+}
+.body .text ul{
+    margin: 20px 40px;
+    text-align: justify;
+
+}
+.body .text li{
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+    line-height: 20px;
+    margin: 10px 0;
+}
+.body .text table{
+    width: 100%;
+    text-align: center;
+    color: #546270;
+    font-size: 14px;
+    font-family: 'HelveticaNeueCyrRoman';
+    margin: 20px 0;
+}
+.body .text table tr{
+    height: 30px;
+}
+.body .text table td,
+.body .text table th{
+    vertical-align: middle;
+    word-break: break-all;
+    border: solid 1px #BDC1C6;
+    padding: 10px;
+}
+.body .text table th{
+    font-family: 'HelveticaNeueCyrBold';
+}
+.body .social{
+    text-align: center;
+}
+.body .social .item{
+    display: inline-block;
+    margin: 0 5px;
+    opacity: .5
+}
+.body .social .item:hover{
+    opacity: 1;
+}
+.articles .item{
+    margin: 20px;
+}
+.buttons{
+    text-align: right;
+    margin: 20px;
+}
+.buttons .backBut{
+    margin: 0 40px;
+}
