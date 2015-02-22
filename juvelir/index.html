@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=false">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/rangeSlider/ion.rangeSlider.css">
+        <link rel="stylesheet" href="css/rangeSlider/ion.rangeSlider.skinFlat.css">
+        <!--<link rel="stylesheet" href="css/rangeSlider/normalize.min.css">-->
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/ion.rangeSlider.min.js"></script>
+        <script src="js/func.js"></script>
+        <title>Ювелирный ломбард сток</title>
+    </head>
+    <body>
+        <div id="mobile_body">
+            <header>
+                <div class="center">
+                    <a href="index.html" class="logoUrl">
+                        <img class="logo" src="img/logo.png" alt="Logo">
+                        <span class="siteName">
+                            <strong>Ювелирный</strong>
+                            Ломбард Сток
+                        </span>
+                    </a>
+                    <div class="right">
+                        <a href="contacts.html" class="filials">
+                            <span class="text">9 филиалов</span>
+                        </a>
+                        <div class="basket_mini">
+                            <div class="bask_body">
+                                <p class="title">В вашей корзине:</p>
+                                <a href="" class="value">2 товара на сумму 45000 руб.</a>
+                            </div>
+                        </div>
+                        <p class="phone">
+                            <span class="small">(495)</span>
+                            212-06-74
+                        </p>
+                        <div class="menu_show"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </header>
+            <div class="center body">
+                <nav class="top">
+                    <a href="#" class="item get">Получить<br>займ</a>
+                    <a href="#" class="item sold">Продать<br>украшение</a>
+                    <a href="#" class="item buy">Купить<br>украшение</a>
+                    <a href="#" class="item online">Получить<br>онлайн-займ</a>
+                </nav>
+                <nav class="top mobile none">
+                    <a href="#" class="item get">Получить займ</a>
+                    <a href="#" class="item sold">Продать украшение</a>
+                    <a href="#" class="item buy">Купить украшение</a>
+                    <a href="#" class="item online">Получить онлайн-займ</a>
+                </nav>
+                <div class="slider_nav">
+                    <nav class="left">
+                        <a href="lombard.html" class="item">Ломбард</a>
+                        <a href="#" class="item">Магазин</a>
+                        <a href="without-comp.html" class="item">Без выкупа</a>
+                        <a href="franchise.html" class="item">Франшиза</a>
+                        <a href="contacts.html" class="item">Контакты</a>
+                    </nav>
+                    <div id="slider">
+                        <div class="arrow prev"></div>
+                        <ul class="slider">
+                            <li class="item">
+                                <img src="img/slider.jpg" alt="slider">
+                                <a href="#" class="more">Подробнее</a>
+                            </li>
+                            <li class="item">
+                                <img src="img/slider.jpg" alt="slider">
+                                <a href="#" class="more">Подробнее</a>
+                            </li>
+                            <li class="item">
+                                <img src="img/slider.jpg" alt="slider">
+                                <a href="#" class="more">Подробнее</a>
+                            </li>
+                        </ul>
+                        <div class="arrow next"></div>
+                        <div class="pager">
+                            <a data-slide-index="0" href=""></a>
+                            <a data-slide-index="1" href=""></a>
+                            <a data-slide-index="2" href=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <ul class="products_slider">
+                        <li class="item">
+                            <div class="name">
+                                <span class="bold">Кольцо</span> золото + бриллианты
+                            </div>
+                            <a href="#" class="buy" title="Купить">Купить</a>
+                            <a href="product.html" class="see">Смотреть</a>
+                            <div class="image">
+                                <a href="product.html">
+                                    <img src="img/products/one.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="price">
+                                <p class="new">
+                                    <span class="red">24 300</span> руб
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="name">
+                                <span class="bold">Кольцо</span> золото + бриллианты
+                            </div>
+                            <a href="#" class="buy" title="Купить">Купить</a>
+                            <a href="product.html" class="see">Смотреть</a>
+                            <div class="image">
+                                <a href="product.html">
+                                    <img src="img/products/two.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="price">
+                                <p class="old">32 300 руб</p>
+                                <p class="new">
+                                    <span class="red">24 300</span> руб
+                                </p>
+                            </div>
+                            <div class="sales">
+                                <span>-40%</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="name">
+                                <span class="bold">Кольцо</span> золото + бриллианты
+                            </div>
+                            <a href="#" class="buy" title="Купить">Купить</a>
+                            <a href="product.html" class="see">Смотреть</a>
+                            <div class="image">
+                                <a href="product.html">
+                                    <img src="img/products/three.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="price">
+                                <p class="new">
+                                    <span class="red">24 300</span> руб
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="name">
+                                <span class="bold">Кольцо</span> золото + бриллианты
+                            </div>
+                            <a href="#" class="buy" title="Купить">Купить</a>
+                            <a href="product.html" class="see">Смотреть</a>
+                            <div class="image">
+                                <a href="product.html">
+                                    <img src="img/products/four.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="price">
+                                <p class="new">
+                                    <span class="red">24 300</span> руб
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="name">
+                                <span class="bold">Кольцо</span> золото + бриллианты
+                            </div>
+                            <a href="#" class="buy" title="Купить">Купить</a>
+                            <a href="product.html" class="see">Смотреть</a>
+                            <div class="image">
+                                <a href="product.html">
+                                    <img src="img/products/five.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="price">
+                                <p class="new">
+                                    <span class="red">24 300</span> руб
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="arrow left"></div>
+                    <div class="arrow right"></div>
+                </div>
+                <div class="calc_bann">
+                    <div class="calculator">
+                        <form method="post" action="#" class="calc_form">
+                            <p class="name">Калькулятор займа</p>
+                            <div class="calc_body">
+                                <div class="line">
+                                    <p class="slide_name">Размер займа</p>
+                                    <div class="rangeSlider total"></div>
+                                    <div class="total">
+                                        <input type="text" class="field" name="summ" value="1">
+                                        <label>руб</label>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="line">
+                                    <p class="slide_name">Срок займа</p>
+                                    <div class="rangeSlider long"></div>
+                                    <div class="total">
+                                        <input type="text" class="field" name="long" value="10">
+                                        <label>дней</label>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="calc_rezult">
+                                <p class="label">Платеж:</p>
+                                <p class="summ">
+                                    <span class="red">78</span>
+                                    руб
+                                    <span class="small">в день</span>
+                                </p>
+                            </div>
+                            <input type="submit" class="calc_submit" value="Оформить заем">
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <div class="banner_one">
+                        <div class="text">
+                            <p class="black">Получите бесплатно карту клиента</p>
+                            <p class="red">и украшение</p>
+                        </div>
+                        <a href="actions.html" class="url">Получить</a>
+                        <div class="bg_image"></div>
+                    </div>
+                    <div class="banner_two">
+                        <a href="actions.html">
+                            <img src="img/banner2.jpg" alt="banner">
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <h2>Отзывы клиентов</h2>
+                    <a href="#" class="allReviews">Посмотреть все отзывы ></a>
+                    <div class="clear"></div>
+                    <ul class="reviews_slider">
+                        <li class="item">
+                            <p class="name">Анна Рыбченко </p>
+                            <p class="text">
+                                Добрый день, хотелось бы оставить отзыв о качестве работы ювелирного магазина.
+                                Не так давно открыла для себя один из магазинов сети "Первый Ювелирный..."
+                            </p>
+                            <a href="#" class="more">Читать далее</a>
+                        </li>
+                        <li class="item">
+                            <p class="name">Анна Рыбченко </p>
+                            <p class="text">
+                                Спасибо сотрудникам за благополучное разрешение моей проблемы. Так же, хочется отметить
+                                слаженную работу коллектива, что отражается в опытности...
+                            </p>
+                            <a href="#" class="more">Читать далее</a>
+                        </li>
+                        <li class="item">
+                            <p class="name">Анна Рыбченко </p>
+                            <p class="text">
+                                А я про ломбард «Первый ювелирный» узнала еще 4 года назад, как-то раз зашла
+                                полюбопытствовать и стала постоянным клиентом. Как «клиент-старичок» могу...
+                            </p>
+                            <a href="#" class="more">Читать далее</a>
+                        </li>
+                        <li class="item">
+                            <p class="name">Анна Рыбченко </p>
+                            <p class="text">
+                                Добрый день, хотелось бы оставить отзыв о качестве работы ювелирного магазина.
+                                Не так давно открыла для себя один из магазинов сети «Первый Ювелирный...»
+                            </p>
+                            <a href="#" class="more">Читать далее</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="actions.html" class="big_banner"> Покупка и продажа золота в сети ломбардов «Первый Ювелирный» </a>
+                <div class="contacts">
+                    <div class="about">
+                        <h2>О компании</h2>
+                        <div class="text">
+                            <p>
+                                “Первый Ювелирный — это группа компаний, которая включает в себя ломбарды и ювелирные стоки,
+                                основанная в 2009 году. Вот уже на протяжении 5 лет компания успешно выручает тысячи людей и
+                                сохраняет их изделия в неприкосновенности.
+                            </p>
+                            <p>
+                                Мы дорожим нашими достижениями и стараемся изо дня в день повышать качество предоставляемых услуг.
+                                Нашим клиентам мы гарантируем честность и абсолютную прозрачность всех операций.
+                            </p>
+                            <a class="more" href="#">Читать весь текст</a>
+                        </div>
+                    </div>
+                    <div class="price_for_gramm">
+                        <p class="label">
+                            <span class="light">Цена за грамм</span>
+                            чистого золота
+                        </p>
+                        <p class="date">на 06 ноября 2014</p>
+                        <p class="summ">1655,75 руб./г</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="center">
+                    <div class="top">
+                        <div class="urls">
+                            <a href="lombard.html" class="item">Покупка/продажа золота в интернет ломбарде</a>
+                            <a href="lombard.html" class="item">Скупка золота 585 и ювелирных изделий</a>
+                            <a href="lombard.html" class="item">Магазин ювелирных изделий и украшений</a>
+                            <a href="lombard.html" class="item">Стоимость золота за 1 грамм в ломбарде</a>
+                        </div>
+                        <div class="nav">
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="actions.html">Акции</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Подарочные карты</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Аренда</a>
+                                </li>
+                            </ul>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="vacansy.html">Вакансии</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Партнерам</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Карта сайта</a>
+                                </li>
+                            </ul>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#">Клиентская служба</a>
+                                </li>
+                                <li class="item">
+                                    <a href="reviews.html">Отзывы</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Советы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bottom">
+                        <div class="copyright">
+                            &copy; «Первый Ювелирный» 2014<br>
+                            г. Москва, Пресненский вал, д. 27, стр. 15
+                        </div>
+                        <ul class="social">
+                            <li class="item">
+                                <a href="#" target="_blank" class="vk"></a>
+                            </li>
+                            <li class="item">
+                                <a href="#" target="_blank" class="fb"></a>
+                            </li>
+                            <li class="item">
+                                <a href="#" target="_blank" class="ok"></a>
+                            </li>
+                            <li class="item">
+                                <a href="#" target="_blank" class="tw"></a>
+                            </li>
+                            <li class="item">
+                                <a href="#" target="_blank" class="gp"></a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="mobile_nav">
+            <a href="lombard.html" class="item">Ломбард</a>
+            <a href="" class="item">Магазин</a>
+            <a href="without-comp.html" class="item">Без выкупа</a>
+            <a href="franchise.html" class="item">Франшиза</a>
+            <a href="reviews.html" class="item">Отзывы клиентов</a>
+            <a href="contacts.html" class="item">Контакты</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+.basket_content{
+    padding: 45px 0 0;
+    float: left;
+    width: 75%;
+}
+.basket{
+    width: 100%;
+}
+.basket thead tr,
+.basket tfoot tr{
+    background: #eeeeee;
+}
+.basket thead th,
+.basket tfoot td{
+    border-top: solid 1px #e7e7e7;
+    border-bottom: solid 1px #e7e7e7;
+    font-size: 15px;
+    color: #141414;
+    font-family: 'ProximaNova-Regular';
+    padding: 10px 0;
+    text-transform: lowercase;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.basket tfoot td.price{
+    letter-spacing: normal;
+}
+.basket tbody td{
+    border-bottom: solid 1px #e7e7e7;
+    vertical-align: top;
+    text-align: left;
+    padding: 20px 0 15px;
+}
+.basket tbody td.image{
+    text-align: center;
+    vertical-align: middle;
+}
+.basket .name{
+    color: #1b1c20;
+    font-size: 16px;
+    font-family: 'ProximaNovaLight';
+    text-transform: uppercase;
+}
+.basket .bold{
+    font-family: 'ProximaNova-Bold';
+}
+.basket .tech{
+    margin: 25px 0 35px;
+    font-size: 15px;
+    color: #1b1c20;
+    font-family: 'ProximaNovaLight';
+    line-height: 20px;
+}
+.basket .delete{
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'ProximaNovaLight';
+    cursor: pointer;
+}
+.basket .delete:after{
+    content: "";
+    background: url("../img/remove-filter.png");
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.6;
+    margin: -2px 5px 0;
+}
+.basket .price{
+    color: #151515;
+    font-family: 'ProximaNovaLight';
+    font-size: 16px;
+}
+.basket_content .button{
+    float: right;
+    width: 221px;
+    height: 48px;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    background: #e42226;
+    border: none;
+    cursor: pointer;
+    border-bottom: solid 4px #ca0004;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'ProximaNova-Bold';
+}
+.basket_content .button.order{
+    margin: 40px 0 60px;
+}
+.basket_content .button.order.disabled{
+    opacity: 0.2;
+}
+.basket_content .button:hover{
+    background: white;
+    color: #e42226;
+}
+.anketa .label{
+    color: #1b1c20;
+    font-size: 30px;
+    font-family: 'ProximaNovaLight';
+    margin: 0 0 30px;
+}
+.anketa{
+    display: none;
+    padding: 0 20px;
+}
+.anketa .field{
+    display: block;
+    width: 360px;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    border: solid 1px #b6b6b5;
+    padding: 0 25px;
+    color: #1c1c1c;
+    font-size: 16px;
+    font-family: 'ProximaNova-Regular';
+}
+.anketa .field.phone{
+    float: left;
+    margin: 0;
+}
+aside{
+    float: right;
+    padding: 45px 25px 0 0;
+}
+aside a{
+    color: #1c1c1c;
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular';
+    margin: 0 0 13px;
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+    text-decoration: none;
+}
+aside a:after{
+    width: 100%;
+    height: 1px;
+    background: #d6d6d6;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: ""
+}
+aside a:hover:after{
+    background: black;
+}

@@ -1,0 +1,195 @@
+#contacts .seo_text{
+    margin: 0;
+}
+#contacts .seo_text h3{
+    font-size: 34px;
+}
+#contacts table{
+    margin: 15px auto;
+}
+#contacts .addr_list .address,
+#contacts .addr_list .metro,
+#contacts .addr_list .phone{
+    background: transparent;
+    padding: 0 0 0 25px;
+    color: #1b1c20;
+    text-align: left;
+    margin: 10px 0;
+    line-height: 20px;
+}
+#contacts .addr_list .address:before,
+#contacts .addr_list .metro:before,
+#contacts .addr_list .phone:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+}
+#contacts .addr_list .address:before{
+    background-image: url("../img/contacts/address.png");
+}
+#contacts .addr_list .metro:before{
+    background-image: url("../img/contacts/metro.png");
+}
+#contacts .addr_list .phone:before{
+    background-image: url("../img/contacts/phone.png");
+}
+#contacts .addr_list .time{
+    color: #e20620;
+}
+#contacts .vacansy,
+#contacts .office{
+    background: #eeeeee;
+    padding: 25px 15px 20px;
+    box-sizing: border-box;
+}
+#contacts .vacansy .title,
+#contacts .office .title{
+    color: #1b1c20;
+    font-size: 18px;
+    font-family: 'ProximaNova-Bold';
+    padding: 0 0 0 9px;
+    margin: 0 0 9px;
+}
+#contacts .office .title{
+    margin: 0 0 20px;
+}
+#contacts .vacansy .chair_icon,
+#contacts .vacansy .list,
+#contacts .office .map_icon,
+#contacts .office .office_place{
+    display: inline-block;
+}
+#contacts .vacansy .chair_icon,
+#contacts .vacansy .list{
+    vertical-align: middle;
+}
+#contacts .office .map_icon,
+#contacts .office .office_place{
+    vertical-align: top;
+}
+#contacts .vacansy .list,
+#contacts .office .office_place{
+    width: 240px;
+    margin: 0 0 0 10px;
+}
+#contacts .vacansy .list .item{
+    margin: 0 0 2px;
+}
+#contacts .vacansy .list .item:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 3px;
+    margin: 0 6px 0 0;
+    background: #c8c8c8;
+    border-radius: 50%;
+}
+#contacts .vacansy .list .item .url{
+    color: #1c1c20;
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular';
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+#contacts .office .button,
+#contacts .vacansy .button{
+    text-align: center;
+    margin: 20px 0 0;
+}
+#contacts .office .address_text{
+    color: #1c1c20;
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular';
+    line-height: 16px;
+    padding: 15px 0 0;
+    margin: 0 0 15px;
+}
+#contacts .office .noty{
+    color: #1e1e1e;
+    font-size: 14px;
+    font-family: 'ProximaNova-Regular';
+    font-style:  italic;
+    opacity: 0.47;
+}
+#contacts .big_map{
+    position: relative;
+    border: solid 1px #cfcfcf;
+    box-sizing: border-box;
+}
+#contacts .big_map img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+#contacts .big_map .toggles{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: white;
+    border-right: solid 1px #cfcfcf;
+    border-bottom: solid 1px #cfcfcf;
+    padding: 0 15px 15px 0;
+}
+#contacts .big_map .toggles .toggle{
+    color: #e20620;
+    font-size: 18px;
+    font-family: 'ProximaNova-Regular';
+    text-align: center;
+    padding: 15px 10px;
+    background: transparent;
+    cursor: pointer;
+    border: solid 1px #cfcfcf;
+
+}
+#contacts .big_map .toggles .toggle.active,
+#contacts .big_map .toggles .toggle:hover{
+    color: #1b1c20;
+}
+#contacts .big_map .toggles .toggle:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 32px;
+    margin: 0 10px 0 0;
+}
+#contacts .big_map .toggles .toggle.map{
+    border-bottom: none;
+}
+#contacts .big_map .toggles .toggle.map:before{
+    background-image: url("../img/contacts/toggle_map.png");
+}
+#contacts .big_map .toggles .toggle.map:hover:before,
+#contacts .big_map .toggles .toggle.map.active:before{
+    background-image: url("../img/contacts/toggle_map_active.png");
+}
+#contacts .big_map .toggles .toggle.metro:before{
+    background-image: url("../img/contacts/toggle_metro.png");
+}
+#contacts .big_map .toggles .toggle.metro:hover:before,
+#contacts .big_map .toggles .toggle.metro.active:before{
+    background-image: url("../img/contacts/toggle_metro_active.png");
+}
+#contacts .form_block{
+    margin: 29px 0 0;
+}
+#contacts .form_block.send_form .area {
+    height: 115px;
+    padding: 15px 25px;
+    margin: 0;
+}
+#contacts .form_block.callback .area {
+    height: 50px;
+    padding: 10px 25px;
+    margin: 0;
+}
