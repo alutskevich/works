@@ -1,0 +1,309 @@
+@media screen and (max-width: 1000px){
+    .center{
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+    .content.center{
+        padding: 155px 50px 50px;
+    }
+    .full_size .form .field:nth-child(2) {
+        width: 180px;
+    }
+    .full_size .form .field:nth-child(3), .full_size .select_block, .full_size .submit {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 940px){
+    .full_size .form .field:nth-child(2){
+        display: block;
+        width: 100%;
+        /*margin: 0 0 35px;*/
+        margin: 0 0 5%;
+    }
+    .full_size .submit{
+        display: block;
+        /*margin: 35px auto 0;*/
+        margin: 5% auto 0;
+        width: 100%;
+    }
+    .full_size .form .field:nth-child(3){
+        margin: 0 5% 0 0;
+    }
+    .full_size .select_block{
+        margin: 0;
+    }
+    .full_size .form .field:nth-child(3), .full_size .select_block{
+        width: 47%;
+    }
+    .full_size .hiw_p:hover:after{
+        top: 0;
+    }
+}
+@media screen and (max-width: 890px){
+    nav{
+        position: fixed;
+        width: 100%;
+        background: rgba(205, 92,92, 0.9);
+        top: 100px;
+        left: 0;
+        box-sizing: border-box;
+        text-align: center;
+        display: none;
+    }
+    header .menu{
+        display: block;
+    }
+    header .menu.close .line:first-child {
+        display: none;
+    }
+    header .menu.close .line:nth-child(2) {
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    header .menu.close .line:nth-child(3) {
+        transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        margin-top: -6px;
+    }
+}
+@media screen and (max-width: 750px){
+    nav{
+        height: 100%;
+        background: rgba(205, 92,92, 1);
+    }
+    header.close{
+        background: rgba(205, 92,92, 1);
+    }
+    nav .url{
+        display: block;
+        font-size: 25px;
+        margin: 0;
+    }
+    nav .url.but{
+        display: inline-block;
+        width: 30%;
+        height: 85px;
+        line-height: 78px;
+        font-size: 30px;
+    }
+    nav .url:not(:first-child):not(.but):before {
+        width: 10px;
+        height: 10px;
+        top: -4px;
+        left: 50%;
+    }
+    nav .url:not(.but):after{
+        display: none;
+    }
+    nav .url:not(.but):hover{
+        color: #424242;
+    }
+    .content .left, .content .right {
+        width: 100%;
+    }
+    footer .socials{
+        display: none;
+    }
+    footer .left{
+        float: none;
+        text-align: center;
+    }
+    nav .socials{
+        display: block;
+        margin: 15% 0 0;
+    }
+    nav .social{
+        height: 48px;
+        width: 15%;
+    }
+    nav .social:first-child{
+        margin: 0;
+    }
+    .socials a,
+    .socials .fb,
+    .socials .pn{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    .full_size .form{
+        /*padding: 40px 40px 60px;*/
+        padding: 10% 10% 20%;
+    }
+    .full_size .form .field:nth-child(3), .full_size .select_block {
+        width: 100%;
+        /*margin: 0 0 35px;*/
+        margin: 0 0 5%;
+    }
+    /*.full_size .hiw{
+        left: 38%;
+    }*/
+}
+@media screen and (max-width: 535px){
+    .full_size h2{
+        font-size: 20px;
+        margin: 0 0 15%;
+    }
+}
+@media screen and (max-width: 480px){
+    .full_size h2:before{
+        display: none;
+    }
+    /*.full_size .hiw {
+        left: 33%;
+    }*/
+    nav .url {
+        display: block;
+        font-size: 18px;
+        line-height: 70px;
+    }
+    nav .url.but {
+        width: 35%;
+        height: 50px;
+        line-height: 48px;
+        font-size: 19px;
+    }
+    nav .social {
+        height: 35px;
+        width: 9%;
+    }
+    .full_size .select_block .list{
+        top: 26px;
+    }
+}
+@media screen and (max-height: 600px){
+    header{
+        height: 15%;
+    }
+    #logo{
+        margin: 8px 0;
+    }
+    header .menu{
+        margin-top: 28px;
+    }
+    nav{
+        top: 15%;
+    }
+    nav .url {
+        line-height: 60px;
+    }
+    nav .socials {
+        margin: 5% 0 0;
+    }
+    nav .socials .social {
+        height: 20px;
+        width: 6%;
+        vertical-align: top;
+    }
+}
+@media screen and (max-height: 480px){
+    .full_size h2 {
+        font-size: 15px;
+        margin: 0 0 5%;
+    }
+    .full_size .field, .full_size .select_block{
+        font-size: 14px;
+        height: 30px;
+    }
+    .full_size .select_block .value{
+        line-height: 28px;
+    }
+    .full_size .select_block .value:after{
+        top: 10px;
+    }
+    .full_size .form{
+        padding: 5% 10% 10%;
+    }
+    .full_size .hiw_p, .full_size .must_click{
+        font-size: 15px;
+    }
+    .full_size .hiw_p:after{
+        width: 35px;
+        height: 20px;
+        background-size: cover;
+        margin: 5px auto 0;
+    }
+}
+@media screen and (max-height: 400px){
+    header {
+        height: 45px;
+    }
+    #logo {
+        margin: 3px 0;
+        width: 54px;
+        background-size: contain;
+    }
+    header .menu {
+        margin-top: 15px;
+    }
+    nav {
+        top: 45px;
+    }
+    nav .url {
+        line-height: 35px;
+    }
+    nav .url:not(:first-child):not(.but):before{
+        display: none;
+    }
+    nav .url.but {
+        width: 30%;
+        height: 45px;
+        line-height: 42px;
+        font-size: 20px;
+    }
+    nav .socials {
+        margin: 0;
+    }
+    .full_size .form {
+        padding: 5% 5% 5%;
+    }
+    .full_size h2 {
+        margin: 0 0 4%;
+        font-size: 18px;
+    }
+    .full_size h2:before{
+        display: none;
+    }
+    .full_size .form .field:nth-child(2),
+    .full_size .form .field:nth-child(3),
+    .full_size .select_block{
+        margin: 0 0 3%;
+    }
+    .full_size .field, .full_size .select_block{
+        font-size: 13px;
+        height: 30px;
+    }
+    .full_size .select_block .value {
+        line-height: 27px;
+    }
+    .full_size .select_block .value:after{
+        top: 10px;
+    }
+    .full_size .select_block .list{
+        top: 25px;
+    }
+    .full_size .submit{
+        margin: 0;
+        height: 30px;
+    }
+    .full_size .hiw_p:after{
+        width: 25px;
+        height: 15px;
+        background-size: cover;
+        margin: 5px auto 0;
+    }
+    .full_size .hiw_p{
+        font-size: 13px;
+    }
+    .content.center {
+        padding: 75px 50px 50px;
+    }
+}

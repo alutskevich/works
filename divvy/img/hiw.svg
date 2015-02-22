@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+
+      .cls-3 {
+        stroke: #ffffff;
+        stroke-width: 2px;
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #ffffff;
+        stroke-width: 4px;
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="hiwsvg">
+    <rect id="rect-1" class="cls-3" x="21" y="13" width="2" height="10"/>
+    <path d="M39.302,32.000 C35.843,37.972 29.398,42.000 22.000,42.000 C14.602,42.000 8.157,37.972 4.698,32.000 C4.698,32.000 2.000,32.000 2.000,32.000 C2.000,32.000 2.000,22.000 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,22.000 42.000,32.000 42.000,32.000 C42.000,32.000 39.302,32.000 39.302,32.000 Z" id="path-1" class="cls-4" fill-rule="evenodd"/>
+  </g>
+</svg>
