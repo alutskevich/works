@@ -1,0 +1,113 @@
+@media screen and (max-width: 980px){
+    #contacts .head .address{
+        margin: 0 100px;
+    }
+}
+@media screen and (max-width: 970px){
+    #kozyrs .nav .item{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 920px){
+    #contacts .footer ul .item{
+        padding: 15px 30px 10px;
+    }
+}
+@media screen and (max-width: 900px){
+    #channels .item{
+        min-width: 25%;
+    }
+    #channels .item:nth-child(1),
+    #channels .item:nth-child(2),
+    #channels .item:nth-child(4){
+        margin: 0 25px 60px;
+    }
+    #channels.open .arrow.three{
+        top: 297px;
+    }
+    #channels.open .arrow{
+        /*top: 430px;*/
+        top: 450px;
+    }
+    #channels .textLi{
+        display: block;
+    }
+}
+@media screen and (max-width: 870px){
+    #kozyrs .nav{
+        display: none;
+    }
+    #kozyrs .arrow{
+        display: block;
+    }
+    #kozyrs .header{
+        width: 90%;
+        top: 40px;
+        left: 5%;
+    }
+    #kozyrs .header .text{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    #kozyrs .header .label_name{
+        display: inline;
+    }
+    #channels .chanel_content .center .ch_image{
+        display: block;
+        margin: 0 auto;
+    }
+    #channels .chanel_content .center .ch_text{
+        width: 100%;
+        margin: 20px auto;
+    }
+    #channels .chanel_content .center .ch_text .name{
+        text-align: center;
+    }
+    #channels .chanel_content .center .ch_text .name:after{
+        margin: 10px auto;
+    }
+    #channels .chanel_content .center .ch_image img{
+        max-width: 100%;
+    }
+    #channels .item.active:after{
+        display: none;
+    }
+}
+@media screen and (max-width: 820px){
+    #channels .item {
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width: 800px){
+    #contacts .footer ul .item {
+        padding: 15px;
+    }
+    footer .uptolike-buttons{
+        left: 35%;
+    }
+    #contacts .head .address{
+            margin: 0 50px;
+        }
+}
+@media screen and (max-width: 775px){
+    #channels .chanel_content{
+        padding: 10px 0 30px;
+    }
+    #channels .chanel_content .center .close{
+        right: 15px;
+    }
+}
+@media screen and (max-width: 715px){
+    #contacts .footer{
+        height: auto;
+        padding: 20px 0;
+    }
+    #contacts .footer ul .item:nth-child(2){
+        border: none;
+        border-top: solid 1px #19425a;
+        border-bottom: solid 1px #19425a;
+    }
+    #contacts .footer ul .item{
+        display: block;
+    }
+}

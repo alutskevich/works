@@ -1,0 +1,348 @@
+@media screen and (max-width: 650px){
+    #channels .item {
+        min-width: 23%;
+    }
+}
+@media screen and (max-width: 640px){
+    .main-section .triangle{
+        width: 47%;
+    }
+    .main-section .head_desc{
+        padding: 0 20px;
+    }
+    #about{
+        background: url("../img/header.jpg") no-repeat;
+        background-size: cover;
+    }
+    #about video{
+        display: none;
+    }
+    #about .logo.visible{
+        top: 45px !important;
+    }
+    #kozyrs .header{
+        width: 80%;
+        left: 10%;
+    }
+    #kozyrs .header .text{
+        font-size: 18px;
+    }
+    #channels.open .item .chanel_content{
+        margin: 20px 0 0;
+    }
+    #channels .item .chanel_content .center .close{
+        display: none;
+    }
+    #channels .item img.visible{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+    #channels .item {
+        min-width: 30%;
+    }
+    #channels .textLi,
+    #channels .text{
+        display: none;
+    }
+    #channels .item,#channels .item:nth-child(1), #channels .item:nth-child(2), #channels .item:nth-child(4){
+        margin: 30px 25px;
+    }
+    #channels,
+    #channels.open{
+        padding: 40px 0 0;
+    }
+    .name:after{
+        margin: 15px auto;
+    }
+    #channels .mainName {
+        margin: 0 0 18px;
+    }
+    #channels .list {
+        padding: 0 0 50px;
+    }
+    #channels .mobileTextLi{
+        display: block;
+    }
+    #channels.open .arrow.oneLine{
+        top: 215px;
+    }
+    #channels.open .arrow.twoLine{
+        top: 345px;
+    }
+    #channels.open .arrow.threeLine{
+        /*top: 480px;*/
+        top: 495px;
+    }
+    #channels .chanel_content {
+        padding: 68px 0 35px;
+    }
+    #channels .chanel_content .center .close {
+        right: 20px;
+        top: -50px;
+        width: 20px;
+        height: 20px;
+    }
+    #channels .chanel_content .center .ch_text .name{
+        font-size: 25px;
+    }
+    #channels .chanel_content .center .ch_text .name:after{
+        margin: 20px auto;
+    }
+    #channels .chanel_content .center .ch_text .info{
+        font-size: 14px;
+    }
+    #channels .more,
+    #channels .but{
+        display: block;
+        margin: 15px auto 20px;
+    }
+    #channels .infoText{
+        /*max-height: 120px;*/
+        max-height: 140px;
+        overflow: hidden;
+        position: relative;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+    #channels .infoText .shadow{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 30%, rgba(255,255,255,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 30%,rgba(255,255,255,1) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 30%,rgba(255,255,255,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 30%,rgba(255,255,255,1) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 30%,rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+        height: 20px;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+    .main-section{
+        padding: 45px 0 40px;
+    }
+    nav .url {
+        padding: 27px 20px;
+    }
+    #clients{
+        padding: 40px 0 30px;
+    }
+    #contacts .head{
+        padding: 40px 0 0;
+        height: 150px;
+    }
+    #contacts .head:after{
+        bottom: -50px;
+    }
+    #contacts {
+        height: 710px;
+    }
+    footer .copyright{
+        float: left;
+        position: relative;
+        padding: 10px 25px;
+        left: 0;
+    }
+    footer .sponge{
+        float: right;
+        padding: 0 25px;
+        right: 0;
+        top: 20px;
+    }
+    #clients .client{
+        margin: 0;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 560px){
+    nav .url {
+        padding: 16px 10px 12px;
+    }
+    .main-section .head_desc{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    #kozyrs .header .text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    footer{
+        padding: 10px 20px;
+    }
+    footer .copyright{
+        float: none;
+        position: relative;
+        padding: 20px 0;
+        font-size: 15px;
+    }
+    footer .sponge{
+        float: none;
+        padding: 20px 0 10px;
+        right: 0;
+        top: 0;
+        position: relative;
+        border-top: solid 1px #19425a;
+    }
+}
+@media screen and (max-width: 479px){
+    #clients .client {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 460px){
+    nav{
+        z-index: 3;
+    }
+    nav .url{
+        display: block;
+        text-align: left;
+        padding: 15px 0;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+    }
+    nav .url:last-child{
+        padding: 15px 0 30px;
+    }
+    nav .url:first-child{
+        padding: 30px 0 15px;
+    }
+    nav .url.active, nav .url:hover{
+        border-bottom: solid 4px #00314f;
+        color: #d71923;
+    }
+    nav .urls{
+        padding: 0 17px;
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        box-sizing: border-box;
+        background: #00314f;
+        top: 60px;
+    }
+    nav .head{
+        display: block;
+        position: relative;
+        height: 60px;
+        box-sizing: border-box;
+        border-bottom: solid 1px #43677c;
+        padding: 0 17px;
+    }
+    nav .head .menuBut{
+        width: 26px;
+        height: 23px;
+        position: absolute;
+        left: 17px;
+        top: 20px;
+        background: url("../img/menu-ico.svg") no-repeat;
+    }
+    nav .head .mini_logo{
+        width: 113px;
+        height: 13px;
+        margin: 25px auto;
+        background: url("../img/logo-small.svg") no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+    .android_mobile .logo_text_android{
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'MovaviGrotesqueBlack';
+        line-height: 62px;
+        font-size: 15px;
+    }
+    .android_mobile nav .head .mini_logo{
+        display: none;
+    }
+    /*nav.fix,
+    nav .head .mini_logo,
+    nav .head .menuBut{
+        -webkit-backface-visibility: hidden;
+    }*/
+    .main-section{
+        padding: 0;
+    }
+    .main-section .name{
+        padding: 22px 0 0;
+    }
+    .main-section .head_desc{
+        font-size: 15px;
+        padding: 0 20px 28px;
+    }
+    #kozyrs .header{
+        top: 30px;
+    }
+    #kozyrs .header .name:after{
+        margin: 15px auto 25px;
+    }
+    #kozyrs .header .text{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    #channels .chanel_content .center .ch_text .name{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #channels .chanel_content .center .ch_text .info{
+        font-size: 14px;
+    }
+    #contacts .head{
+        height: auto;
+        padding: 40px 0 0;
+    }
+    #contacts .head .address.address_rish,
+    #contacts .head .address.address_marsh_gh{
+        display: block;
+        border-radius: 25px;
+        margin: 20px auto;
+        width: 215px;
+    }
+    #contacts .head:after {
+        bottom: -20px;
+    }
+    #contacts .footer{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    #kozyrs .header .text{
+        font-size: 13px;
+        padding: 0 20px;
+        line-height: 18px;
+    }
+    #channels .item, #channels .item:nth-child(1), #channels .item:nth-child(2), #channels .item:nth-child(4){
+        margin: 0 0 40px;
+        width: 40%;
+    }
+    #channels.open .arrow.oneLine {
+        top: 185px;
+    }
+    #channels.open .arrow.twoLine {
+        top: 300px;
+    }
+    #channels.open .arrow.threeLine {
+        /*top: 410px;*/
+        top: 430px;
+    }
+    #kozyrs .image{
+        height: 230px;
+    }
+    #kozyrs .arrow{
+        top: 100px;
+    }
+    #channels .chanel_content {
+        margin: 0 0 50px;
+    }
+    #channels .list {
+        padding: 0 0 0.1px;
+    }
+    #channels.open .chanel_content.g,
+    #channels.open .chanel_content.ktk{
+        margin: 0;
+    }
+}
