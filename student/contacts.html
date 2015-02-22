@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,300,400&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pages/service.css">
+        <link rel="stylesheet" href="css/pages/contacts.css">
+        <link href="img/fav.png" rel="shortcut icon" type="image/x-icon">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/func.js"></script>
+        <title>Слуга студента - Контакты</title>
+    </head>
+    <body class="dark">
+        <header>
+            <div class="center">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Слуга студента" title="Слуга студента">
+                    </a>
+                </div>
+                <nav>
+                    <a href="about.html" class="url">О нас</a>
+                    <a href="service.html" class="url">Услуги</a>
+                    <a href="garant.html" class="url">Гарантии</a>
+                    <a href="payment.html" class="url">Оплата</a>
+                    <a href="discount.html" class="url">Акции и скидки</a>
+                    <a href="reviews.html" class="url">Отзывы</a>
+                    <a href="faq.html" class="url">F.A.Q</a>
+                    <a href="contacts.html" class="url active">Контакты</a>
+                    <a href="order.html" class="url">Оформить заказ</a>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="center content">
+            <div id="breadcrumbs">
+                <a href="index.html" class="url main">Главная</a>
+                <span class="cur url">Контакты</span>
+            </div>
+            <h1>Контактная информация:</h1>
+            <p class="h1">Пишите, звоните, приходите! Мы всегда рады</p>
+            <div class="contacts">
+                <div class="contact">
+                    <div class="item">
+                        <div class="icon">
+                            <span class="phone"></span>
+                        </div>
+                        <p class="name">Телефон</p>
+                        <div class="service">
+                            <div class="border border_right"></div>
+                            <div class="border border_left"></div>
+                            <div class="full_info">
+                                <p class="text">
+                                    <span class="pink">(495) 987-17-16</span><br>
+                                    <span class="pink">(985) 340-58-58</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="mail"></span>
+                        </div>
+                        <p class="name">Электронная почта</p>
+                        <div class="service">
+                            <div class="border border_right"></div>
+                            <div class="border border_left"></div>
+                            <div class="full_info email">
+                                <p class="text">
+                                    <span class="pink">zakaz@findiplom.com</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="planet"></span>
+                        </div>
+                        <p class="name">Адрес</p>
+                        <div class="service">
+                            <div class="border border_right"></div>
+                            <div class="border border_left"></div>
+                            <div class="full_info">
+                                <p class="text">
+                                    <span class="pink">Москва. Проспект Мира, 102, офис 13.011</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opacity_block">
+                    <p class="text yellow">
+                        Время приёма звонков: с <span class="blue">9:00 до 21:00 без выходных</span>
+                    </p>
+                </div>
+                <div id="map"></div>
+                <div class="opacity_block">
+                    <p class="text">
+                        Наш главный офис находится в Москве, до него 5 минут пешком от станций метро Чистые Пруды,
+                        Тургеневская, Сретенский Бульвар. Офис работает с понедельника по пятницу с 10:00 до 19:00.
+                        В некоторых случаях, например если заказ срочный и Вы не можете ждать можно договориться о встрече
+                        в выходные дни с 12:00 до 17:00. Мы будем рады видеть Вас у себя в гостях, однако Вам необязательно
+                        тратить время на визит в офис чтобы заказать работу, 7 из 10 наших клиентов предпочитают
+                        дистанционное сотрудничество, присылая материалы на e-mail и оплачивая работы по реквизитам.
+                    </p>
+                    <p class="text">
+                        Если Вы предпочитаете личную встречу с менеджером, Вам необходимо предварительно записаться по
+                        телефону, чтобы не попасть на обеденный перерыв или не ждать в очереди.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="bef_footer"></div>
+        <footer>
+            <div class="center">
+                <ul class="nav">
+                    <li class="item">
+                        <a href="about.html" class="url">О нас</a>
+                    </li>
+                    <li class="item">
+                        <a href="service.html" class="url">Услуги</a>
+                    </li>
+                    <li class="item">
+                        <a href="garant.html" class="url">Гарантии</a>
+                    </li>
+                    <li class="item">
+                        <a href="payment.html" class="url">Оплата</a>
+                    </li>
+                    <li class="item">
+                        <a href="discount.html" class="url">Акции и скидки</a>
+                    </li>
+                    <li class="item">
+                        <a href="reviews.html" class="url">Отзывы</a>
+                    </li>
+                    <li class="item">
+                        <a href="faq.html" class="url">F.A.Q</a>
+                    </li>
+                    <li class="item">
+                        <a href="contacts.html" class="url active">Контакты</a>
+                    </li>
+                    <li class="item">
+                        <a href="order.html" class="url">Оформить заказ</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <p class="label">Социальные сети:</p>
+                    <div class="socials">
+                        <a href="http://vk.com" target="_blank" class="item vk"></a>
+                        <a href="http://facebook.com" target="_blank" class="item fb"></a>
+                        <a href="http://twitter.com" target="_blank" class="item tw"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+        <script>
+            var mapMarsh, coorMarsh, markerMarsh;
+            coorMarsh = new google.maps.LatLng(55.8012682,37.6366067);
+
+            mapMarsh = new google.maps.Map(document.getElementById('map'),
+                    {
+                        backgroundColor: "rgba(0, 76, 106, 0.75)",
+                        zoom: 15,
+                        center: coorMarsh,
+                        scrollwheel: false,
+                        zoomControl: true,
+                        draggable: true
+                    });
+
+            markerMarsh = new google.maps.Marker({
+                position: coorMarsh,
+                map: mapMarsh
+            });
+            markerMarsh.setMap(mapMarsh);
+        </script>
+    </body>
+</html>

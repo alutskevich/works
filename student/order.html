@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,300,400&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pages/service.css">
+        <link rel="stylesheet" href="css/pages/order.css">
+        <link href="img/fav.png" rel="shortcut icon" type="image/x-icon">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/func.js"></script>
+        <title>Слуга студента - Заказать работу</title>
+    </head>
+    <body class="d-red">
+        <div id="overlay"></div>
+        <div class="popup">
+            <div class="close"></div>
+            <div class="success body">
+                <div class="icon">
+                    <span class="smile"></span>
+                </div>
+                <p class="message">
+                    <span class="thax">Спасибо</span> что обратились к нам!
+                </p>
+                <div class="hr pink"></div>
+                <p class="noty">Наш менеджер свяжется с Вами в ближайшее время.</p>
+            </div>
+            <div class="error body none">
+                <div class="icon">
+                    <span class="unsmile"></span>
+                </div>
+                <p class="message">Вы не указали номер телефона</p>
+                <div class="hr pink"></div>
+                <p class="noty">Наш менеджер не сможет с вами связаться!</p>
+                <div class="button">Указать</div>
+            </div>
+        </div>
+        <header>
+            <div class="center">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Слуга студента" title="Слуга студента">
+                    </a>
+                </div>
+                <nav>
+                    <a href="about.html" class="url">О нас</a>
+                    <a href="service.html" class="url">Услуги</a>
+                    <a href="garant.html" class="url">Гарантии</a>
+                    <a href="payment.html" class="url">Оплата</a>
+                    <a href="discount.html" class="url">Акции и скидки</a>
+                    <a href="reviews.html" class="url">Отзывы</a>
+                    <a href="faq.html" class="url">F.A.Q</a>
+                    <a href="contacts.html" class="url">Контакты</a>
+                    <a href="order.html" class="url active">Оформить заказ</a>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="center content">
+            <div id="breadcrumbs">
+                <a href="index.html" class="url main">Главная</a>
+                <span class="cur url">Заказать работу</span>
+            </div>
+            <h1>Заказать работу</h1>
+            <p class="h1">Заполните форму и получите косультацию</p>
+            <div class="order">
+                <div class="opacity_block">
+                    <p class="text">
+                        Чтобы правильно оценить работу и подобрать наиболее подходящего автора очень важно иметь
+                        максимально полную информацию о работе. Чем больше информации Вы укажете &mdash; тем лучшие условие
+                        мы сможем Вам предложить. Не бойтесь указывать имя и название Вашего учебного заведения &mdash; вся
+                        информация строго конфиденциальна, никто кроме нас не будет знать о том, что Вы к нам обращались.
+                    </p>
+                    <p class="text yellow">
+                        Заполнение формы ни к чему Вас не обязывает, это добровольный шаг, который поможет нам точнее Вас проконсультировать.
+                    </p>
+                </div>
+                <h2>Основная информация</h2>
+                <form method="post" action="#" class="order_form">
+                    <div class="line">
+                        <div class="selectBox">
+                            <select name="work_type" class="none">
+                                <option value="Дипломный проект">Дипломный проект</option>
+                                <option value="Отчет по практике">Отчет по практике</option>
+                                <option value="Курсовая работа">Курсовая работа</option>
+                                <option value="Контрольная работа">Контрольная работа</option>
+                                <option value="Решение задач">Решение задач</option>
+                                <option value="Реферат">Реферат</option>
+                                <option value="Ответы на билеты">Ответы на билеты</option>
+                                <option value="Практическое задание">Практическое задание</option>
+                                <option value="Доклад">Доклад</option>
+                                <option value="Чертеж">Чертеж</option>
+                            </select>
+                            <div class="form_select">
+                                <p class="value">Тип работы:<span class="req">*</span></p>
+                                <ul class="dropDownList">
+                                    <li class="item">Дипломный проект</li>
+                                    <li class="item">Отчет по практике</li>
+                                    <li class="item">Курсовая работа</li>
+                                    <li class="item">Контрольная работа</li>
+                                    <li class="item">Решение задач</li>
+                                    <li class="item">Реферат</li>
+                                    <li class="item">Ответы на билеты</li>
+                                    <li class="item">Практическое задание</li>
+                                    <li class="item">Доклад</li>
+                                    <li class="item">Чертеж</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="opacity_block">
+                            <p class="label">Учебное заведение:</p>
+                            <div class="checkBlock">
+                                <div class="radio">
+                                    <span class="check">x</span>
+                                </div>
+                                <label class="blue">ВУЗ</label>
+                                <input type="checkbox" name="vuz_vuz" class="none">
+                            </div>
+                            <div class="checkBlock">
+                                <div class="radio">
+                                    <span class="check">x</span>
+                                </div>
+                                <label class="pink">Колледж</label>
+                                <input type="checkbox" name="vuz_kolledge" class="none">
+                            </div>
+                            <div class="checkBlock">
+                                <div class="radio">
+                                    <span class="check">x</span>
+                                </div>
+                                <label class="pink">Другое</label>
+                                <input type="checkbox" name="vuz_drugoe" class="none">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="selectBox">
+                            <select name="antiplagiat" class="none">
+                                <option value="не требуется">не требуется</option>
+                                <option value="60%">60%</option>
+                                <option value="70%">70%</option>
+                                <option value="75%">75%</option>
+                                <option value="80%">80%</option>
+                                <option value="85%">85%</option>
+                                <option value="90% и более">90% и более</option>
+                                <option value="E-TXT">E-TXT</option>
+                                <option value="не знаю">не знаю</option>
+                            </select>
+                            <div class="form_select">
+                                <p class="value">Отчет по практике:<span class="req">*</span></p>
+                                <ul class="dropDownList">
+                                    <li class="item">не требуется</li>
+                                    <li class="item">60%</li>
+                                    <li class="item">70%</li>
+                                    <li class="item">75%</li>
+                                    <li class="item">80%</li>
+                                    <li class="item">85%</li>
+                                    <li class="item">90% и более</li>
+                                    <li class="item">E-TXT</li>
+                                    <li class="item">не знаю</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Кол-во страниц</label>
+                            <input type="text" name="number_of_pages" class="form_field count">
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Срок выполнения</label>
+                            <input type="text" name="details_srok" class="form_field exp">
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Предмет<span class="req">*</span></label>
+                            <input type="text" name="discipline" class="form_field lesson">
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="input_block">
+                            <label class="up">Специальность</label>
+                            <input type="text" name="speciality" class="form_field spec">
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Название ВУЗа</label>
+                            <input type="text" name="university" class="form_field vuz_name">
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Код на скидку (если есть)</label>
+                            <input type="text" name="details_skidka" class="form_field code">
+                        </div>
+                    </div>
+                    <div class="input_block block">
+                        <label class="up">Тема работы <span class="req">*</span></label>
+                        <input type="text" name="title" class="form_field theme">
+                    </div>
+                    <div class="input_block block">
+                        <label class="up">Требования</label>
+                        <textarea name="details_first" class="form_area"></textarea>
+                    </div>
+                    <h2>Дополнительно потребуется</h2>
+                    <div class="radios">
+                        <div class="checkBlock">
+                            <div class="radio">
+                                <span class="check">x</span>
+                            </div>
+                            <label class="blue">Доклад</label>
+                            <input type="checkbox" name="dop_doklad" class="none">
+                        </div>
+                        <div class="checkBlock">
+                            <div class="radio">
+                                <span class="check">x</span>
+                            </div>
+                            <label class="pink">Презентация</label>
+                            <input type="checkbox" name="dop_presentashka" class="none">
+                        </div>
+                        <div class="checkBlock">
+                            <div class="radio">
+                                <span class="check">x</span>
+                            </div>
+                            <label class="pink">Раздаточный материал</label>
+                            <input type="checkbox" name="dop_razdatka" class="none">
+                        </div>
+                        <div class="checkBlock">
+                            <div class="radio">
+                                <span class="check">x</span>
+                            </div>
+                            <label class="blue">Аннотация</label>
+                            <input type="checkbox" name="dop_annotation" class="none">
+                        </div>
+                        <div class="checkBlock">
+                            <div class="radio">
+                                <span class="check">x</span>
+                            </div>
+                            <label class="pink">Рецензия</label>
+                            <input type="checkbox" name="dop_recenzia" class="none">
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="input_block">
+                            <label class="up">Контактный телефон <span class="req">*</span></label>
+                            <input type="text" name="cellphone" class="form_field spec">
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Ваше имя <span class="req">*</span></label>
+                            <input type="text" name="name" class="form_field vuz_name">
+                        </div>
+                        <div class="input_block">
+                            <label class="up">Ваш Email <span class="req">*</span></label>
+                            <input type="text" name="email" class="form_field code">
+                        </div>
+                    </div>
+                    <div class="input_block block">
+                        <label class="up">Комментарий</label>
+                        <textarea name="details_second" class="form_area"></textarea>
+                    </div>
+                    <div class="line">
+                        <p class="notification">
+                            Нажимая кнопку "Оформить заказ" Вы принимаете условия публичной
+                            <a href="#">оферты</a>
+                        </p>
+                        <div class="buttons">
+                            <div class="button">Прикрепить файлы</div>
+                            <input type="submit" value="Оформить заказ" class="button">
+                        </div>
+                    </div>
+                    <div class="attachments opacity_block">
+                        <h2>Прикрепленные файлы</h2>
+                        <ul class="att_list">
+                            <li class="item">
+                                <p class="name image">image_02031.jpeg</p>
+                                <div class="button">Удалить</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="item">
+                                <p class="name pdf">AUDI a4 Quattro.pdf</p>
+                                <div class="button">Удалить</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="item">
+                                <p class="name doc">Я хочу вот такую тачку короче.docx</p>
+                                <div class="button">Удалить</div>
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bef_footer"></div>
+        <footer>
+            <div class="center">
+                <ul class="nav">
+                    <li class="item">
+                        <a href="about.html" class="url">О нас</a>
+                    </li>
+                    <li class="item">
+                        <a href="service.html" class="url">Услуги</a>
+                    </li>
+                    <li class="item">
+                        <a href="garant.html" class="url">Гарантии</a>
+                    </li>
+                    <li class="item">
+                        <a href="payment.html" class="url">Оплата</a>
+                    </li>
+                    <li class="item">
+                        <a href="discount.html" class="url">Акции и скидки</a>
+                    </li>
+                    <li class="item">
+                        <a href="reviews.html" class="url">Отзывы</a>
+                    </li>
+                    <li class="item">
+                        <a href="faq.html" class="url">F.A.Q</a>
+                    </li>
+                    <li class="item">
+                        <a href="contacts.html" class="url">Контакты</a>
+                    </li>
+                    <li class="item">
+                        <a href="order.html" class="url active">Оформить заказ</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <p class="label">Социальные сети:</p>
+                    <div class="socials">
+                        <a href="http://vk.com" target="_blank" class="item vk"></a>
+                        <a href="http://facebook.com" target="_blank" class="item fb"></a>
+                        <a href="http://twitter.com" target="_blank" class="item tw"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,300,400&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pages/index.css">
+        <link href="img/fav.png" rel="shortcut icon" type="image/x-icon">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/func.js"></script>
+        <title>Слуга студента</title>
+    </head>
+    <!--
+        Body can be one of the next class:
+        - index
+        - blue
+        - d-blue
+        - d-green
+        - d-red
+        - dark
+        - green
+        - red
+        - viol
+     -->
+    <body class="index">
+        <header>
+            <div class="center">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Слуга студента" title="Слуга студента">
+                    </a>
+                </div>
+                <nav>
+                    <a href="about.html" class="url">О нас</a>
+                    <a href="service.html" class="url">Услуги</a>
+                    <a href="garant.html" class="url">Гарантии</a>
+                    <a href="payment.html" class="url">Оплата</a>
+                    <a href="discount.html" class="url">Акции и скидки</a>
+                    <a href="reviews.html" class="url">Отзывы</a>
+                    <a href="faq.html" class="url">F.A.Q</a>
+                    <a href="contacts.html" class="url">Контакты</a>
+                    <a href="order.html" class="url">Оформить заказ</a>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="center content">
+            <div class="mainpage">
+                <div class="number">+8 (495) 105-90-69</div>
+                <div class="board">
+                    <div class="start">
+                        <p class="name">Сколько стоит работа?</p>
+                        <form method="post" action="#" class="form">
+                            <div class="line">
+                                <label class="up">Ваше имя<span class="req">*</span></label>
+                                <input type="text" name="name" class="form_field">
+                            </div>
+                            <div class="line">
+                                <label class="up">Ваш телефон<span class="req">*</span></label>
+                                <input type="text" name="phone" class="form_field">
+                            </div>
+                            <div class="line">
+                                <label class="up">Комментарий</label>
+                                <textarea class="form_area" name="comment"></textarea>
+                            </div>
+                            <input type="submit" class="form_submit button" value="Узнать цену">
+                        </form>
+                        <p class="noty">
+                            Если Вы хотите сообщить подробные сведения о работе или прикрепить файлы то нажмите
+                            <a href="order.html" class="url">сюда</a>
+                        </p>
+                    </div>
+                    <div class="success none">
+                        <div class="icon">
+                            <span class="smile"></span>
+                        </div>
+                        <p class="message">
+                            <span class="thax">Спасибо</span> что обратились к нам!
+                        </p>
+                        <div class="hr pink"></div>
+                        <p class="noty">Наш менеджер свяжется с Вами в ближайшее время.</p>
+                    </div>
+                    <div class="error none">
+                        <div class="icon">
+                            <span class="unsmile"></span>
+                        </div>
+                        <p class="message">Вы не указали номер телефона</p>
+                        <div class="hr pink"></div>
+                        <p class="noty">Наш менеджер не сможет с вами связаться!</p>
+                        <div class="button">Указать</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="center">
+                <ul class="nav">
+                    <li class="item">
+                        <a href="about.html" class="url">О нас</a>
+                    </li>
+                    <li class="item">
+                        <a href="service.html" class="url">Услуги</a>
+                    </li>
+                    <li class="item">
+                        <a href="garant.html" class="url">Гарантии</a>
+                    </li>
+                    <li class="item">
+                        <a href="payment.html" class="url">Оплата</a>
+                    </li>
+                    <li class="item">
+                        <a href="discount.html" class="url">Акции и скидки</a>
+                    </li>
+                    <li class="item">
+                        <a href="reviews.html" class="url">Отзывы</a>
+                    </li>
+                    <li class="item">
+                        <a href="faq.html" class="url">F.A.Q</a>
+                    </li>
+                    <li class="item">
+                        <a href="contacts.html" class="url">Контакты</a>
+                    </li>
+                    <li class="item">
+                        <a href="order.html" class="url">Оформить заказ</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <p class="label">Социальные сети:</p>
+                    <div class="socials">
+                        <a href="http://vk.com" target="_blank" class="item vk"></a>
+                        <a href="http://facebook.com" target="_blank" class="item fb"></a>
+                        <a href="http://twitter.com" target="_blank" class="item tw"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+/* Reviews page */
+.review .service{
+    width: 690px;
+    margin: 0 0 40px;
+    padding: 40px 37px 50px 44px;
+}
+.review.men .icon{
+    float: left;
+    position: relative;
+}
+.review.men .service{
+    float: right;
+}
+.review.women .icon{
+    float: right;
+    position: relative;
+    border: solid 4px #dc3d9a;
+}
+.review.women .service{
+    float: left;
+}
+.review.men .icon:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 23px;
+    background: url("../../img/review-r.png") no-repeat;
+    top: 40px;
+    right: -32px;
+}
+.review.women .icon:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 23px;
+    background: url("../../img/review-l.png") no-repeat;
+    top: 40px;
+    left: -32px;
+}
+.review .service .information{
+    margin: 0;
+    width: 100%;
+}
+.review .service .ul_list{
+    margin: 0 0 30px 18px;
+    line-height: normal;
+}
+.review .service .ul_list .black{
+    color: #313a40;
+    font-weight: 600;
+}
+.review .stars{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.stars .star{
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    background: url("../../img/stars.png") no-repeat;
+    background-position: 0 -19px;
+}
+.stars .star.full{
+    background-position: 0 0;
+}
+.reviews .opacity_block{
+    padding: 15px 0;
+}
+.reviews .pagination .item{
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.reviews .pagination .page{
+    color: #39a8c0;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.reviews .pagination .page.active,
+.reviews .pagination .page:hover{
+    color: #dc3d9a;
+}
+.reviews .pagination .prev{
+    background: url("../../img/page-prev.png");
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background-position: 0 -17px;
+}
+.reviews .pagination .prev:hover{
+    background-position: 0 0;
+}
+.reviews .pagination .next{
+    background: url("../../img/page-next.png");
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background-position: 0 -20px;
+}
+.reviews .pagination .next:hover{
+    background-position: 0 -1px;
+}
+.send_review{
+    margin: 0 0 45px;
+}
+.send_review .label{
+    color: #dc3d9a;
+    font-size: 24px;
+    margin: 50px auto;
+    font-family: 'Bello-Pro';
+}
+.send_review .form_field{
+    height: 60px;
+    width: 440px;
+    font-size: 18px;
+    color: #2b2766;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.send_review .form_field:first-child{
+    margin-right: 20px;
+}
+.send_review .form_area{
+    margin: 30px 0;
+    width: 904px;
+    height: 190px;
+    font-size: 18px;
+    color: #2b2766;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-top: 35px;
+}
+.send_review .checkBlock,
+.send_review .checkBlock .radio,
+.send_review .checkBlock label,
+.send_review .label,
+.send_review .stars,
+.send_review .point,
+.send_review .button{
+    display: inline-block;
+    vertical-align: middle;
+}
+.send_review .checkBlock{
+    cursor: pointer;
+    margin-right: 45px;
+}
+.send_review .checkBlock label.blue{
+    color: #95b8bf;
+}
+.send_review .checkBlock label.pink{
+    color: pink;
+}
+.send_review .point{
+    margin-right: 40px;
+}
+.send_review .point .label{
+    color: #ffea01;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0 15px 0 0;
+}
+.send_review .button{
+    width: 295px;
+    cursor: pointer;
+}

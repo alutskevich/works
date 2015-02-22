@@ -1,0 +1,284 @@
+.icon{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: solid 4px #95b8bf;
+    box-sizing: border-box;
+    background: #ffea01;
+    position: relative;
+    text-align: center;
+}
+.icon.small{
+    width: 44px;
+    height: 44px;
+    border: solid 2px #95b8bf;
+}
+.hoverable:hover .icon{
+    background: white;
+}
+.icon span{
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+}
+.icon .smile{
+    background-image: url("../img/icons/smile.png");
+    width: 46px;
+    height: 45px;
+    margin: 33px auto 0;
+}
+.icon .unsmile{
+    background-image: url("../img/icons/unsmile.png");
+    width: 46px;
+    height: 45px;
+    margin: 33px auto 0;
+}
+.icon .heat{
+    background-image: url("../img/icons/heat.png");
+    width: 52px;
+    height: 51px;
+    margin: 27px auto 0;
+}
+.icon .clock{
+    background-image: url("../img/icons/clock.png");
+    width: 16px;
+    height: 23px;
+    margin: 8px auto 0;
+}
+.icon .price{
+    background-image: url("../img/icons/price.png");
+    width: 21px;
+    height: 17px;
+    margin: 11px auto 0;
+}
+.icon .pen{
+    background-image: url("../img/icons/pen.png");
+    width: 13px;
+    height: 26px;
+    margin: 6px auto 0;
+}
+.icon .list{
+    background-image: url("../img/icons/list.png");
+    width: 42px;
+    height: 46px;
+    margin: 29px 40px 0;
+}
+.icon .paper{
+    background-image: url("../img/icons/paper.png");
+    width: 35px;
+    height: 44px;
+    margin: 30px 37px 0;
+}
+.icon .medal{
+    background-image: url("../img/icons/medal.png");
+    width: 38px;
+    height: 48px;
+    margin: 30px 38px 0;
+}
+.icon .book{
+    background-image: url("../img/icons/book.png");
+    width: 55px;
+    height: 50px;
+    margin: 22px 30px 0;
+}
+.icon .folder{
+    background-image: url("../img/icons/folder.png");
+    width: 46px;
+    height: 42px;
+    margin: 30px 37px 0;
+}
+.icon .calc{
+    background-image: url("../img/icons/calc.png");
+    width: 51px;
+    height: 47px;
+    margin: 30px 31px 0;
+}
+.icon .blank{
+    background-image: url("../img/icons/blank.png");
+    width: 56px;
+    height: 47px;
+    margin: 24px 27px 0;
+}
+.icon .people{
+    background-image: url("../img/icons/people.png");
+    width: 49px;
+    height: 55px;
+    margin: 21px 29px 0;
+}
+.icon .video{
+    background-image: url("../img/icons/video.png");
+    width: 37px;
+    height: 37px;
+    margin: 34px 37px 0;
+}
+.icon .master{
+    background-image: url("../img/icons/master.png");
+    width: 43px;
+    height: 56px;
+    margin: 23px 38px 0;
+}
+.icon .books{
+    background-image: url("../img/icons/books.png");
+    width: 48px;
+    height: 47px;
+    margin: 28px 31px 0;
+}
+.icon .calendar{
+    background-image: url("../img/icons/calendar.png");
+    width: 52px;
+    height: 45px;
+    margin: 31px 33px 0;
+}
+.icon .cv{
+    background-image: url("../img/icons/cv.png");
+    width: 33px;
+    height: 49px;
+    margin: 26px 38px 0;
+}
+.icon .pencil{
+    background-image: url("../img/icons/pencil.png");
+    width: 42px;
+    height: 42px;
+    margin: 30px 35px 0;
+}
+.icon .sb{
+    background-image: url("../img/icons/sb.png");
+    width: 43px;
+    height: 48px;
+    margin: 29px 33px 0;
+}
+.icon .ym{
+    background-image: url("../img/icons/ym.png");
+    width: 48px;
+    height: 48px;
+    margin: 28px 35px 0;
+}
+.icon .qiwi{
+    background-image: url("../img/icons/qiwi.png");
+    width: 54px;
+    height: 56px;
+    margin: 26px 29px 0;
+}
+.icon .ab{
+    background-image: url("../img/icons/ab.png");
+    width: 38px;
+    height: 59px;
+    margin: 23px 36px 0;
+}
+.icon .wu{
+    background-image: url("../img/icons/wu.png");
+    width: 64px;
+    height: 64px;
+    margin: 22px 22px 0;
+}
+.icon .nal{
+    background-image: url("../img/icons/nal.png");
+    width: 58px;
+    height: 58px;
+    margin: 22px 27px 0;
+}
+.icon .user{
+    background-image: url("../img/icons/user.png");
+    width: 56px;
+    height: 50px;
+    margin: 25px 31px 0;
+}
+.icon .money{
+    background-image: url("../img/icons/money.png");
+    width: 47px;
+    height: 58px;
+    margin: 21px 32px 0;
+}
+.icon .seven{
+    background-image: url("../img/icons/seven.png");
+    width: 63px;
+    height: 45px;
+    margin: 28px 29px 0;
+}
+.icon .stud{
+    background-image: url("../img/icons/stud.png");
+    width: 43px;
+    height: 57px;
+    margin: 24px 32px 0;
+}
+.icon .stud-w{
+    background-image: url("../img/icons/stud-w.png");
+    width: 46px;
+    height: 57px;
+    margin: 24px 32px 0;
+}
+.icon .faq-r{
+    background-image: url("../img/icons/faq-r.png");
+    width: 46px;
+    height: 38px;
+    margin: 34px 31px 0;
+}
+.hoverable:hover .icon .faq-r{
+    background-image: url("../img/icons/faq-l.png");
+}
+.icon .phone{
+    background-image: url("../img/icons/phone.png");
+    width: 52px;
+    height: 52px;
+    margin: 26px 28px 0;
+}
+.icon .mail{
+    background-image: url("../img/icons/mail.png");
+    width: 51px;
+    height: 40px;
+    margin: 33px 29px 0;
+}
+.icon .planet{
+    background-image: url("../img/icons/planet.png");
+    width: 47px;
+    height: 49px;
+    margin: 26px 31px 0;
+}
+.icon .pirate{
+    background-image: url("../img/icons/pirate.png");
+    width: 54px;
+    height: 44px;
+    margin: 30px 28px 0;
+}
+.icon .work{
+    background-image: url("../img/icons/work.png");
+    width: 60px;
+    height: 54px;
+    margin: 22px 28px 0;
+}
+.icon .examen{
+    background-image: url("../img/icons/examen.png");
+    width: 40px;
+    height: 54px;
+    margin: 25px 35px 0;
+}
+.icon .business{
+    background-image: url("../img/icons/business.png");
+    width: 51px;
+    height: 51px;
+    margin: 25px 32px 0;
+}
+.icon .article{
+    background-image: url("../img/icons/article.png");
+    width: 46px;
+    height: 46px;
+    margin: 29px 32px 0;
+}
+.icon .tech{
+    background-image: url("../img/icons/tech.png");
+    width: 47px;
+    height: 59px;
+    margin: 26px 30px 0;
+}
+.icon .wm{
+    background-image: url("../img/icons/wm.png");
+    width: 54px;
+    height: 54px;
+    margin: 25px 28px 0;
+}
+.icon .nm{
+    background-image: url("../img/icons/nm.png");
+    width: 54px;
+    height: 45px;
+    margin: 27px 27px 0;
+}
