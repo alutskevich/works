@@ -646,7 +646,6 @@ table tbody .thead td .red{
     border-radius: 0 0 2px 2px;
     left: -1px;
     width: calc(100% + 2px);
-    padding: 10px;
     box-sizing: border-box;
     background: #eeeeee;
     z-index: 1;
@@ -660,7 +659,15 @@ table tbody .thead td .red{
     overflow: hidden;
     white-space: nowrap;
     opacity: 1;
-    margin: 0 0 10px;
+    height: 55px;
+    line-height: 55px;
+    border-top: solid 1px #cfcfcf;
+    margin: 0;
+    font-size: 16px;
+    color: #080808;
+    padding: 0 25px;
+    box-sizing: border-box;
+    position: relative;
     -webkit-transition: opacity .3s linear;
     -ms-transition: opacity .3s linear;
     transition: opacity .3s;

@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/point.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/cus-select.js"></script>
     <script src="js/func.js"></script>
     <title>Ювелирный ломбард сток - Оценка изделия</title>
 </head>
@@ -22,10 +24,10 @@
         <div class="center">
             <a href="index.html" class="logoUrl">
                 <img class="logo" src="img/logo.png" alt="Logo">
-                        <span class="siteName">
-                            <strong>Ювелирный</strong>
-                            Ломбард Сток
-                        </span>
+                <span class="siteName">
+                    <strong>Ювелирный</strong>
+                    Ломбард Сток
+                </span>
             </a>
             <div class="right">
                 <a href="contacts.html" class="filials">
@@ -60,22 +62,29 @@
         <div id="point" class="page_content">
             <div class="red_block">Форма оценки вашего изделия</div>
             <div class="tabs_block">
-                <div class="tabs_trigger">
-                    <div class="tab active">Изделие 1</div>
-                    <div class="tab">Изделие 2</div>
+                <div class="tabs_trigger left">
+                    <div class="tab active"><span class="name">Изделие</span> 1</div>
+                    <div class="tab"><span class="name">Изделие</span> 2</div>
                     <div class="tab add">+</div>
                 </div>
-                <div class="info_block">
-                    <span class="label">Сумма за изделие:</span>
-                    <span class="price">15.000</span>
-                    <span class="label">Общая сумма:</span>
-                    <span class="price">20.000</span>
-                    <span class="label">Сумма платежа в день:</span>
-                    <span class="price">500</span>
+                <div class="info_block right">
+                    <div class="tab_price_block">
+                        <span class="label">Сумма за изделие:</span>
+                        <span class="price">15.000</span>
+                    </div>
+                    <div class="tab_price_block">
+                        <span class="label">Общая сумма:</span>
+                        <span class="price">20.000</span>
+                    </div>
+                    <div class="tab_price_block">
+                        <span class="label">Сумма платежа в день:</span>
+                        <span class="price">500</span>
+                    </div>
                 </div>
+                <div class="clear"></div>
                 <div class="tab_body">
                     <div class="tab_content active">
-                        <form method="post" action="">
+                        <form method="post" action="" class="form_block">
                             <div class="select_blocks">
                                 <div class="row">
                                     <div class="block">
@@ -199,10 +208,212 @@
                                     </div>
                                     <div class="block">
                                         <label>Вес в граммах</label>
-                                        <input type="text" name="massa">
+                                        <input type="text" name="massa" class="field">
                                     </div>
                                 </div>
-                                <input type=""
+                                <div class="pastes">
+                                    <input type="checkbox" name="check" class="none">
+                                    <div class="checkbox"></div>
+                                    <label>Вставки</label>
+                                </div>
+                            </div>
+                            <div class="full_pastes">
+                                <div class="pastes_header">
+                                    <label>Количество вставок</label>
+                                    <input type="text" class="field" name="count" value="3">
+                                    <div class="noty">
+                                        Группу камней, отличающуюся весом не более 10% друг от друга можно считать за одну вставку
+                                    </div>
+                                </div>
+                                <div class="paste">
+                                    <div class="paste_number">1 вставка</div>
+                                    <div class="paste_stone">
+                                        <select name="stone[]" class="select none">
+                                            <option value="Бриллиант">Бриллиант</option>
+                                            <option value="Бриллиант2">Бриллиант2</option>
+                                            <option value="Бриллиант3">Бриллиант3</option>
+                                            <option value="Бриллиант4">Бриллиант4</option>
+                                        </select>
+                                        <div class="select_block">
+                                            <p class="value">Название камня</p>
+                                            <ul class="list">
+                                                <li class="item">Бриллиант</li>
+                                                <li class="item">Бриллиант2</li>
+                                                <li class="item">Бриллиант3</li>
+                                                <li class="item">Бриллиант4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="carats">
+                                            <label>Вес в каратах</label>
+                                            <span class="minus">-</span>
+                                            <input type="text" class="field" name="count_carats[]" value="0.25">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="paste_fields middle">
+                                        <div class="row">
+                                            <label>Кол-во камней</label>
+                                            <input type="text" name="count_stones[]" class="field" placeholder="Введите здесь">
+                                        </div>
+                                        <div class="row">
+                                            <label>Цвет | Чистота <span class="small">по сертификату</span></label>
+                                            <input type="text" name="count_stones[]" class="field" placeholder="Цвет | Чистота">
+                                        </div>
+                                    </div>
+                                    <div class="paste_fields big">
+                                        <select name="baget[]" class="select none">
+                                            <option value="Багет">Багет</option>
+                                            <option value="Багет2">Багет2</option>
+                                            <option value="Багет3">Багет3</option>
+                                            <option value="Багет4">Багет4</option>
+                                        </select>
+                                        <div class="select_block">
+                                            <p class="value">Багет <span class="icon baget"></span></p>
+                                            <ul class="list">
+                                                <li class="item baget">Багет</li>
+                                                <li class="item baget">Багет2</li>
+                                                <li class="item baget">Багет3</li>
+                                                <li class="item baget">Багет4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <label>Размер камня</label>
+                                            <input type="text" name="stone_size[]" class="field px100" placeholder="Необязательно">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="paste">
+                                    <div class="paste_number">2 вставка</div>
+                                    <div class="paste_stone">
+                                        <select name="stone[]" class="select none">
+                                            <option value="Бриллиант">Бриллиант</option>
+                                            <option value="Бриллиант2">Бриллиант2</option>
+                                            <option value="Бриллиант3">Бриллиант3</option>
+                                            <option value="Бриллиант4">Бриллиант4</option>
+                                        </select>
+                                        <div class="select_block">
+                                            <p class="value">Название камня</p>
+                                            <ul class="list">
+                                                <li class="item">Бриллиант</li>
+                                                <li class="item">Бриллиант2</li>
+                                                <li class="item">Бриллиант3</li>
+                                                <li class="item">Бриллиант4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="carats">
+                                            <label>Вес в каратах</label>
+                                            <span class="minus">-</span>
+                                            <input type="text" class="field" name="count_carats[]" value="0.25">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="paste_fields middle">
+                                        <div class="row">
+                                            <label>Кол-во камней</label>
+                                            <input type="text" name="count_stones[]" class="field" placeholder="Введите здесь">
+                                        </div>
+                                        <div class="row">
+                                            <label>Цвет камней</label>
+                                            <div class="color_palitra">
+                                                <div class="color" style="background: #c91f37"></div>
+                                                <div class="color" style="background: #ff8400"></div>
+                                                <div class="color" style="background: #f5f818"></div>
+                                                <div class="color" style="background: #14b235"></div>
+                                                <div class="color active" style="background: #2399f3"></div>
+                                                <div class="color" style="background: #3c44e9"></div>
+                                                <div class="color" style="background: #66119d"></div>
+                                                <div class="color" style="background: #ffffff"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="paste_fields big">
+                                        <select name="baget[]" class="select none">
+                                            <option value="Багет">Багет</option>
+                                            <option value="Багет2">Багет2</option>
+                                            <option value="Багет3">Багет3</option>
+                                            <option value="Багет4">Багет4</option>
+                                        </select>
+                                        <div class="select_block">
+                                            <p class="value">Багет <span class="icon baget"></span></p>
+                                            <ul class="list">
+                                                <li class="item baget">Багет</li>
+                                                <li class="item baget">Багет2</li>
+                                                <li class="item baget">Багет3</li>
+                                                <li class="item baget">Багет4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <label>Размер камня</label>
+                                            <input type="text" name="stone_size[]" class="field px100" placeholder="Необязательно">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="paste">
+                                    <div class="paste_number">3 вставка</div>
+                                    <div class="paste_stone">
+                                        <select name="stone[]" class="select none">
+                                            <option value="Бриллиант">Бриллиант</option>
+                                            <option value="Бриллиант2">Бриллиант2</option>
+                                            <option value="Бриллиант3">Бриллиант3</option>
+                                            <option value="Бриллиант4">Бриллиант4</option>
+                                        </select>
+                                        <div class="select_block">
+                                            <p class="value">Название камня</p>
+                                            <ul class="list">
+                                                <li class="item">Бриллиант</li>
+                                                <li class="item">Бриллиант2</li>
+                                                <li class="item">Бриллиант3</li>
+                                                <li class="item">Бриллиант4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="carats">
+                                            <label>Вес в каратах</label>
+                                            <span class="minus">-</span>
+                                            <input type="text" class="field" name="count_carats[]" value="0.25">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="paste_fields middle">
+                                        <div class="row">
+                                            <label>Кол-во камней</label>
+                                            <input type="text" name="count_stones[]" class="field" placeholder="Введите здесь">
+                                        </div>
+                                        <div class="row">
+                                            <label>Цвет камней</label>
+                                            <div class="color_palitra">
+                                                <div class="color" style="background: #c91f37"></div>
+                                                <div class="color" style="background: #ff8400"></div>
+                                                <div class="color" style="background: #f5f818"></div>
+                                                <div class="color" style="background: #14b235"></div>
+                                                <div class="color active" style="background: #2399f3"></div>
+                                                <div class="color" style="background: #3c44e9"></div>
+                                                <div class="color" style="background: #66119d"></div>
+                                                <div class="color" style="background: #ffffff"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="paste_fields big">
+                                        <select name="baget[]" class="select none">
+                                            <option value="Багет">Багет</option>
+                                            <option value="Багет2">Багет2</option>
+                                            <option value="Багет3">Багет3</option>
+                                            <option value="Багет4">Багет4</option>
+                                        </select>
+                                        <div class="select_block">
+                                            <p class="value">Багет <span class="icon baget"></span></p>
+                                            <ul class="list">
+                                                <li class="item baget">Багет</li>
+                                                <li class="item baget">Багет2</li>
+                                                <li class="item baget">Багет3</li>
+                                                <li class="item baget">Багет4</li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <label>Размер камня</label>
+                                            <input type="text" name="stone_size[]" class="field px100" placeholder="Необязательно">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>

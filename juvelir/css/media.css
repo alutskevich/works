@@ -194,6 +194,51 @@
         margin: 0 15px 15px -1px;
         width: 30%;
     }
+    .tab_body .select_blocks .block{
+        width: 24%;
+    }
+    .tab_body .select_blocks .block .field{
+        width: 40%;
+    }
+    .paste_stone {
+        width: 260px;
+        margin: 0 15px 0 0;
+    }
+    .paste_fields.middle {
+        width: 230px;
+        margin: 0 10px 0 0;
+    }
+    .paste_fields.big {
+        width: 190px;
+    }
+    .carats label {
+        margin: 0 20px 0 0;
+    }
+    .carats .field{
+        margin: 0 5px;
+    }
+    .paste_fields .field {
+        width: 110px;
+        margin: 0 0 0 5px;
+        padding: 0 5px;
+    }
+    .paste_fields .field.px100 {
+        width: 75px;
+    }
+    .select_block .icon{
+        margin: 0 0 0 20px;
+    }
+    .select_block .list .item.baget:after{
+        right: 49px;
+    }
+    .color_palitra .color {
+        width: 13px;
+        height: 10px;
+    }
+    .color_palitra .color:hover:after, .color_palitra .color.active:after{
+        width: 21px;
+        height: 17px;
+    }
 }
 @media screen and (max-width: 1220px){
     .shop .center {
@@ -266,6 +311,46 @@
     .form_block.big .operator .op_photo{
         width: 50px;
         height: 50px;
+    }
+    .tab_body .select_blocks .block {
+        width: 222px;
+    }
+    .tab_body .select_blocks .block label {
+        margin: 0 20px 0 0;
+    }
+    .full_pastes{
+        padding: 15px 15px 25px;
+    }
+    .pastes_header .field{
+        margin: 0 10px;
+    }
+    .paste {
+        padding: 0 0 0 165px;
+    }
+    .paste_stone,
+    .paste_fields.big,
+    .paste_fields.middle{
+        width: 290px;
+    }
+    .paste_stone{
+        margin: 0 25px 0 0;
+    }
+    .paste_fields.big {
+        display: block;
+        margin: 10px auto;
+    }
+    .paste_number:before{
+        top: -250px;
+        height: 245px;
+    }
+    .paste_fields .field.px100 {
+        width: 175px;
+    }
+    .select_block .icon {
+        margin: 0 0 0 90px;
+    }
+    .select_block .list .item.baget:after {
+        right: 85px;
     }
 }
 @media screen and (max-width: 1130px){
@@ -397,6 +482,32 @@
     #product .product_block {
         margin: 0 0 15px -1px;
         width: 33%;
+    }
+    .tab_price_block {
+        display: block;
+        text-align: right;
+    }
+    .tabs_block .info_block {
+        height: auto;
+    }
+    .tabs_trigger{
+        position: absolute;
+        top: 111px;
+    }
+    .tab_body .select_blocks {
+        padding: 0;
+    }
+    .paste_fields.middle{
+        display: block;
+        margin: 15px auto;
+    }
+    .paste_stone {
+        margin: -50px auto 0;
+        display: block;
+    }
+    .paste_number:before {
+        top: -370px;
+        height: 365px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -607,6 +718,16 @@
     .shop .view.center{
         right: -150px;
     }
+    .tab_body .select_blocks .block,
+    .tab_body .select_blocks .block:first-child,
+    .tab_body .select_blocks .block:last-child{
+        width: 48%;
+        margin: 0 5px 10px;
+        text-align: center;
+    }
+    .tab_body .select_blocks .block .select_block{
+        text-align: left;
+    }
 }
 @media screen and (max-width: 980px){
     .half_left, .half_right {
@@ -752,6 +873,21 @@
 @media screen and (max-width: 840px){
     .shop .products .item .see{
         width: 100px;
+    }
+    .paste_fields.middle,
+    .paste_fields.big{
+        display: block;
+        margin: 15px 0 15px auto;
+    }
+    .paste_stone {
+        margin: -50px 0 0 auto;
+    }
+    .pastes_header .noty{
+        width: auto;
+        max-width: 49%;
+    }
+    .paste {
+        padding: 0;
     }
 }
 @media screen and (max-width: 785px){
@@ -1048,6 +1184,16 @@
     #quality .param {
         max-width: 200px;
     }
+    .paste_number:before{
+        display: none;
+    }
+    .tab_body .select_blocks .block, .tab_body .select_blocks .block:first-child, .tab_body .select_blocks .block:last-child{
+        margin: 0 1px 10px;
+    }
+    .pastes_header .noty {
+        max-width: 30%;
+        vertical-align: top;
+    }
 }
 @media screen and (max-width: 650px){
     header .right .basket_mini{
@@ -1160,6 +1306,9 @@
     #product .product_block.banner_one{
         display: none;
     }
+    .tabs_trigger .tab .name{
+        display: none;
+    }
 }
 @media screen and (max-width: 550px){
     .shop .products .item {
@@ -1219,6 +1368,21 @@
     }
     #quality .param {
         max-width: 70%;
+    }
+    .tab_body .select_blocks .block, .tab_body .select_blocks .block:first-child, .tab_body .select_blocks .block:last-child{
+        display: block;
+        width: 100%;
+    }
+    .pastes_header .noty{
+        display: none;
+    }
+    .paste_number{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .paste_stone, .paste_fields.middle, .paste_fields.big{
+        margin: 10px auto;
     }
 }
 @media screen and (max-width: 510px){
@@ -1403,6 +1567,21 @@
     #vacansy .seo_text .right, #quality .seo_text .right {
         width: 40%;
     }
+    .tabs_block .info_block{
+        padding: 0;
+        line-height: 40px;
+    }
+    .tabs_block .info_block .label{
+        font-size: 14px;
+    }
+    .tabs_block .info_block .price {
+        font-size: 15px;
+        padding: 3px;
+        margin: 0 5px 0 0;
+    }
+    .tabs_trigger{
+        top: 70px;
+    }
 }
 @media screen and (max-width: 400px){
     .filter_rezult .item{
@@ -1420,5 +1599,23 @@
     }
     .button_more:first-child{
         border-right: none;
+    }
+    .tabs_trigger {
+        top: 84px;
+    }
+    .tabs_trigger .tab{
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+    .tabs_trigger .tab.add {
+        font-size: 30px;
+    }
+    .tab_body{
+        padding: 0;
+    }
+    .tab_content .form_block{
+        padding: 10px 5px;
     }
 }
