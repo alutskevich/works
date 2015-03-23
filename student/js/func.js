@@ -74,11 +74,13 @@ $(document).ready(function(){
     $(".checkBlock").on("click", function(){
         var block = $(this);
 
-        block.siblings(".checkBlock").find(".radio .check.checked").removeClass("checked");
-        block.siblings(".checkBlock").find("input[type='radio']").removeAttr("checked");
-
-        block.find(".radio .check").addClass("checked");
-        block.find("input[type='checkbox']").attr("checked", "checked");
+        if(block.find(".radio .check").hasClass("checked")){
+            block.find(".radio .check").removeClass("checked");
+            block.find("input[type='radio']").removeAttr("checked");
+        } else{
+            block.find(".radio .check").addClass("checked");
+            block.find("input[type='checkbox']").attr("checked", "checked");
+        }
     });
 
     $(".selectBox").on("click", function(e){
@@ -98,11 +100,13 @@ $(document).ready(function(){
     $(".dropDownList .item").on("click", function(e){
         e.stopPropagation();
         var dropDown = $(this),
-            formSelect = dropDown.parents(".form_select");
+            formSelect = dropDown.parents(".form_select"),
+            select = formSelect.prev();
 
         formSelect.find(".value").html(dropDown.text());
         $(".dropDownList").slideUp();
         formSelect.removeClass("open");
+        select.val(dropDown.text());
     });
 
     $(".popup .close").on("click", function(){
