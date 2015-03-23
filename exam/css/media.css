@@ -1,0 +1,198 @@
+@media screen and (max-width: 1040px){
+    nav{
+        text-align: center;
+    }
+    nav .item{
+        margin: 0 10px;
+    }
+    footer .sponge{
+        margin-right: 30px;
+    }
+    #reviews .slider{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .right_line{
+        width: 28%;
+    }
+    .left_line {
+        width: 40%;
+    }
+    #order .order_form .sel_ico:hover:after{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+@media screen and (max-width: 980px){
+    #advantages{
+        padding-top: 142px;
+    }
+    #advantages .list .item{
+        padding: 0 42px;
+        margin: 0 10px 50px;
+    }
+    nav .item {
+        margin: 0 12px 20px;
+    }
+    #order .button{
+        transition: all 0s;
+        -webkit-transition: all 0s;
+    }
+    #order .button:hover {
+        background: #eec85e;
+    }
+    #order .button:hover:after{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    #order.vis_form .button:hover:after{
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+    }
+}
+@media screen and (max-width: 970px){
+    nav.fix{
+        background-size: auto 121%;
+    }
+}
+@media screen and (max-width: 930px){
+    #reviews .slider .review{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 890px){
+    #lessons .list,
+    #lessons .list:nth-child(3){
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    #lessons{
+        height: 900px;
+    }
+    #work .steps .item:first-child{
+        margin-right: 40px;
+    }
+    #work .steps .item:first-child:after {
+        right: -60px;
+    }
+    #work .steps .item:nth-child(2) {
+        margin-right: 65px;
+    }
+    #work .steps .item:nth-child(2):after {
+        right: -65px;
+    }
+    #work .steps .item:nth-child(3) {
+        margin-right: 57px;
+    }
+    #work .steps .item:nth-child(3):after {
+        right: -57px;
+    }
+    #work .steps .item:nth-child(4) {
+        margin-left: 36px;
+    }
+    #reviews .slider {
+        width: 80%;
+    }
+    #reviews .slider .arrow.prev {
+        left: -40px;
+    }
+    #reviews .slider .arrow.next {
+        right: -40px;
+    }
+    footer .top{
+        margin: 0 0 48px;
+    }
+    #payments .item{
+        margin: 0 2%;
+    }
+}
+@media screen and (max-width: 820px){
+    #work .steps .item:not(:last-child):after{
+        display: none;
+    }
+    #work .steps .item,
+    #work .steps .item:first-child,
+    #work .steps .item:nth-child(2),
+    #work .steps .item:nth-child(3),
+    #work .steps .item:nth-child(4){
+        width: 35%;
+        margin: 0 0 40px;
+    }
+    #work .steps .item:nth-child(4):before{
+        right: -180px;
+    }
+    #work h2{
+        margin-bottom: 44px;
+    }
+    #important .tabs_content{
+        padding-right: 30px;
+    }
+    footer .contact.viber {
+        margin-right: 0;
+    }
+    footer .contact.wa,
+    footer .contact.vk{
+        margin-right: 20px;
+    }
+    footer .contact.wa:before,
+    footer .contact.viber:before,
+    footer .contact.vk:before{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 770px){
+    #lessons .list, #lessons .list:nth-child(3){
+        width: 37%;
+    }
+    #payments .item {
+        margin: 0 10%;
+        min-width: 170px;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 760px){
+    #advantages .list .item {
+        padding: 0 22px;
+    }
+    #important .tabs_content .list .item .text{
+        width: 80%;
+    }
+    #important .tabs .item{
+        margin: 0 34px;
+    }
+    #important .tabs{
+        margin-bottom: 30px;
+    }
+    #important .tabs_content{
+        font-size: 16px;
+    }
+    #order .order_form{
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #order .order_form .line.first .field.lesson, #order .order_form .line.first .field.date,#order .order_form .selectedSelect{
+        width: 35%;
+        margin-right: 2%;
+    }
+    #order .order_form .line.first .field.time{
+        width: 24%;
+    }
+    #order .order_form .cal_ico{
+        right: 27.4%;
+    }
+    #order .order_form .line.second .fieldSelectedSelect,
+    #order .order_form .line.second .field{
+        width: 47%;
+    }
+    #order .order_form .line.second .field{
+        margin-right: 1%;
+    }
+    .ui-timepicker-wrapper{
+        margin-left: 30px;
+        width: 105px;
+    }
+}
