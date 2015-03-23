@@ -1,0 +1,237 @@
+.form{
+    text-align: center;
+    margin-left: 80px;
+}
+.form .item{
+    margin: 20px 0;
+    text-align: left;
+}
+.form .item .label,
+.form .item .value,
+.form .item .value .categories .item{
+    display: inline-block;
+    vertical-align: top;
+}
+.form .item .label{
+    width: 130px;
+    text-align: left;
+    margin-right: 80px;
+    font-size: 20px;
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+}
+.form .item .label.green{
+    color: #39b54a;
+}
+.form .item .label.red{
+    color: #e42323;
+}
+.form .item .value{
+    width: 470px;
+}
+.form .item .value .categories .item{
+    margin: 5px 6px;
+    cursor: pointer;
+    opacity: 0.7;
+    text-align: center;
+}
+.form .item .value .categories .item:hover,
+.form .item .value .categories .item.active{
+    opacity: 1;
+}
+.form .item .value .categories .item .name{
+    text-align: center;
+    color: #2ca0aa;
+    font-size: 14px;
+    margin: 6px 0;
+    font-family: 'Calibri-Light';
+}
+.form .item .value .categories .item.bad .name{
+    color: #ed1c24;
+}
+.form .item .value .field{
+    font-family: 'Calibri';
+    width: 230px;
+    height: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #6a7883;
+    margin: 0 0 20px;
+}
+.form .item .value .field.valid{
+    box-shadow: 0 0 5px rgba(114, 152, 90, 0.4);
+    border: solid 1px #93c273;
+}
+.form .item .value .icon.valid{
+    content: "";
+    display: inline-block;
+    background: url("../../../img/user/ok.png") no-repeat;
+    width: 20px;
+    height: 18px;
+    margin: 0 25px;
+    vertical-align: super;
+}
+.form .item .value .area{
+    border: solid 1px #dcdbd2;
+    width: 400px;
+    height: 290px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.form .item .value .fileDiv{
+    border: dotted 1px #dcdbd2;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #979ba0;
+    font-size: 16px;
+    margin: 0 auto 15px;
+    font-family: 'Calibri';
+    width: 315px;
+}
+.form .item .value .fileDiv .openFile{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.form .item .value .files{
+    text-align: center;
+}
+.form .item .value .files .pic{
+    margin: 15px 0;
+}
+.form .item .value .files .pic img,
+.form .item .value .files .pic .name,
+.form .item .value .files .pic .del{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+.form .item .value .files .pic .name{
+    color: #979ba0;
+    font-size: 16px;
+    font-family: 'Calibri';
+}
+.form .item .value .del{
+    background: url("../../../img/user/del-item.png") no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+.form .item .value .files .pic .del{
+    width: 13px;
+    height: 13px;
+}
+.form .item .value .block{
+    width: 290px;
+    box-sizing: border-box;
+    background: white;
+    text-align: center;
+    padding: 15px 35px;
+}
+.form .item .value .block .line{
+    margin: 15px 0;
+}
+.form .item .value .block .hideBlock.lines{
+    display: none;
+}
+.form .item .value .block .line .name,
+.form .item .value .block .line .separate,
+.form .item .value .block .line .field{
+    display: inline-block;
+    vertical-align: middle;
+}
+.form .item .value .block .line .name,
+.form .item .value .block .line .separate{
+    color: #6a7883;
+    font-size: 16px;
+    font-family: 'Calibri-Light';
+}
+.form .item .value .block .line .separate{
+    margin: 0 15px;
+}
+.form .item .value .block .line .field{
+    width: 110px;
+    height: 25px;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: solid 1px #dcdbd2;
+}
+.form .item .value .block .add{
+    margin: 25px 0 0;
+    cursor: pointer;
+}
+.form .item .value .block .add .addIcon{
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../../img/user/add-favorites.png");
+    width: 19px;
+    height: 19px;
+}
+.form .item .value .block .add .text{
+    color: #39b54a;
+    font-size: 14px;
+    font-family: 'Calibri-Light';
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+.form .item .value .block .add:hover .text{
+    text-decoration: underline;
+}
+.form .custom{
+    margin: 75px 0;
+    text-align: center;
+}
+.form .custom label{
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form .custom .checkBut{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 60px;
+}
+.form .submit{
+    margin: 110px auto;
+    background: #2ca0aa;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    width: 220px;
+    height: 45px;
+    font-size: 16px;
+    font-family: 'Calibri-Bold';
+}
+
+@media screen and (max-width: 1220px) {
+    .form .item .label{
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 590px) {
+    .form .item .value,
+    .form .item .value .area{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .form{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    .form .item .value .field{
+        width: 50%;
+    }
+    .form .item .value .fileDiv,
+    .form .item .value .block{
+        width: 100%;
+    }
+}

@@ -1,0 +1,349 @@
+body{
+    background: #f3f3f3;
+}
+.center{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1209px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 83px;
+    left: 1px;
+    background: white;
+    border: solid 1px #2ca0aa;
+    width: 690px;
+    z-index: 3;
+}
+.dropdown .item{
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family: 'ErasITC-Light';
+    text-align: left;
+}
+.dropdown .item:hover{
+    color: white;
+    background: #2ca0aa;
+}
+.select{
+    cursor: pointer;
+}
+.select .options{
+    position: absolute;
+    width: 100%;
+    background: white;
+    z-index: 1;
+    display: none;
+    box-sizing: border-box;
+}
+.select .options .option{
+    cursor: pointer;
+}
+.select .options .option:hover{
+    background: #2ca0aa;
+    color: white;
+}
+
+#overlay,
+#regOverlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+/* Label block */
+#label{
+    background: white;
+    padding: 9px 20px 25px;
+    min-width: 235px;
+}
+#label .header{
+    border-bottom: solid 16px #302f2f;
+}
+#label .header .name{
+    font-family: 'HelveticaRegular';
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: solid 1px #555555;
+}
+#label .header .num{
+    margin: 0 0 5px;
+}
+#label .header .num .number,
+#label .header .num .text{
+    font-family: 'Arial';
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#label .header .num .number .n{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 21px;
+    color: #e60000;
+}
+#label .header .num .number .before,
+#label .header .num .number .after{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../img/label/arrows.png");
+    width: 7px;
+    height: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#label .header .num .number .after{
+    background-position: 0 -10px;
+}
+#label .header .num .text{
+    font-size: 17px;
+    color: #302f2f;
+    margin-left: 10px;
+}
+#label .header .serving{
+    color: #535353;
+    font-size: 12px;
+    font-family: 'HelveticaRegular';
+}
+#label .header .serving .size{
+    float: left;
+}
+#label .header .serving .num{
+    float: right;
+    margin: 0;
+}
+#label .calories .head{
+    border-bottom: solid 7px #302f2f;
+}
+#label .calories .head .title{
+    font-family: 'MyriadPro-Regular';
+    color: #535353;
+    font-size: 12px;
+    margin: 4px 0 5px;
+}
+#label .calories .head .name{
+    font-family: 'HelveticaRegular';
+    font-size: 30px;
+    font-weight: bold;
+}
+#label .calories .head .name .number.red{
+    color: #ff0000;
+}
+#label .calories .head .name .number.green{
+    color: #2eb700;
+    float: right;
+}
+#label .calories .middle{
+    margin: 5px 0;
+    font-size: 12px;
+    font-family: 'HelveticaRegular';
+    height: 5px;
+    line-height: 10px;
+}
+#label .calories .middle .bold{
+    font-weight: bold;
+}
+#label .calories .total{
+    border-top: solid 4px #302f2f;
+    border-bottom: solid 4px #302f2f;
+}
+#label .calories .total .tr{
+    border-bottom: solid 1px black;
+    position: relative;
+    font-family: 'HelveticaRegular';
+    font-size: 12px;
+    height: 16px;
+    line-height: 20px;
+}
+#label .calories .total .tr:last-child{
+    margin: 0 0 5px;
+}
+#label .calories .total .tr.bold{
+    background: black;
+    margin: 5px 0 0;
+}
+#label .calories .total .tr .procent,
+#label .calories .total .tr .info{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    box-sizing: border-box;
+}
+#label .calories .total .tr .procent{
+    max-width: 50px;
+    min-width: 45px;
+    border-right: solid 1px black;
+    font-weight: bold;
+}
+#label .calories .total .tr .info .bold{
+    font-weight: bold;
+}
+#label .calories .total .tr .info .italic{
+    font-style: italic;
+}
+#label .calories .total .tr .range{
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    bottom: -2px;
+}
+#label .calories .total .tr .range.green{
+    background: #00ff00;
+}
+#label .calories .total .tr .range.orange{
+    background: #ff7200;
+}
+#label .calories .total .tr .range.red{
+    background: #ff0000;
+}
+#label .calories .total .tr .range.blue{
+    background: #0090ff;
+}
+#label .calories .total .tr .range.yellow{
+    background: #ffcc00;
+}
+#label .calories .total .tr .range.viol{
+    background: #7e00ff;
+}
+#label .calories .total .tr .range.green{
+    background: #00ff00;
+}
+#label .calories .total .tr .range.green{
+    background: #00ff00;
+}
+#label .noteText{
+    color: #535353;
+    font-size: 10px;
+    font-family: 'MyriadPro-Regular';
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Graphic block */
+#graphic{
+    width: 100%;
+    height: 360px;
+    background: white;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 37px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#graphic .hr{
+    position: relative;
+    top: 290px;
+    border: none;
+    background: #c6cdd2;
+    height: 1px;
+    width: 100%;
+}
+#graphic .graph{
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 60px;
+    text-align: center;
+    height: 100%;
+    width: 10%;
+    margin: 0 1%;
+    position: relative;
+}
+#graphic .graph .bg{
+    width: 30px;
+    margin: 0 auto;
+    height: 80%;
+    position: absolute;
+    left: 15px;
+    bottom: 48px;
+}
+#graphic .graph.red .bg{
+    background: #eb1616;
+}
+#graphic .graph.orange .bg{
+    background: #ea6821;
+}
+#graphic .graph.yellow .bg{
+    background: #ffcc01;
+}
+#graphic .graph.green .bg{
+    background: #00ff01;
+}
+#graphic .graph.blue .bg{
+    background: #0083ff;
+}
+#graphic .graph.azure .bg{
+    background: #00b4ff;
+}
+#graphic .graph .procent,
+#graphic .graph .name{
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+}
+#graphic .graph .procent{
+    font-size: 18px;
+    background: white;
+    position: absolute;
+    left: 4px;
+    top: -20px;
+    width: 100%;
+    display: block;
+}
+#graphic .graph .name{
+    font-size: 14px;
+    margin: 8px 0 0;
+    position: absolute;
+    bottom: 10px;
+    min-height: 28px;
+}
+#graphic .emptyText{
+    display: none;
+    font-size: 18px;
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+    margin: 30% 0;
+}
+
+/* 404 page */
+.content.c404{
+    background-image: url("../img/404bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 66px 0 670px;
+    text-align: center;
+}
+.content.c404 h1{
+    font-family: 'Calibri-Bold';
+    color: #2ca0aa;
+    font-size: 60px;
+}
+.content.c404 .emptyPage{
+    font-family: 'Calibri';
+    color: #2ca0aa;
+    font-size: 40px;
+}
+.content.c404 .text{
+    color: #c8c8c8;
+    margin: 80px 0 0;
+    font-size: 30px;
+    font-family: 'Calibri-Light';
+}
+.content.c404 .text a{
+    text-transform: uppercase;
+    color: #2ca0aa;
+}
+.content.c404 .text a:hover {
+    text-decoration: none;
+}

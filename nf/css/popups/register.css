@@ -1,0 +1,814 @@
+/* Registration popup */
+#regPopup{
+    position: absolute;
+    background: white;
+    max-width: 640px;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    border-radius: 5px;
+    left: 26%;
+    display: none;
+}
+#regPopup .close{
+    display: none;
+    position: absolute;
+    color: white;
+    background: #c2c2c2;
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Arial';
+    text-align: center;
+    right: 20px;
+    top: 15px;
+}
+#regPopup .close:hover{
+    opacity: .5;
+}
+#regPopup .logo{
+    margin: 25px 0 50px;
+}
+#regPopup .logo h1{
+    font-size: 42px;
+    color: #333333;
+}
+#regPopup .buttons{
+    margin: 30px 0;
+}
+#regPopup .button{
+    color: white;
+    font-size: 22px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'CandaraBold';
+}
+#regPopup .button.next{
+    border-bottom: solid 2px #bcbcbc;
+    background: #cccccc;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+#regPopup .button.back{
+    border-bottom: solid 2px #7f7f7f;
+    background: #cccccc;
+    border-radius: 25px;
+    padding: 10px 40px;
+    display: none;
+    margin: 0 15px;
+}
+#regPopup .button.apply{
+    border-bottom: solid 2px #38642b;
+    background: #5aa044;
+    border-radius: 25px;
+    padding: 10px 40px;
+    display: none;
+    margin: 0 15px;
+}
+#regPopup .button.apply.signin{
+    width: 160px;
+    box-sizing: border-box;
+    margin: 0 auto 200px;
+}
+#regPopup .step{
+    display: none;
+}
+#regPopup .step.one{
+    display: block;
+}
+#regPopup .line{
+    margin: 10px 0;
+    position: relative;
+}
+#regPopup .line .valid{
+    display: none;
+    background-image: url("../../img/user/ok.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    right: 160px;
+}
+#regPopup .line.valid .valid{
+    display: block;
+}
+#regPopup .line.valid .field{
+    color: #189e4b;
+}
+#regPopup .line.valPass .field{
+    border: solid 2px #9ac67c;
+    border-left: none;
+}
+#regPopup .line.valPass .icon{
+    border: solid 2px #9ac67c;
+    border-right: none;
+}
+#regPopup .icon{
+    height: 45px;
+    border: solid 2px #dddddd;
+    border-right: none;
+    position: relative;
+    box-sizing: border-box;
+}
+#regPopup .icon:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 11px;
+    height: 100%;
+    background: url("../../img/popup/reg/icon-separator.png") no-repeat;
+    background-position: right;
+}
+#regPopup .icon span{
+    display: block;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: 20px 0;
+    position: relative;
+}
+#regPopup .icon.name span{
+    background-image: url("../../img/popup/reg/icons/name.png");
+    height: 22px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.name span{
+    background-position: 20px -23px;
+}
+#regPopup .icon.lastname span{
+    background-image: url("../../img/popup/reg/icons/lastname.png");
+    height: 22px;
+    top: 12px;
+}
+#regPopup .line.valid .icon.lastname span{
+    background-position: 20px -21px;
+}
+#regPopup .icon.username span{
+    background-image: url("../../img/popup/reg/icons/username.png");
+    background-position: 26px 0;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.username span{
+    background-position: 26px -30px;
+}
+#regPopup .icon.email span{
+    background-image: url("../../img/popup/reg/icons/email.png");
+    height: 22px;
+    top: 11px;
+}
+#regPopup .line.valid .icon.email span{
+    background-position: 20px -21px;
+}
+#regPopup .icon.phone span{
+    background-image: url("../../img/popup/reg/icons/phone.png");
+    background-position: 23px 0;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.phone span{
+    background-position: 23px -27px;
+}
+#regPopup .icon.mphone span{
+    background-image: url("../../img/popup/reg/icons/mphone.png");
+    background-position: 27px 0;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.mphone span{
+    background-position: 27px -26px;
+}
+#regPopup .icon.password span{
+    background-image: url("../../img/popup/reg/icons/password.png");
+    height: 22px;
+    top: 10px;
+}
+#regPopup .icon.companyName span{
+    background-image: url("../../img/popup/reg/icons/company-name.png");
+    background-position: 23px 4px;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.companyName span{
+    background-position: 23px -19px;
+}
+#regPopup .icon.industry span{
+    background-image: url("../../img/popup/reg/icons/industry.png");
+    background-position: 23px 6px;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.industry span{
+    background-position: 23px -18px;
+}
+#regPopup .icon.typeIndustry span{
+    background-image: url("../../img/popup/reg/icons/type-industry.png");
+    background-position: 23px 0;
+    height: 30px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.typeIndustry span{
+    background-position: 23px -36px;
+}
+#regPopup .icon.zip span{
+    background-image: url("../../img/popup/reg/icons/zip.png");
+    background-position: 23px 0;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.zip span{
+    background-position: 23px -30px;
+}
+#regPopup .icon.streetType span{
+    background-image: url("../../img/popup/reg/icons/type-street.png");
+    background-position: 23px 0;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.streetType span{
+    background-position: 23px -29px;
+}
+#regPopup .icon.phoneBlack span{
+    background-image: url("../../img/popup/reg/icons/bphone.png");
+    background-position: 27px 4px;
+    height: 25px;
+    top: 8px;
+}
+#regPopup .line.valid .icon.phoneBlack span{
+    background-position: 23px -20px;
+}
+#regPopup .icon.prof span{
+    background-image: url("../../img/popup/reg/icons/pro.png");
+    background-position: 22px 0;
+    height: 30px;
+    top: 8px;
+}
+#regPopup .field{
+    width: 280px;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 2px #dddddd;
+    border-left: none;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 0 25px;
+    outline: none;
+    font-size: 20px;
+    color: #999999;
+    margin-left: -5px;
+    font-family: 'Candara';
+}
+#regPopup .step.one label{
+    color: #999999;
+    font-family: 'Candara';
+    font-size: 13px;
+    margin: 30px 0 20px;
+    display: block;
+}
+#regPopup .step.one .socials,
+#regPopup .step.one .socials .item{
+    display: inline-block;
+    vertical-align: middle;
+}
+#regPopup .step.one .item{
+    margin: 0 5px;
+}
+#regPopup .step.one .socials .item a{
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 100%;
+}
+#regPopup .step.one .socials .item .tw{
+    background-image: url("../../img/news/share/tw.png");
+    width: 40px;
+    height: 32px;
+}
+#regPopup .step.one .socials .item .tw:hover{
+    background-position: 0 -44px;
+}
+#regPopup .step.one .socials .item .fb{
+    background-image: url("../../img/news/share/fb.png");
+    width: 32px;
+    height: 32px;
+}
+#regPopup .step.one .socials .item .fb:hover{
+    background-position: 0 -44px;
+}
+#regPopup .step.one .socials .item .gp{
+    background-image: url("../../img/news/share/gp.png");
+    width: 40px;
+    height: 32px;
+}
+#regPopup .step.one .socials .item .gp:hover{
+    background-position: 0 -46px;
+}
+#regPopup .step.one .socials .item .yahoo{
+    background-image: url("../../img/news/share/yahoo.png");
+    width: 35px;
+    height: 32px;
+}
+#regPopup .step.one .socials .item .yahoo:hover{
+    background-position: 0 -45px;
+}
+#regPopup .industry{
+    font-size: 18px;
+}
+#regPopup .checkBut{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 35px;
+}
+#regPopup .checkBut:after{
+    content: ">";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    color: #e0e0e0;
+    font-family: 'Candara';
+    position: absolute;
+    top: -3px;
+    right: -27px;
+}
+#regPopup .certif{
+    background: #e1e1e1;
+    width: 122px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    color: #999999;
+    font-size: 14px;
+    border-radius: 25px;
+    font-family: 'Candara';
+    border-bottom: solid 2px #cfcfcf;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+#regPopup .certif.active{
+    background: #5aa044;
+    color: white;
+    border-bottom: solid 2px #3E6C30;
+}
+#regPopup .certif:focus,
+#regPopup .certif:active{
+    border-bottom: solid 2px transparent;
+}
+#regPopup .faq{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    margin: 0 10px;
+    background: #ebebeb;
+    border-radius: 50%;
+    color: #999999;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Candara';
+}
+#regPopup .faq .miniModal{
+    display: none;
+    position: absolute;
+    top: -120px;
+    background: #ebebeb;
+    border-radius: 5px;
+    padding: 5px;
+    width: 145px;
+    font-size: 10px;
+    color: #999999;
+    left: -20px;
+    z-index: 1;
+}
+#regPopup .faq .miniModal:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #ebebeb;
+    border-right: 35px solid transparent;
+    left: 43px;
+}
+#regPopup .faq:hover .miniModal{
+    display: block;
+}
+#regPopup .checkBut{
+    width: 60px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+}
+#regPopup .checkBut .bg{
+    width: 100%;
+    height: 100%;
+    background: #cacaca;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35) inset;
+    border-radius: 25px;
+}
+#regPopup .checkBut .spline{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #dbdbdb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#dbdbdb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#dbdbdb 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#dbdbdb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+}
+#regPopup .checkBut.on .spline{
+    left: 36px;
+}
+#regPopup .checkBut.on .bg{
+    background: #189c4a;
+}
+#regPopup .checkBut .toggleOn{
+    display: none;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+#regPopup .checkBut.on .toggleOff{
+    display: none;
+}
+#regPopup .checkBut.on .toggleOn{
+    display: block;
+}
+#regPopup .step.one .strong{
+    background: #d4d4d4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #d4d4d4 1%, #ecedec 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#d4d4d4), color-stop(100%,#ecedec)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #d4d4d4 1%,#ecedec 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #d4d4d4 1%,#ecedec 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #d4d4d4 1%,#ecedec 100%); /* IE10+ */
+    background: linear-gradient(to right,  #d4d4d4 1%,#ecedec 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#ecedec',GradientType=1 ); /* IE6-9 */
+    width: 324px;
+    margin: 20px auto;
+    height: 10px;
+    position: relative;
+}
+#regPopup .step.one .strong .power{
+    position: absolute;
+    height: 100%;
+    width: 235px;
+    top: 0;
+    left: 0;
+    background: #189c4a;
+}
+
+#regPopup  .left,
+#regPopup .right{
+    display: inline-block;
+    vertical-align: middle;
+}
+#regPopup .left{
+    width: 280px;
+}
+#regPopup .right{
+    margin-left: 10%;
+}
+#regPopup .step.two .left .field,
+#regPopup .step.three .left .field{
+    width: 215px;
+    border: solid 1px #e5e5e8;
+    border-left: none;
+}
+#regPopup .step.two .left .icon,
+#regPopup .step.three .left .icon{
+    border: solid 1px #e5e5e8;
+    border-right: none;
+}
+#regPopup .step.two .line .valid{
+    right: 10px;
+    background-image: url("../../img/popup/reg/icons/valid.png");
+    width: 12px;
+    height: 11px;
+    top: 15px;
+}
+#regPopup .step.two .line.valid .icon{
+    border: solid 1px #93c273;
+    border-right: none;
+}
+#regPopup .step.two .line.valid .field{
+    border: solid 1px #93c273;
+    border-left: none;
+}
+#regPopup .image{
+    width: 145px;
+    height: 145px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: solid 1px #e7e7e7;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+#regPopup .right .image .empty{
+    margin: 32% 0;
+    font-size: 18px;
+    color: #999999;
+    text-transform: uppercase;
+    font-family: 'Candara';
+}
+#regPopup .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#regPopup .upload{
+    font-family: 'CandaraBold';
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    margin: 0 0 75px;
+    padding: 10px 20px;
+    background: #5aa044;
+    border-radius: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#regPopup .step.two .right .hours{
+    width: 173px;
+    height: 45px;
+    background: #5aa044;
+    line-height: 45px;
+    color: white;
+    font-size: 17px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#regPopup .step.two .right .hours .value{
+    position: relative;
+    display: inline-block;
+    font-family: 'Candara';
+}
+#regPopup .step.two .right .hours .value:after{
+    content: "v";
+    position: absolute;
+    display: inline-block;
+    margin: 0 10px;
+}
+#regPopup .step.two .right .hoursBlock{
+    position: absolute;
+    width: 380px;
+    right: 0;
+    background: white;
+    z-index: 10;
+    top: 55px;
+    border: solid 1px #ababab;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #5aa044;
+    cursor: default;
+    display: none;
+}
+#regPopup .step.two .right .hoursBlock:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: -7px;
+    background: url("../../img/popup/reg/hoursBlock.png");
+    width: 16px;
+    height: 7px;
+}
+#regPopup .step.two .right .hoursBlock .day{
+    margin: 0;
+    height: 30px;
+    line-height: 25px;
+    cursor: pointer;
+}
+#regPopup .step.two .right .hoursBlock .day.off{
+    color: #a4d096;
+}
+#regPopup .step.two .right .hoursBlock .day .off,
+#regPopup .step.two .right .hoursBlock .day .nameday,
+#regPopup .step.two .right .hoursBlock .day .green,
+#regPopup .step.two .right .hoursBlock .day .separate,
+#regPopup .step.two .right .hoursBlock .day .h24{
+    display: inline-block;
+    vertical-align: middle;
+}
+#regPopup .step.two .right .hoursBlock .day .off{
+    font-family: 'CandaraBold';
+    font-size: 10px;
+    cursor: pointer;
+}
+#regPopup .step.two .right .hoursBlock .day.off .off{
+    opacity: 0;
+}
+#regPopup .step.two .right .hoursBlock .day .nameday{
+    font-family: 'Calibri';
+    font-size: 18px;
+    min-width: 100px;
+    margin: 0 25px 0 10px;
+    text-align: left;
+}
+#regPopup .step.two .right .hoursBlock .day .green{
+    background: url("../../img/user/arrow-green.png") no-repeat;
+    background-position: 25px 6px;
+    -webkit-appearance: none;
+    width: 38px;
+    height: 19px;
+    border: solid 1px #5aa044;
+    border-radius: 2px;
+    font-family: 'Calibri';
+    font-size: 13px;
+    color: #5aa044;
+}
+#regPopup .step.two .right .hoursBlock .day.off .green{
+    border: solid 1px #a4d096;
+}
+#regPopup .step.two .right .hoursBlock .day .separate{
+    font-size: 20px;
+    margin: 0 15px;
+    font-family: 'Candara';
+}
+#regPopup .step.two .right .hoursBlock .day .separate.or{
+    font-size: 12px;
+}
+#regPopup .step.two .right .hoursBlock .day .h24{
+    background: #a4d096;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+}
+#regPopup .step.two .right .hoursBlock .day .h24.active{
+    background: #5aa044;
+}
+#regPopup .step.two .right .hoursBlock .day.off .h24{
+    cursor: default;
+    background: #a4d096;
+}
+#regPopup .step.two .right .hoursBlock .confirm{
+    font-family: 'Calibri-Light';
+    color: white;
+    font-size: 12px;
+    width: 60px;
+    height: 12px;
+    line-height: 12px;
+    margin: 15px auto;
+    background: #5aa044;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+#regPopup .radioBut{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: solid 1px #9d9d9d;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#regPopup .radioBut.check .green{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #5aa044;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 2px;
+}
+#regPopup .radioGroup,
+#regPopup .radioGroup .group{
+    display: inline-block;
+    vertical-align: top;
+}
+#regPopup .radioGroup .group:first-child{
+    margin-right: 60px;
+}
+#regPopup .radioGroup .group label{
+    margin: 0 10px;
+    min-width: 85px;
+    color: #999999;
+    font-size: 20px;
+    font-family: 'Candara';
+}
+#regPopup .step.three .field{
+    width: 220px;
+}
+#regPopup .step.three .label{
+    font-family: 'Candara';
+    color: #999999;
+    font-size: 20px;
+    margin: 40px 0 20px;
+    display: block;
+    text-align: left;
+}
+#regPopup .dayBirth,
+#regPopup .monthBirth,
+#regPopup .yearBirth{
+    font-family: 'Candara';
+    background: url("../../img/user/arrow-grey.png") no-repeat;
+    background-position: 88%;
+    display: inline-block;
+    vertical-align: top;
+    border: solid 1px #e5e5e8;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    color: #d6d6d6;
+    margin: 0 3px;
+    position: relative;
+}
+#regPopup .dayBirth .value,
+#regPopup .monthBirth .value,
+#regPopup .yearBirth .value{
+    padding: 0 30px 0 10px;
+}
+#regPopup .step.three{
+    margin: 0 0 200px;
+}
+#regPopup .step.three .left .line{
+    text-align: left;
+}
+#regPopup .step.four .image{
+    background: white;
+    padding: 3px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+#regPopup .step.four .upload{
+    width: 150px;
+    margin: 0 auto 30px;
+}
+#regPopup .userInfo{
+    line-height: 20px;
+}
+#regPopup .userInfo .name{
+    font-family: 'CandaraBold';
+    font-size: 20px;
+    color: #333333;
+}
+#regPopup .userInfo .info{
+    font-family: 'Candara';
+    font-size: 18px;
+    color: #707070;
+}
+#regPopup .step.four .line{
+    margin: 80px 0;
+}
+#regPopup .step.four .industry{
+    display: block;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: 'CandaraBold';
+}
+#regPopup .step.five .complete{
+    color: #333333;
+    font-family: 'CandaraBold';
+    font-size: 30px;
+    margin: 60px 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 570px){
+    #regPopup{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 525px){
+    #regPopup .step.two .right .hoursBlock{
+        right: -15%;
+    }
+}
+@media screen and (max-width: 360px){
+    #regPopup .field{
+        width: 200px;
+    }
+    #regPopup .line .valid{
+        right: 50px;
+    }
+    #regPopup .step.one .strong{
+        width: 100%;
+    }
+}

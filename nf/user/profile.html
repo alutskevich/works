@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/icons.css">
+        <link rel="stylesheet" href="../css/user/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/user/pages/profile.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/user.js"></script>
+        <title>Nutrition Facts - User Profile</title>
+    </head>
+    <body>
+        <a name="top" class="none"></a>
+        <header>
+            <div class="center">
+                <nav>
+                    <a href="#" class="url home">Home</a>
+                    <a href="../news.html" class="url news">News</a>
+                    <a href="../callculate.html" class="url calc">Calculate NF</a>
+                    <a href="#" class="url fav">Favorites</a>
+                    <a href="#" class="url labels">Labels</a>
+                </nav>
+                <div class="user">
+                    <div class="me">Me</div>
+                    <div class="avatar">
+                        <img src="../img/user/avatar.png" alt="avatar">
+                    </div>
+                    <div class="menu">
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#" class="url profile">Edit profile</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url refresh">Refresh</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url messages">Messages</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url settings">Settings</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url help">Help</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="signout">Sign Out</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="navigation">
+                <a href="profile.html" class="url profile active">Profile</a>
+                <a href="favorites.html" class="url favorites">Favorites</a>
+                <a href="articles.html" class="url articles">Articles</a>
+                <a href="shopping.html" class="url shopping">Shopping List</a>
+                <a href="add.html" class="url add">Add ingridient</a>
+                <a href="categories.html" class="url categories">Categories</a>
+                <a href="business.html" class="url business">My business</a>
+                <a href="recipe.html" class="url recipe">My recipe</a>
+            </div>
+            <div class="middle">
+                <h1>Edit profile</h1>
+                <div class="body">
+                    <form method="post" action="#" class="profile" enctype="multipart/form-data">
+                        <div class="block">
+                            <div class="left">
+                                <div class="line no-error">
+                                    <label>Name:</label>
+                                    <input type="text" name="name" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Username:</label>
+                                    <input type="text" name="username" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Change password:</label>
+                                    <input type="password" name="password" class="input">
+                                </div>
+                                <div class="line">
+                                    <label></label>
+                                    <input type="text" name="confPass" class="input">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="image">
+                                    <img src="../img/user/avatar.jpg" alt="Avatar">
+                                </div>
+                                <input type="file" name="photo" class="file none">
+                                <div class="changeBut">Change photo</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="block">
+                            <div class="left">
+                                <div class="line">
+                                    <label>Profile type</label>
+                                    <div class="radioGroup">
+                                        <div class="group">
+                                            <label>Business</label>
+                                            <input type="radio" class="radio none" name="business">
+                                            <div class="radioBut check" data-attr="business">
+                                                <span class="green"></span>
+                                            </div>
+                                        </div>
+                                        <div class="group">
+                                            <label>Personal</label>
+                                            <input type="radio" class="radio none" name="personal">
+                                            <div class="radioBut" data-attr="personal">
+                                                <span class="green"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <label>Company name:</label>
+                                    <input type="text" name="company" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Adress:</label>
+                                    <input type="text" name="adress" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Phone number:</label>
+                                    <input type="password" name="phone" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Fax number:</label>
+                                    <input type="text" name="fax" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Director name:</label>
+                                    <input type="text" name="director" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Position:</label>
+                                    <input type="text" name="position" class="input">
+                                </div>
+                                <div class="line">
+                                    <label>Business Hours:</label>
+                                    <div class="hoursBlock">
+                                        <div class="day">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Monday</p>
+                                            <select class="green" name="hourStart">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                        <div class="day">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Tuesday</p>
+                                            <select class="green" name="hourStart">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                        <div class="day">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Wednesday</p>
+                                            <select class="green" name="hourStart">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                        <div class="day off">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Thursday</p>
+                                            <select class="green" name="hourStart" disabled>
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd" disabled>
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                        <div class="day">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Friday</p>
+                                            <select class="green" name="hourStart">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                        <div class="day">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Saturday</p>
+                                            <select class="green" name="hourStart">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                        <div class="day">
+                                            <p class="off">x</p>
+                                            <p class="nameday">Sunday</p>
+                                            <select class="green" name="hourStart">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate">-</p>
+                                            <select class="green" name="hourEnd">
+                                                <option></option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                            </select>
+                                            <p class="separate or">or</p>
+                                            <input type="checkbox" class="none" name="noSleep">
+                                            <div class="h24" data-attr="noSleep">24h</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="image">
+                                    <img src="../img/user/no-avatar.png" alt="No avatar">
+                                </div>
+                                <input type="file" name="logo" class="file none">
+                                <div class="changeBut">Change logo</div>
+                                <div class="certified">
+                                    <label>Are you in the food industry?</label>
+                                    <input type="checkbox" name="foodIndustry" class="none">
+                                    <div class="checkBut off" data-attr="foodIndustry">
+                                        <div class="bg"></div>
+                                        <div class="spline">
+                                            <img src="../img/user/toggle-off.png" class="toggleOff" alt="Off">
+                                            <img src="../img/user/toggle-on.png" class="toggleOn" alt="On">
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="certif">Get certified</div>
+                                        <div class="faq">
+                                            <span class="quest">?</span>
+                                            <div class="miniModal">
+                                                In order to feature your own ingredients on our service, you have to get certified.
+                                                Its a quick and painless process. Hope to see you inside soon.
+                                            </div>
+                                        </div>
+                                        <div class="varified none">
+                                            <img src="../img/user/ok.png" alt="Ok">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <input type="submit" value="Save changes" class="submit">
+                    </form>
+                </div>
+            </div>
+            <aside>
+                <div id="rightButton" class="button"> > </div>
+                <h1>Find out more</h1>
+                <form method="post" action="#" class="rightForm">
+                    <input type="text" name="search" class="field" placeholder="Search...">
+                    <select name="by" class="bySelect none">
+                        <option value="by">by</option>
+                        <option value="by2">by2</option>
+                    </select>
+                    <div class="select">
+                        <p class="value">by</p>
+                        <ul class="options">
+                            <li class="option">by</li>
+                            <li class="option">by2</li>
+                        </ul>
+                    </div>
+                    <input type="submit" value="Search now" class="submit">
+                </form>
+                <div class="latest">
+                    <p class="label">Latest seaches:</p>
+                    <div class="item">
+                        <div class="block">
+                            <div class="image">
+                                <img src="../img/news/1.png" alt="news1">
+                            </div>
+                            <div class="infoBlock">
+                                <div class="name">
+                                    <p class="text">Hot Chicken</p>
+                                    <p class="cat">
+                                        Category: <span>poultry</span>
+                                    </p>
+                                </div>
+                                <div class="like">
+                                    <a href="#">
+                                        <div class="icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div id="rightButtonHide" class="button"> > </div>
+        <footer>
+            <div class="center">
+                <div class="left">
+                    <a href="#" class="toTop">back to top</a>
+                </div>
+                <div class="middle">
+                    <p class="copyright">&copy; 2014 NutritionFacts</p>
+                    <p class="copyright">Powered by <img src="../img/footer/logo.png" class="powered">Fraoche</p>
+                </div>
+                <div class="right">
+                    <ul class="nav">
+                        <li class="item">
+                            <a href="#" class="url">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">Articles</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">About us</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">Help</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

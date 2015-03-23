@@ -1,0 +1,233 @@
+.content{
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+.content .mainIcon{
+    position: relative;
+    top: -45px;
+    background-image: url("../../img/ingredients/icons/1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fbfbfb;
+    border: solid 1px #5ba79a;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.content .up{
+    margin: 0 0 115px;
+}
+.content .up .green{
+    color: #5bb25b;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 8px;
+    font-family: 'Candara';
+}
+.content .up .text{
+    color: #333333;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MyriadPro-Regular';
+}
+.content .body h1{
+    color: #6a7883;
+    font-size: 38px;
+    font-family: 'MyriadPro-Regular';
+    margin: 0 0 50px;
+}
+.content .body .left,
+.content .body .right{
+    display: inline-block;
+    vertical-align: top;
+}
+.content .body .left{
+    width: 30%;
+    margin-right: 15%;
+    position: relative;
+}
+.content .body .left #label{
+    margin: 0 0 25px;
+}
+.content .body .left .buttons .but{
+    background: #e74c3c;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 13px 17px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Calibri';
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+}
+.content .body .left .buttons .but:hover{
+    text-decoration: underline;
+}
+.content .body .left .buttons .but:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    right: 11px;
+    top: 15px;
+}
+.content .body .left .buttons .but.favAdd:after{
+    background: url("../../img/buttons/heart.png") no-repeat;
+    width: 13px;
+}
+.content .body .left .buttons .but.siteAdd:after{
+    background: url("../../img/buttons/add.png") no-repeat;
+}
+.content .body .left .arrow{
+    position: absolute;
+    top: 250px;
+    right: -90px;
+    background: url("../../img/arrows/rl.png") no-repeat;
+    width: 45px;
+    height: 25px;
+}
+.content .body .right{
+    width: 54%;
+}
+.content .body .right .form .area{
+    padding: 20px;
+    border: solid 1px #dcdbd2;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    color: #bfbfbf;
+    font-size: 16px;
+    font-family: 'Calibri-Light';
+    box-sizing: border-box;
+}
+.content .body .right .form .text{
+    font-family: 'Candara';
+    margin: 25px 0;
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 18px;
+}
+.content .body .right .form .ingridients .item{
+    margin: 0 0 15px;
+    padding-left: 10px;
+}
+.content .body .right .form .ingridients .item .block{
+    display: inline-block;
+    vertical-align: top;
+}
+.content .body .right .form .ingridients .item .block.name{
+    width: 190px;
+}
+.content .body .right .form .ingridients .item .block.amount{
+    width: 55px;
+    margin: 0 30px;
+}
+.content .body .right .form .ingridients .item .block.measurement{
+    float: right;
+    width: 110px;
+}
+.content .body .right .form .ingridients .item label{
+    color: #6a7883;
+    font-size: 17px;
+    display: block;
+    font-family: 'Candara';
+}
+.content .body .right .form .ingridients .item .block.name label{
+    padding-left: 10px;
+}
+.content .body .right .form .ingridients .item .block  .select{
+    background: url("../../img/select-arrow-black.png") white;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    line-height: 33px;
+    position: relative;
+}
+.content .body .right .form .ingridients .item .block  .select .value {
+    margin: 0 15px;
+}
+.content .body .right .form .ingridients .item .block  .select .options{
+    border: solid 1px #d7d7d7;
+}
+.content .body .right .form .ingridients .item .block  .select .options .option{
+    padding: 0 10px;
+}
+.content .body .right .form .ingridients .item .block .field,
+.content .body .right .form .ingridients .item .block .select{
+    height: 37px;
+    width: 100%;
+    margin: 3px 0;
+    border: solid 1px #d7d7d7;
+    border-radius: 3px;
+    color: #6a7883;
+    font-size: 18px;
+    font-family: 'Candara';
+    box-sizing: border-box;
+}
+.content .body .right .form .ingridients .item .block.name .field{
+    padding: 0 15px;
+}
+.content .body .right .form .ingridients .item .block.amount .field{
+    text-align: center;
+}
+.content .body .right .form .ingridients .add{
+    cursor: pointer;
+    display: block;
+    margin: 25px 0 45px;
+    font-size: 17px;
+    color: #5bb25b;
+    font-family: 'Candara';
+}
+.content .body .right .form .ingridients .add:hover{
+    text-decoration: underline;
+}
+.content .body .right .form .ingridients .generate,
+.content .body .right .form .ingridients .addRecepie{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    cursor: pointer
+}
+.content .body .right .form .ingridients .generate{
+    margin: 25px auto;
+    background: #27a3ac;
+    padding: 20px 55px;;
+}
+.content .body .right .form .ingridients .addRecepie{
+    margin: 0 auto 25px;
+    width: 100%;
+    padding: 20px 0;
+    background: #5bb25b;
+}
+
+@media screen and (max-width: 820px) {
+    .content .body .left{
+        display: block;
+        width: 100%;
+    }
+    .content .body .left .arrow{
+        display: none;
+    }
+    .content .body .right{
+        display: block;
+        margin: 50px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .content .body h1{
+        text-align: center;
+    }
+    .content .body .right .form .ingridients .item .block.measurement{
+        float: none;
+    }
+}

@@ -1,0 +1,264 @@
+.body{
+    width: 865px;
+}
+.body .label{
+    text-align: center;
+    color: #6a7883;
+    font-size: 26px;
+    margin: 0 0 60px;
+    font-family: 'Calibri';
+}
+.catBlock{
+    margin-left: 75px;
+}
+.catBlock .label{
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 80px;
+}
+.catBlock .categories{
+    display: inline-block;
+    vertical-align: top;
+    width: 470px;
+}
+.catBlock .categories .item{
+    margin: 5px 6px;
+    cursor: pointer;
+    opacity: 0.7;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.catBlock .categories .item:hover,
+.catBlock .categories .item.active{
+    opacity: 1;
+}
+.catBlock .categories .item .name{
+    text-align: center;
+    color: #2ca0aa;
+    font-size: 14px;
+    margin: 6px 0;
+    font-family: 'Calibri-Light';
+}
+.body .about{
+    margin: 45px 0 75px 50px;
+    background: white;
+    border: solid 1px #dcdbd2;
+    padding: 20px 50px;
+    position: relative;
+}
+.body .about:before{
+    content: "";
+    position: absolute;
+    background: url("../../../img/user/before-arrow.png");
+    width: 20px;
+    height: 37px;
+    top: -37px;
+    left: 47px;
+}
+.body .about .logo{
+    font-family: 'Calibri-Light';
+    display: inline-block;
+    vertical-align: middle;
+    width: 68px;
+    color: #2ca0aa;
+    font-size: 14px;
+    text-align: center;
+}
+.body .about .logo .icon{
+    margin: 0 0 9px;
+}
+.body .about .info{
+    font-family: 'Calibri-Light';
+    display: inline-block;
+    vertical-align: middle;
+    width: 550px;
+    margin-left: 60px;
+    color: #6a7883;
+    font-size: 16px;
+    line-height: 20px;
+}
+.body .about .info .params{
+    list-style: disc;
+}
+.body .about .info .params .item{
+    list-style: disc;
+    margin: 10px;
+}
+.body .about .buttons{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.body .about .buttons .item{
+    color: #ff0000;
+    font-size: 16px;
+    text-decoration: underline;
+    font-family: 'Calibri';
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.body .about .buttons .item.active{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Calibri';
+    background: #2ca0aa;
+    text-decoration: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    cursor: default;
+}
+.body .about .buttons .item.active:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #2ca0aa;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 0;
+}
+.body .about .text.bad{
+    display: none;
+}
+.faq{
+    margin: 120px 0 200px;
+}
+.faq .name{
+    color: #6a7883;
+    font-size: 26px;
+    margin: 0 0 35px;
+    font-family: 'Calibri';
+}
+.faq .questions,
+.faq .answers{
+    display: inline-block;
+    vertical-align: top;
+    border: solid 1px #dcdbd2;
+    background: white;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+.faq .arrow {
+    display: inline-block;
+    vertical-align: middle;
+    top: 50px;
+    color: #cdcdcd;
+    font-size: 16px;
+    font-family: 'Calibri';
+    margin: 0 30px;
+    position: relative;
+}
+.faq .questions{
+    width: 285px;
+    margin-left: 50px;
+}
+.faq .questions .list .item{
+    color: #2ca0aa;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-family: 'Calibri';
+}
+.faq .questions .list .item:hover{
+    text-decoration: none;
+}
+.faq .questions .list .item.active{
+    color: #cdcdcd;
+    text-decoration: none;
+    cursor: default;
+}
+.faq .answers{
+    width: 425px;
+}
+.faq .answers .answer{
+    display: none;
+    font-size: 16px;
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+    line-height: 20px;
+}
+.faq .answers .answer.active{
+    display: block;
+}
+
+@media screen and (max-width: 1580px) {
+    .body{
+        width: 100%;
+    }
+    .body .about{
+        margin-left: 0;
+        width: 80%;
+        box-sizing: border-box;
+    }
+    .body .about .info{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .faq .answers{
+        width: 50%;
+    }
+    .faq .questions{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .body .about .info{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .faq .arrow{
+        display: none;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .faq{
+        text-align: center;
+        padding-right: 30px;
+    }
+    .faq .answers,
+    .faq .questions{
+        width: 100%;
+    }
+    .body .about{
+        margin: 45px auto;
+    }
+}
+@media screen and (max-width: 950px) {
+    .body{
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    .catBlock{
+        margin: 0;
+    }
+    .body .about{
+        margin: 45px 0;
+        width: 100%;
+    }
+    .faq{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 790px) {
+    .catBlock .categories{
+        width: 100%;
+    }
+    .body{
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .body .about .logo{
+        display: block;
+        margin: 0 auto;
+    }
+}

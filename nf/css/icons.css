@@ -1,0 +1,172 @@
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 59px;
+}
+.icon.banana{
+    background-image: url("../img/icons/banana.png");
+    width: 38px;
+    height: 37px;
+}
+.icon.alcohol{
+    background-image: url("../img/icons/alcohol.png");
+}
+.icon.berries{
+    background-image: url("../img/icons/berries.png");
+}
+.icon.dairy{
+    background-image: url("../img/icons/dairy.png");
+}
+.icon.eggs{
+    background-image: url("../img/icons/eggs.png");
+}
+.icon.fish{
+    background-image: url("../img/icons/fish.png");
+}
+.icon.fruits{
+    background-image: url("../img/icons/fruits.png");
+}
+.icon.grains{
+    background-image: url("../img/icons/grains.png");
+}
+.icon.meat{
+    background-image: url("../img/icons/meat.png");
+}
+.icon.non-alcohol{
+    background-image: url("../img/icons/non-alcohol.png");
+}
+.icon.nuts{
+    background-image: url("../img/icons/nuts.png");
+}
+.icon.oils{
+    background-image: url("../img/icons/oils.png");
+}
+.icon.poultry{
+    background-image: url("../img/icons/poultry.png");
+}
+.icon.seafood{
+    background-image: url("../img/icons/seafood.png");
+}
+.icon.seeds{
+    background-image: url("../img/icons/seeds.png");
+}
+.icon.soy{
+    background-image: url("../img/icons/soy.png");
+}
+.icon.vegetables{
+    background-image: url("../img/icons/vegetables.png");
+}
+.icon.articular{
+    background-image: url("../img/icons/articular.png");
+    width: 18px;
+    height: 45px;
+}
+.icon.articular.bad{
+    background-position: 0 -50px;
+}
+.icon.bolt{
+    background-image: url("../img/icons/bolt.png");
+    width: 44px;
+    height: 45px;
+}
+.icon.bolt.bad{
+    background-position: 0 -51px;
+}
+.icon.bones{
+    background-image: url("../img/icons/bones.png");
+    width: 44px;
+    height: 45px;
+}
+.icon.bones.bad{
+    background-position: 0 -51px;
+}
+.icon.brain{
+    background-image: url("../img/icons/brain.png");
+    width: 45px;
+    height: 45px;
+}
+.icon.brain.bad{
+    background-position: 0 -51px;
+}
+.icon.children{
+    background-image: url("../img/icons/children.png");
+    width: 57px;
+    height: 45px;
+}
+.icon.children.bad{
+    background-position: 0 -50px;
+}
+.icon.eyesight{
+    background-image: url("../img/icons/eyesight.png");
+    width: 52px;
+    height: 45px;
+}
+.icon.eyesight.bad{
+    background-position: 0 -51px;
+}
+.icon.graybeard{
+    background-image: url("../img/icons/graybeard.png");
+    width: 19px;
+    height: 45px;
+}
+.icon.graybeard.bad{
+    background-position: 0 -50px;
+}
+.icon.growth{
+    background-image: url("../img/icons/growth.png");
+    width: 31px;
+    height: 45px;
+}
+.icon.growth.bad{
+    background-position: 0 -51px;
+}
+.icon.heart{
+    background-image: url("../img/icons/heart.png");
+    width: 48px;
+    height: 45px;
+}
+.icon.heart.bad{
+    background-position: 0 -46px;
+}
+.icon.metabolism{
+    background-image: url("../img/icons/metabolism.png");
+    width: 37px;
+    height: 45px;
+}
+.icon.metabolism.bad{
+    background-position: 0 -51px;
+}
+.icon.muscles{
+    background-image: url("../img/icons/muscles.png");
+    width: 40px;
+    height: 45px;
+}
+.icon.muscles.bad{
+    background-position: 0 -50px;
+}
+.icon.prophylaxy{
+    background-image: url("../img/icons/prophylaxy.png");
+    width: 29px;
+    height: 45px;
+}
+.icon.prophylaxy.bad{
+    background-position: 0 -51px;
+}
+.icon.satiated{
+    background-image: url("../img/icons/satiated.png");
+    width: 28px;
+    height: 45px;
+}
+.icon.satiated.bad{
+    background-position: 0 -51px;
+}
+.icon.weight-loss{
+    background-image: url("../img/icons/weight-loss.png");
+    width: 58px;
+    height: 45px;
+}
+.icon.weight-loss.bad{
+    background-position: 0 -50px;
+}

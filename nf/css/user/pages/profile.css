@@ -1,0 +1,327 @@
+.content .middle .profile{
+    text-align: center;
+}
+.profile .left{
+    float: left;
+    margin-right: 150px;
+    min-width: 550px;
+    text-align: left;
+}
+.profile .right{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    width: 30%;
+}
+.profile .block:nth-child(2) .right{
+    top: 0;
+}
+.profile .block{
+    margin: 0 0 70px;
+}
+.profile .line{
+    margin: 9px 0;
+}
+.profile label{
+    color: #6a7883;
+    font-size: 20px;
+    font-family: 'Calibri-Light';
+    min-width: 150px;
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: baseline;
+}
+.profile .line .input{
+    font-family: 'Calibri-Light';
+    border: solid 1px #e5e5e8;
+    border-radius: 3px;
+    width: 230px;
+    height: 35px;
+    color: #6a7883;
+    font-size: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.profile .line.no-error .input{
+    border: solid 1px #93c273;
+    box-shadow: 0 0 5px #93c273;
+}
+.profile .line.no-error:after{
+    content: "";
+    display: inline-block;
+    background: url("../../../img/user/ok.png") no-repeat;
+    width: 20px;
+    height: 18px;
+    margin: 0 25px;
+}
+.profile .block .image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    padding: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.6);
+    margin: 0 auto 20px;
+}
+.profile .block .image img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+.profile .block .changeBut{
+    font-family: 'CandaraBold';
+    background: #5aa044;
+    color: white;
+    max-width: 130px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.radioGroup,
+.radioGroup .group{
+    display: inline-block;
+    vertical-align: top;
+}
+.radioGroup .group:first-child{
+    margin-right: 60px;
+}
+.radioGroup .group label{
+    margin: 0;
+    min-width: 85px;
+}
+.hoursBlock{
+    display: inline-block;
+    vertical-align: top;
+    color: #5aa044;
+    padding: 25px 0;
+}
+.hoursBlock .day{
+    margin: 6px 0;
+}
+.hoursBlock .day.off{
+    color: #a4d096;
+}
+.hoursBlock .day .off,
+.hoursBlock .day .nameday,
+.hoursBlock .day .green,
+.hoursBlock .day .separate,
+.hoursBlock .day .h24{
+    display: inline-block;
+    vertical-align: middle;
+}
+.hoursBlock .day .off{
+    font-family: 'CandaraBold';
+    font-size: 10px;
+    cursor: pointer;
+}
+.hoursBlock .day.off .off{
+    opacity: 0;
+}
+.hoursBlock .day .nameday{
+    font-family: 'Calibri';
+    font-size: 18px;
+    min-width: 100px;
+    margin: 0 25px 0 10px;
+}
+.hoursBlock .day .green{
+    background: url("../../../img/user/arrow-green.png") no-repeat;
+    background-position: 25px 6px;
+    -webkit-appearance: none;
+    width: 38px;
+    height: 19px;
+    border: solid 1px #5aa044;
+    border-radius: 2px;
+    font-family: 'Calibri';
+    font-size: 13px;
+    color: #5aa044;
+}
+.hoursBlock .day.off .green{
+    border: solid 1px #a4d096;
+}
+.hoursBlock .day .separate{
+    font-size: 20px;
+    margin: 0 15px;
+    font-family: 'Candara';
+}
+.hoursBlock .day .separate.or{
+    font-size: 12px;
+}
+.hoursBlock .day .h24{
+    background: #a4d096;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+}
+.hoursBlock .day .h24.active{
+    background: #5aa044;
+}
+.hoursBlock .day.off .h24{
+    cursor: default;
+    background: #a4d096;
+}
+.certified{
+    margin: 80px 0 0;
+}
+.certified label{
+    color: #999999;
+    font-size: 18px;
+    font-family: 'Candara';
+    margin: 0 auto;
+}
+.checkBut{
+    margin: 30px auto 25px;
+}
+.certif{
+    background: #e1e1e1;
+    width: 122px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    color: #999999;
+    font-size: 14px;
+    border-radius: 25px;
+    font-family: 'Candara';
+    border-bottom: solid 2px #cfcfcf;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+.certif.active{
+    background: #5aa044;
+    color: white;
+    border-bottom: solid 2px #3E6C30;
+}
+.certif:focus,
+.certif:active{
+    border-bottom: solid 2px transparent;
+}
+.faq{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    margin: 0 10px;
+    background: #ebebeb;
+    border-radius: 50%;
+    color: #999999;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Candara';
+}
+.faq .miniModal{
+    display: none;
+    position: absolute;
+    top: -120px;
+    background: #ebebeb;
+    border-radius: 5px;
+    padding: 5px;
+    width: 145px;
+    font-size: 10px;
+    color: #999999;
+    left: -20px;
+    z-index: 1;
+}
+.faq .miniModal:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #ebebeb;
+    border-right: 35px solid transparent;
+    left: 43px;
+}
+.faq:hover .miniModal{
+    display: block;
+}
+.profile .submit{
+    background: #27a3ac;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    padding: 20px 70px;
+    margin: 0 0 200px;
+}
+
+@media screen and (max-width: 1710px) {
+    .profile .left{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1325px) {
+    .profile .left{
+        float: none;
+        width: 100%;
+    }
+    .profile .right{
+        display: block;
+        top: 0;
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .hoursBlock{
+        display: block;
+        text-align: center;
+    }
+    .hoursBlock .day .nameday{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .profile label{
+        margin: 0;
+    }
+    .profile .left{
+        min-width: 100px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .profile .line{
+        text-align: center;
+    }
+    .profile label{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hoursBlock .day .nameday{
+        margin: 0 10px 0;
+    }
+    .hoursBlock .day .separate{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .profile .line .input{
+        width: 150px;
+    }
+    .hoursBlock .day .nameday{
+        margin: 0;
+    }
+}

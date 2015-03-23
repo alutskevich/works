@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/icons.css">
+        <link rel="stylesheet" href="../css/user/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/user/pages/shopping.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/user.js"></script>
+        <title>Nutrition Facts - Shpping list</title>
+    </head>
+    <body>
+        <a name="top" class="none"></a>
+        <header>
+            <div class="center">
+                <nav>
+                    <a href="#" class="url home">Home</a>
+                    <a href="../news.html" class="url news">News</a>
+                    <a href="../callculate.html" class="url calc">Calculate NF</a>
+                    <a href="#" class="url fav">Favorites</a>
+                    <a href="#" class="url labels">Labels</a>
+                </nav>
+                <div class="user">
+                    <div class="me">Me</div>
+                    <div class="avatar">
+                        <img src="../img/user/avatar.png" alt="avatar">
+                    </div>
+                    <div class="menu">
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#" class="url profile">Edit profile</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url refresh">Refresh</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url messages">Messages</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url settings">Settings</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="url help">Help</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="signout">Sign Out</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="navigation">
+                <a href="profile.html" class="url profile">Profile</a>
+                <a href="favorites.html" class="url favorites">Favorites</a>
+                <a href="articles.html" class="url articles">Articles</a>
+                <a href="shopping.html" class="url shopping active">Shopping List</a>
+                <a href="add.html" class="url add">Add ingridient</a>
+                <a href="categories.html" class="url categories">Categories</a>
+                <a href="business.html" class="url business">My business</a>
+                <a href="recipe.html" class="url recipe">My recipe</a>
+            </div>
+            <div class="middle">
+                <h1>Add New List</h1>
+                <div class="body">
+                    <div class="left">
+                        <form method="post" action="#" class="form">
+                            <input type="text" class="field valid" name="name">
+                            <div class="productList">
+                                <div class="item">
+                                    <input type="checkbox" name="" class="none" checked="checked">
+                                    <div class="checkbox checked"></div>
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text" contenteditable="">Apples, row</p>
+                                        <div class="count">
+                                            <span class="num">
+                                                <span class="before"></span>
+                                                <span class="n">1</span>
+                                                <span class="after"></span>
+                                            </span>
+                                            <span class="cur">шт</span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="del"></div>
+                                        <div class="edit"></div>
+                                    </div>
+                                </div>
+                                <div class="item disabled">
+                                    <input type="checkbox" name="" class="none">
+                                    <div class="checkbox"></div>
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text" contenteditable="">Pineapple fresh</p>
+                                        <div class="count">
+                                            <span class="num">
+                                                <span class="before"></span>
+                                                <span class="n">1</span>
+                                                <span class="after"></span>
+                                            </span>
+                                            <span class="cur">шт</span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="del"></div>
+                                        <div class="edit"></div>
+                                    </div>
+                                </div>
+                                <div class="item disabled">
+                                    <input type="checkbox" name="" class="none">
+                                    <div class="checkbox"></div>
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text" contenteditable="">Potatos fries</p>
+                                        <div class="count">
+                                            <span class="num">
+                                                <span class="before"></span>
+                                                <span class="n">1</span>
+                                                <span class="after"></span>
+                                            </span>
+                                            <span class="cur">шт</span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="del"></div>
+                                        <div class="edit"></div>
+                                    </div>
+                                </div>
+                                <div class="item disabled">
+                                    <input type="checkbox" name="" class="none">
+                                    <div class="checkbox"></div>
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text" contenteditable="true"></p>
+                                        <div class="count">
+                                            <span class="num">
+                                                <span class="before"></span>
+                                                <span class="n">1</span>
+                                                <span class="after"></span>
+                                            </span>
+                                            <span class="cur"></span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="del"></div>
+                                        <div class="edit"></div>
+                                    </div>
+                                </div>
+                                <div class="item disabled">
+                                    <input type="checkbox" name="" class="none">
+                                    <div class="checkbox"></div>
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text" contenteditable="true"></p>
+                                        <div class="count">
+                                            <span class="num">
+                                                <span class="before"></span>
+                                                <span class="n">1</span>
+                                                <span class="after"></span>
+                                            </span>
+                                            <span class="cur"></span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <div class="del"></div>
+                                        <div class="edit"></div>
+                                    </div>
+                                </div>
+                                <div class="add">
+                                    <span class="iconAdd"></span>
+                                    <p class="name">Add from Favorites</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="submit save">Save</div>
+                                <div class="submit print">Print</div>
+                                <div class="submit send">Send email</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <div class="calculate">
+                            <p class="text">Also you can calculate nutritions facts</p>
+                            <p class="arrow"> > </p>
+                            <div class="button">Calculate</div>
+                        </div>
+                        <div id="label">
+                            <div class="header">
+                                <p class="name">Nutrition Facts</p>
+                                <div class="num">
+                                    <div class="number">
+                                        <span class="before"></span>
+                                        <span class="n">8</span>
+                                        <span class="after"></span>
+                                    </div>
+                                    <p class="text">servings per container</p>
+                                </div>
+                                <div class="serving">
+                                    <p class="size">Serving size</p>
+                                    <p class="num">1 cup (60g)</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="calories">
+                                <div class="head">
+                                    <p class="title">Amount per 1 cup</p>
+                                    <p class="name">
+                                        <span class="n">Calories</span>
+                                        <span class="number green">2000</span>
+                                    </p>
+                                </div>
+                                <div class="middle">% <span class="bold">DV*</span></div>
+                                <div class="total">
+                                    <div class="tr">
+                                        <div class="procent">10%</div>
+                                        <div class="info">
+                                            <span class="bold">Total Fat</span>  6g
+                                        </div>
+                                        <div class="range green"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">5%</div>
+                                        <div class="info">
+                                            <span class="bold">Saturated Fat</span> 8g
+                                        </div>
+                                        <div class="range green"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent"></div>
+                                        <div class="info">
+                                            <span class="italic">Trans Fat</span> 0g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">0%</div>
+                                        <div class="info">
+                                            <span class="bold">Cholesterol</span> 0g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">7%</div>
+                                        <div class="info">
+                                            <span class="bold">Sodium</span> 160mg
+                                        </div>
+                                        <div class="range orange"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">12%</div>
+                                        <div class="info">
+                                            <span class="bold">Total Carbs</span> 36g
+                                        </div>
+                                        <div class="range red"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">14%</div>
+                                        <div class="info">
+                                            <span class="bold">Dietary Fiber</span> 4g
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent"></div>
+                                        <div class="info">
+                                            <span class="bold">Sugars</span> 1g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent"></div>
+                                        <div class="info">
+                                            <span class="bold">Added Sugars</span> 0g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">10%</div>
+                                        <div class="info">
+                                            <span class="bold">Protein</span> 10g
+                                        </div>
+                                        <div class="range yellow"></div>
+                                    </div>
+                                    <div class="tr bold"></div>
+                                    <div class="tr">
+                                        <div class="procent">10%</div>
+                                        <div class="info">
+                                            <span class="bold">Vitamin D</span> 2mcg
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">20%</div>
+                                        <div class="info">
+                                            <span class="bold">Calcium</span> 360mcg
+                                        </div>
+                                        <div class="range viol"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">47%</div>
+                                        <div class="info">
+                                            <span class="bold">Iron</span> 9mg
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">120%</div>
+                                        <div class="info">
+                                            <span class="bold">Potassium</span>  9g
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>My Shopping List
+                    <div class="admin">
+                        <a href="#" class="edit">edit</a>
+                        <a href="#" class="del">delete</a>
+                    </div>
+                </h1>
+                <div class="body list">
+                    <div class="left">
+                        <div class="myList">
+                            <div class="productList">
+                                <div class="item">
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text">Apples, row</p>
+                                        <div class="count">1 шт</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text">Pineapple fresh</p>
+                                        <div class="count">1 шт</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <span class="icon banana"></span>
+                                        <p class="text">Potatos fries</p>
+                                        <div class="count">24 кг</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <span class="icon"></span>
+                                        <p class="text"></p>
+                                        <div class="count"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <span class="icon"></span>
+                                        <p class="text"></p>
+                                        <div class="count"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="submit print">Print</div>
+                                <div class="submit send">Send email</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="calculate">
+                            <p class="text">Also you can calculate nutritions facts</p>
+                            <p class="arrow"> > </p>
+                            <div class="button">Calculate</div>
+                        </div>
+                        <div id="label">
+                            <div class="header">
+                                <p class="name">Nutrition Facts</p>
+                                <div class="num">
+                                    <div class="number">
+                                        <span class="before"></span>
+                                        <span class="n">8</span>
+                                        <span class="after"></span>
+                                    </div>
+                                    <p class="text">servings per container</p>
+                                </div>
+                                <div class="serving">
+                                    <p class="size">Serving size</p>
+                                    <p class="num">1 cup (60g)</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="calories">
+                                <div class="head">
+                                    <p class="title">Amount per 1 cup</p>
+                                    <p class="name">
+                                        <span class="n">Calories</span>
+                                        <span class="number green">2000</span>
+                                    </p>
+                                </div>
+                                <div class="middle">% <span class="bold">DV*</span></div>
+                                <div class="total">
+                                    <div class="tr">
+                                        <div class="procent">10%</div>
+                                        <div class="info">
+                                            <span class="bold">Total Fat</span>  6g
+                                        </div>
+                                        <div class="range green"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">5%</div>
+                                        <div class="info">
+                                            <span class="bold">Saturated Fat</span> 8g
+                                        </div>
+                                        <div class="range green"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent"></div>
+                                        <div class="info">
+                                            <span class="italic">Trans Fat</span> 0g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">0%</div>
+                                        <div class="info">
+                                            <span class="bold">Cholesterol</span> 0g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">7%</div>
+                                        <div class="info">
+                                            <span class="bold">Sodium</span> 160mg
+                                        </div>
+                                        <div class="range orange"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">12%</div>
+                                        <div class="info">
+                                            <span class="bold">Total Carbs</span> 36g
+                                        </div>
+                                        <div class="range red"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">14%</div>
+                                        <div class="info">
+                                            <span class="bold">Dietary Fiber</span> 4g
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent"></div>
+                                        <div class="info">
+                                            <span class="bold">Sugars</span> 1g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent"></div>
+                                        <div class="info">
+                                            <span class="bold">Added Sugars</span> 0g
+                                        </div>
+                                        <div class="range"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">10%</div>
+                                        <div class="info">
+                                            <span class="bold">Protein</span> 10g
+                                        </div>
+                                        <div class="range yellow"></div>
+                                    </div>
+                                    <div class="tr bold"></div>
+                                    <div class="tr">
+                                        <div class="procent">10%</div>
+                                        <div class="info">
+                                            <span class="bold">Vitamin D</span> 2mcg
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">20%</div>
+                                        <div class="info">
+                                            <span class="bold">Calcium</span> 360mcg
+                                        </div>
+                                        <div class="range viol"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">47%</div>
+                                        <div class="info">
+                                            <span class="bold">Iron</span> 9mg
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="procent">120%</div>
+                                        <div class="info">
+                                            <span class="bold">Potassium</span>  9g
+                                        </div>
+                                        <div class="range blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div id="rightButton" class="button"> > </div>
+                <h1>Find out more</h1>
+                <form method="post" action="#" class="rightForm">
+                    <input type="text" name="search" class="field" placeholder="Search...">
+                    <select name="by" class="bySelect none">
+                        <option value="by">by</option>
+                        <option value="by2">by2</option>
+                    </select>
+                    <div class="select">
+                        <p class="value">by</p>
+                        <ul class="options">
+                            <li class="option">by</li>
+                            <li class="option">by2</li>
+                        </ul>
+                    </div>
+                    <input type="submit" value="Search now" class="submit">
+                </form>
+                <div class="latest">
+                    <p class="label">Latest seaches:</p>
+                    <div class="item">
+                        <div class="block">
+                            <div class="image">
+                                <img src="../img/news/1.png" alt="news1">
+                            </div>
+                            <div class="infoBlock">
+                                <div class="name">
+                                    <p class="text">Hot Chicken</p>
+                                    <p class="cat">
+                                        Category: <span>poultry</span>
+                                    </p>
+                                </div>
+                                <div class="like">
+                                    <a href="#">
+                                        <div class="icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div id="rightButtonHide" class="button"> > </div>
+        <footer>
+            <div class="center">
+                <div class="left">
+                    <a href="#" class="toTop">back to top</a>
+                </div>
+                <div class="middle">
+                    <p class="copyright">&copy; 2014 NutritionFacts</p>
+                    <p class="copyright">Powered by <img src="../img/footer/logo.png" class="powered">Fraoche</p>
+                </div>
+                <div class="right">
+                    <ul class="nav">
+                        <li class="item">
+                            <a href="#" class="url">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">Articles</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">About us</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">Help</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="url">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

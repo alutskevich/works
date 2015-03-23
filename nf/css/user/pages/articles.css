@@ -1,0 +1,352 @@
+.middle .body .form{
+    margin: 0 0 130px;
+}
+.middle .body .form .left{
+    width: 400px;
+    margin: 0 50px;
+}
+.middle .body .form .left,
+.middle .body .form .right{
+    display: inline-block;
+    vertical-align: top;
+}
+.middle .body .form .field{
+    font-family: 'Calibri';
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #979ba0;
+    margin: 0 0 20px;
+}
+.middle .body .form .field.valid{
+    box-shadow: 0 0 5px rgba(114, 152, 90, 0.4);
+    border: solid 1px #93c273;
+}
+.middle .body .form .editor{
+    letter-spacing: -3px;
+}
+.middle .body .form .editor .item{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Calibri';
+    background: #2ca0aa;
+    width: 43.45px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: normal;
+}
+.middle .body .form .editor .item.bold{
+    font-family: 'Calibri-Bold';
+}
+.middle .body .form .editor .item.italic{
+    font-style: italic;
+}
+.middle .body .form .editor .item.underline{
+    text-decoration: underline;
+}
+.middle .body .form .editor .item.stretch{
+    text-decoration: line-through;
+}
+.middle .body .form .editor .item.list{
+    background-image:  url("../../../img/user/editor-list.png");
+    background-repeat: no-repeat;
+    background-position: 14px 15px;
+}
+.middle .body .form .editor .item.num{
+    background-image:  url("../../../img/user/editor-list-num.png");
+    background-repeat: no-repeat;
+    background-position: 14px 15px;
+}
+.middle .body .form textarea{
+    margin: 0;
+    border: solid 1px #dcdbd2;
+    width: 100%;
+    box-sizing: border-box;
+    height: 290px;
+    padding: 25px 15px;
+}
+.middle .body .form .buttons{
+    margin: 20px 0;
+}
+.middle .body .form .buttons .submit{
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Calibri-Bold';
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.middle .body .form .buttons .submit.save{
+    background: #39b54a;
+}
+.middle .body .form .buttons .submit.preview{
+    background: #c1cfd9;
+    margin: 0 16px;
+}
+.middle .body .form .buttons .submit.publish{
+    background: #2ca0aa;
+}
+.middle .body .form .right{
+    width: 320px;
+}
+.middle .body .form label{
+    color: #979ba0;
+    font-size: 24px;
+    margin: 13px 0;
+    font-family: 'Calibri';
+    display: block;
+}
+.middle .body .form .upload{
+    margin: 0 0 80px;
+}
+.middle .body .form .fileDiv{
+    border: dotted 1px #dcdbd2;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #979ba0;
+    font-size: 16px;
+    margin: 0 0 15px;
+    font-family: 'Calibri';
+}
+.middle .body .form .fileDiv .openFile{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.middle .body .form .files .pic{
+    margin: 15px 0;
+}
+.middle .body .form .files .pic img,
+.middle .body .form .files .pic .name,
+.middle .body .form .files .pic .del{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+.middle .body .form .files .pic .name{
+    color: #979ba0;
+    font-size: 16px;
+    font-family: 'Calibri';
+}
+.middle .body .form .del{
+    background: url("../../../img/user/del-item.png") no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+.middle .body .form .files .pic .del{
+    width: 13px;
+    height: 13px;
+}
+.middle .body .form .category .select{
+    background: url("../../../img/user/arrow-grey.png") no-repeat white;
+    background-position: 200px;
+    cursor: pointer;
+    width: 230px;
+    height: 30px;
+    border: solid 1px #dcdbd2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    line-height: 28px;
+    color: #979ba0;
+    font-size: 16px;
+    font-family: 'Calibri';
+    position: relative;
+}
+.middle .body .form .category .select .value{
+    padding: 0 15px;
+}
+.middle .body .form .category .select .options{
+    background: white;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 29px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: solid 1px #dcdbd2;
+    border-top: none;
+    left: -1px;
+    margin: 0 5px;
+}
+.middle .body .form .category .select .options .option{
+    padding: 0 10px;
+
+}
+.middle .body .form .category .select .options .option:hover{
+    background: #39b54a;
+    color: white;
+}
+.middle .body .form .category .categories{
+    margin: 20px 0;
+}
+.middle .body .form .category .categories .chooseCat{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 10px;
+}
+.middle .body .form .category .categories .chooseCat .del{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+}
+.middle .articles{
+    margin: 0 0 200px;
+}
+.middle .articles .left,
+.middle .articles .right{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.middle .articles .left{
+    width: 700px;
+    margin-right: 40px;
+}
+.middle .articles .left .header{
+    margin: 0 0 40px;
+}
+.middle .articles .left .header .name{
+    color: #6a7883;
+    font-size: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    font-family: 'Calibri-Light';
+}
+.middle .articles .left .header .share{
+    float: right;
+    position: relative;
+    top: 11px;
+}
+.middle .articles .left .header .share .item{
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+.middle .articles .left .header .share .item{
+    margin: 0 6px;
+}
+.middle .articles .left .header .share .item.socials{
+    background-image: url("../../../img/news/share/social.png");
+    width: 18px;
+    height: 20px;
+}
+.middle .articles .left .header .share .item.socials:hover{
+    background-position: 0 -22px;
+}
+.middle .articles .left .header .share .item.favorite{
+    background-image: url("../../../img/news/share/fav.png");
+    background-position: 0 -22px;
+    width: 18px;
+    height: 20px;
+}
+.middle .articles .left .text{
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 30px;
+}
+.middle .articles .left .more{
+    font-family: 'ErasITC-Light';
+    float: right;
+    font-size: 15px;
+    color: #27a3ac;
+}
+.middle .articles .left .more:hover{
+    text-decoration: none;
+}
+.middle .articles .right{
+    width: 165px;
+}
+.middle .articles .right img{
+    width: 100%;
+}
+.middle .articles .status{
+    float: left;
+}
+.middle .articles .status .label,
+.middle .articles .status .name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: 'Calibri-Light';
+}
+.middle .articles .status .label{
+    color: #abacac;
+}
+.middle .articles .status .name{
+    color: #39b54a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1620px) {
+    .middle .articles .left{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .middle .articles .left .header .share{
+        float: none;
+        margin: 10px 0 0;
+        top: 0;
+    }
+    .middle .body .form{
+        text-align: center;
+    }
+    .middle .body .form .right{
+        display: block;
+        margin: 20px auto;
+        text-align: left;
+    }
+    .middle .body .form .left{
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .middle .articles .left .header .icon{
+        display: none;
+    }
+    .middle .articles .left .header .name{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .middle .articles .right{
+        display: block;
+        margin: 20px auto;
+    }
+    .middle .articles .left{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .middle .body .form .buttons .submit{
+        display: block;
+        margin: 20px auto;
+    }
+    .middle .body .form .buttons .submit.preview{
+        margin: 20px auto;
+    }
+    .middle .body .form .left,
+    .middle .body .form .right{
+        width: 250px;
+    }
+}

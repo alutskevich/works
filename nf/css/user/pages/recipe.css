@@ -1,0 +1,402 @@
+.middle .addNew .left,
+.middle .addNew .right{
+    display: inline-block;
+    vertical-align: middle;
+}
+.middle .addNew .left{
+    width: 500px;
+    margin-right: 40px;
+}
+.middle .addNew .left .form{
+    width: 450px;
+    margin: 0 50px;
+}
+.middle .addNew .form label{
+    color: #979ba0;
+    font-size: 24px;
+    margin: 13px 0;
+    font-family: 'Calibri';
+    display: block;
+}
+.middle .addNew .form .field{
+    font-family: 'Calibri';
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #979ba0;
+    margin: 0 0 60px;
+}
+.middle .addNew .form .field.valid{
+    box-shadow: 0 0 5px rgba(114, 152, 90, 0.4);
+    border: solid 1px #93c273;
+}
+.middle .addNew .form .upload{
+    margin: 0 0 80px;
+}
+.middle .addNew .form .fileDiv{
+    border: dotted 1px #dcdbd2;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #979ba0;
+    font-size: 16px;
+    margin: 0 0 15px;
+    font-family: 'Calibri';
+}
+.middle .addNew .form .fileDiv .openFile{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.middle .addNew .form .files .pic{
+    margin: 15px 0;
+}
+.middle .addNew .form .files .pic img,
+.middle .addNew .form .files .pic .name,
+.middle .addNew .form .files .pic .del{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+.middle .addNew .form .files .pic .name{
+    color: #979ba0;
+    font-size: 16px;
+    font-family: 'Calibri';
+}
+.middle .addNew .form .del{
+    background: url("../../../img/user/del-item.png") no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+.middle .addNew .form .files .pic .del{
+    width: 13px;
+    height: 13px;
+}
+.productList{
+    border: solid 1px #dcdbd2;
+    background: white;
+    padding: 0 12px 20px;
+    width: 500px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.productList .item{
+    padding: 17px 0 0;
+}
+.productList .item .checkbox,
+.productList .item .name,
+.productList .item .name .icon,
+.productList .item .name .text,
+.productList .item .buttons,
+.productList .item .name .count,
+.productList .item .buttons .del,
+.productList .item .buttons .edit,
+.productList .item .buttons .print{
+    display: inline-block;
+    vertical-align: middle;
+}
+.productList .item .checkbox{
+    border: solid 1px #e1e1e1;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.productList .item .checkbox.checked{
+    background-image: url("../../../img/user/check.png");
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+.productList .item .name{
+    border-bottom: solid 1px #d7d7d7;
+    margin: 0 12px;
+    padding: 0 0 5px;
+    width: 335px;
+}
+.productList .item .name .icon{
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+}
+.productList .item .name .text{
+    margin: 0 15px;
+    font-size: 20px;
+    color: #979ba0;
+    font-family: 'Calibri';
+    width: 177px;
+}
+.productList .item .name .count{
+    float: right;
+    color: #565656;
+    font-size: 14px;
+    font-family: 'Calibri-Light';
+}
+.productList .item .name .count .num{
+    font-size: 16px;
+    font-family: 'Calibri';
+    margin: 0 15px;
+}
+.productList .item .name .count .num:after,
+.productList .item .name .count .num:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.productList .item .name .count .num:before{
+    background-image: url("../../../img/user/count-down.png");
+}
+.productList .item .name .count .num:after{
+    background-image: url("../../../img/user/count-up.png");
+}
+.productList .item .buttons{
+    vertical-align: top;
+}
+.productList .item .buttons .del{
+    background-image: url("../../../img/user/del.png");
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+.productList .item .buttons .edit{
+    background-image: url("../../../img/user/edit.png");
+    width: 10px;
+    height: 14px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+.productList .item .buttons .print{
+    background-image: url("../../../img/user/print-small.png");
+    width: 15px;
+    height: 13px;
+    cursor: pointer;
+}
+.productList .item.disabled .name{
+    opacity: 0.4;
+}
+.productList .item.disabled .buttons,
+.productList .item.disabled .name .count,
+.productList .item.disabled .name .icon{
+    opacity: 0;
+}
+.productList .add{
+    margin: 60px 0 10px;
+}
+.productList .add .iconAdd{
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../../img/user/add-favorites.png");
+    width: 19px;
+    height: 19px;
+}
+.productList .add .name{
+    display: inline-block;
+    vertical-align: middle;
+    color: #39b54a;
+    font-size: 16px;
+    font-family: 'Calibri-Light';
+    cursor: pointer;
+    margin: 0 22px;
+}
+
+.myRecipies{
+    margin: 0 0 200px;
+}
+.myRecipies .productList{
+    background: transparent;
+    border: none;
+    margin-left: 60px;
+}
+.myRecipies .productList .item .name .count .num{
+    margin: 0;
+}
+.myRecipies .productList .item .name .count .num:after,
+.myRecipies .productList .item .name .count .num:before{
+    display: none;
+}
+
+.form .variant .categories .item{
+    margin: 5px 6px;
+    cursor: pointer;
+    opacity: 0.7;
+    text-align: center;
+}
+.form .variant .categories .item:hover,
+.form .variant .categories .item.active{
+    opacity: 1;
+}
+.form .variant .categories .item .name{
+    text-align: center;
+    color: #2ca0aa;
+    font-size: 14px;
+    margin: 6px 0;
+    font-family: 'Calibri-Light';
+}
+.form .variant .categories .item.bad .name{
+    color: #ed1c24;
+}
+.chooseCategory{
+    margin: 130px 0 0;
+}
+.chooseCategory .select{
+    background: url("../../../img/user/arrow-grey.png") no-repeat white;
+    background-position: 200px;
+    cursor: pointer;
+    width: 230px;
+    height: 30px;
+    border: solid 1px #dcdbd2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    line-height: 28px;
+    color: #979ba0;
+    font-size: 16px;
+    font-family: 'Calibri';
+    position: relative;
+}
+.chooseCategory .select .value{
+    padding: 0 15px;
+}
+.chooseCategory .select .options{
+    background: white;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 29px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: solid 1px #dcdbd2;
+    border-top: none;
+    left: -1px;
+    margin: 0 5px;
+}
+.chooseCategory .select .options .option{
+    padding: 0 10px;
+
+}
+.chooseCategory .select .options .option:hover{
+    background: #39b54a;
+    color: white;
+}
+.chooseCategory .variant{
+    margin: 115px 0;
+}
+.chooseCategory .variant .item{
+    margin: 40px 0;
+}
+.chooseCategory .variant .item .label,
+.chooseCategory .variant .item .value,
+.chooseCategory .variant .item .value .categories .item{
+    display: inline-block;
+    vertical-align: top;
+}
+.chooseCategory .variant .item .label{
+    width: 130px;
+    text-align: left;
+    margin-right: 80px;
+    font-size: 20px;
+    color: #6a7883;
+    font-family: 'Calibri-Light';
+}
+.chooseCategory .variant .item .value{
+    width: 470px;
+}
+.instruction .step{
+    margin: 0 0 150px;
+}
+.instruction .step .name{
+    color: #27a3ac;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+}
+.instruction .step .area{
+    border: solid 1px #dcdbd2;
+    width: 100%;
+    height: 160px;
+    margin: 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+}
+.instruction .step .time{
+    text-align: right;
+}
+.instruction .step .time .label{
+    color: #39b54a;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Calibri';
+}
+.instruction .step .time .label:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../../img/user/clock.png") no-repeat;
+    width: 19px;
+    height: 19px;
+    margin: 0 15px;
+}
+.instruction .step .time .timeInput{
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 1px #dcdbd2;
+    width: 113px;
+    height: 25px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-left: 75px;
+    font-family: 'Calibri';
+}
+.instruction .step .text{
+    color: #6a7883;
+    font-size: 16px;
+    font-family: 'Calibri';
+    line-height: 20px;
+}
+.instruction .step .timeIs{
+    display: inline-block;
+    vertical-align: middle;
+    color: #6a7883;
+    font-size: 16px;
+    margin-left: 75px;
+    font-family: 'Calibri';
+}
+.addNew .submit{
+    margin: 0 45% 200px;
+    width: 135px;
+    height: 40px;
+    background: #2ca0aa;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-size: 16px;
+    font-family:'Calibri-Bold';
+}
+
+@media screen and (max-width: 1350px) {
+    .middle .addNew .left{
+        width: 90%;
+        display: block;
+    }
+    .productList{
+        margin: 0 auto;
+    }
+    .middle .addNew .right{
+        display: block;
+        margin: 50px auto;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .chooseCategory .variant .item .value{
+        width: 100%;
+    }
+}

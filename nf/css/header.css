@@ -1,0 +1,417 @@
+header{
+    background: #5bb25b; /* Old browsers */
+    background: -moz-linear-gradient(left,  #5bb25b 1%, #2ca0aa 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#5bb25b), color-stop(100%,#2ca0aa)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #5bb25b 1%,#2ca0aa 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #5bb25b 1%,#2ca0aa 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #5bb25b 1%,#2ca0aa 100%); /* IE10+ */
+    background: linear-gradient(to right,  #5bb25b 1%,#2ca0aa 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bb25b', endColorstr='#2ca0aa',GradientType=1 ); /* IE6-9 */
+}
+nav{
+    letter-spacing: -4px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+nav .url{
+    height: 95px;
+    display: inline-block;
+    line-height: 95px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    padding: 0 25px;
+    position: relative;
+    letter-spacing: normal;
+}
+nav .url.active,
+nav .url:hover{
+    background: #2ca0aa;
+}
+nav .url:before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    vertical-align: sub;
+}
+nav .url.home:before{
+    background-image: url("../img/header/icons/home.png");
+    width: 26px;
+    height: 22px;
+}
+nav .url.news:before{
+    background-image: url("../img/header/icons/news.png");
+    width: 18px;
+    height: 22px;
+}
+nav .url.calc:before{
+    background-image: url("../img/header/icons/calc.png");
+    width: 19px;
+    height: 22px;
+}
+nav .url.fav:before{
+    background-image: url("../img/header/icons/fav.png");
+    width: 23px;
+    height: 22px;
+}
+nav .url.labels:before{
+    background-image: url("../img/header/icons/labels.png");
+    width: 20px;
+    height: 23px;
+}
+nav .url.home:hover:before,
+nav .url.home.active:before{
+    background-position: 0 -23px;
+}
+nav .url.news:hover:before,
+nav .url.news.active:before{
+    background-position: 0 -28px;
+}
+nav .url.calc:hover:before,
+nav .url.calc.active:before{
+    background-position: 0 -25px;
+}
+nav .url.fav:hover:before,
+nav .url.fav.active:before{
+    background-position: 0 -26px;
+}
+nav .url.labels:hover:before,
+nav .url.labels.active:before{
+    background-position: 0 -27px;
+}
+
+.guest,
+.user{
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    top: 13px;
+}
+.guest{
+    top: 26px;
+}
+.guest .button{
+    background: #246c60;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+}
+.guest .button.reg{
+    margin-right: 0;
+}
+.guest .button:hover{
+    background: #8ab71b;
+}
+.guest .signinPopup{
+    position: absolute;
+    width: 300px;
+    right: 0;
+    background: #ebe9de;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    top: 69px;
+    padding: 30px 0 0;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 3;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+.guest .signinPopup .name{
+    color: #38a596;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 0 30px;
+    font-family: 'Ubuntu-Medium';
+}
+.guest .signinPopup .form{
+    padding: 0 20px;
+}
+.guest .signinPopup .form .field{
+    font-family: 'Ubuntu';
+    height: 50px;
+    border: solid 1px #dcdbd2;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #b4b3a9;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-color:  #f7f7f7;
+    margin: 0 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.guest .signinPopup .form .field.nameField{
+    background-image: url("../img/popup/signin/mail.png");
+    background-position: 15px 18px;
+}
+.guest .signinPopup .form .field.password{
+    background-image: url("../img/popup/signin/password.png");
+    background-position: 18px 18px;
+}
+.guest .signinPopup .form .submit{
+    font-family: 'Ubuntu-Medium';
+    display: block;
+    background: #5bb25b;
+    border: none;
+    margin: 0 auto 25px;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.guest .signinPopup .form .forgot{
+    font-family: 'Ubuntu';
+    color: #b3b2ad;
+    margin: 0 0 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+}
+.guest .signinPopup .form .forgot:hover{
+    text-decoration: underline;
+}
+.guest .signinPopup .footer{
+    font-family: 'Ubuntu';
+    background: #dcdbd2;
+    padding: 15px 30px;
+    border-radius: 0 0 5px 5px;
+    color: #38a596;
+    text-align: left;
+    font-size: 16px;
+}
+.guest .signinPopup .footer .label,
+.guest .signinPopup .footer .list .item{
+    display: inline-block;
+    vertical-align: middle;
+}
+.guest .signinPopup .footer .list{
+    float: right;
+}
+.guest .signinPopup .footer .list .item{
+    background-repeat: no-repeat;
+    margin: 0 3px;
+    opacity: .5;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.guest .signinPopup .footer .list .item:hover{
+    opacity: 1;
+}
+.guest .signinPopup .footer .list .item.fb{
+    background-image: url("../img/popup/signin/fb.png");
+}
+.guest .signinPopup .footer .list .item.tw{
+    background-image: url("../img/popup/signin/tw.png");
+}
+.guest .signinPopup .footer .list .item.yahoo{
+    background-image: url("../img/popup/signin/yahoo.png");
+}
+.guest .signinPopup .footer .list .item.gp{
+    background-image: url("../img/popup/signin/gp.png");
+}
+
+.user .me,
+.user .avatar{
+    display: inline-block;
+    vertical-align: middle;
+}
+.user .me{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    cursor: pointer;
+}
+.user .me:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 10px;
+    background: url("../img/user/dropdown/arrow.png") no-repeat;
+    width: 15px;
+    height: 8px;
+}
+.user .me:hover:after{
+    background-position: -18px 0;
+}
+.user .menu{
+    position: absolute;
+    width: 275px;
+    top: 82px;
+    background: white;
+    box-shadow: 1px 0 0 #dfdfdf inset;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+.user .menu .list{
+    padding: 30px 0;
+}
+.user .menu .list .item{
+    box-shadow: 1px 0 0 #dfdfdf inset;
+    border-bottom: solid 1px #e8e8e8;
+    padding: 12px 20px;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.user .menu .list .item .url{
+    font-family: 'Roboto', sans-serif;
+    color: #606366;
+    font-size: 16px;
+    text-decoration: none;
+}
+.user .menu .list .item .url:before,
+.user .menu .list .item .url:after,
+.user .menu .signout:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.user .menu .list .item .url.profile:before{
+    background-image: url("../img/user/dropdown/icons/profile.png");
+    width: 20px;
+    height: 21px;
+}
+.user .menu .list .item .url.refresh:before{
+    background-image: url("../img/user/dropdown/icons/refresh.png");
+    width: 20px;
+    height: 22px;
+}
+.user .menu .list .item .url.messages:before{
+    background-image: url("../img/user/dropdown/icons/messages.png");
+    width: 20px;
+    height: 15px;
+}
+.user .menu .list .item .url.settings:before{
+    background-image: url("../img/user/dropdown/icons/settings.png");
+    width: 20px;
+    height: 21px;
+}
+.user .menu .list .item .url.help:before{
+    background-image: url("../img/user/dropdown/icons/help.png");
+    width: 20px;
+    height: 21px;
+}
+.user .menu .list .item .url:after{
+    background-image: url("../img/user/dropdown/menu-arrow.png");
+    width: 9px;
+    height: 17px;
+    float: right;
+    margin: 0;
+}
+.user .menu .list .item .url:hover:after{
+    background-position: 0 -21px;
+}
+.user .menu .signout{
+    margin: 0 0 17px;
+    display: block;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #606366;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.user .menu .signout:before{
+    background-image: url("../img/user/dropdown/icons/signout.png");
+    width: 20px;
+    height: 18px;
+}
+
+@media screen and (max-width: 1045px) {
+    header{
+        padding: 0 0 30px;
+    }
+    nav{
+        display: block;
+        text-align: center;
+        margin: 0 0 20px;
+        float: none;
+    }
+    .guest{
+        display: block;
+        float: none;
+        top: 0;
+        text-align: center;
+    }
+    .guest .signinPopup{
+        margin: 0 auto;
+        left: 0;
+    }
+    .user{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        top: 0;
+    }
+    .user .menu{
+        left: 0;
+        margin: 0 auto;
+        top: 73px;
+    }
+}
+@media screen and (max-width: 950px) {
+    nav{
+        display: block;
+        text-align: center;
+    }
+    .guest, .user{
+        display: block;
+        text-align: center;
+        float: none;
+        top: 0;
+    }
+    .user .menu{
+        left: 0;
+        top: 73px;
+        text-align: left;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 790px) {
+    nav .url{
+        display: block;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        padding: 0;
+    }
+    .user .menu{
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 330px) {
+    .guest .button{
+        margin: 0;
+    }
+    .guest .signinPopup{
+        width: 100%;
+    }
+}

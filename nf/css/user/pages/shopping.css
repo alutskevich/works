@@ -1,0 +1,301 @@
+.middle .body .left,
+.middle .body .right{
+    display: inline-block;
+    vertical-align: middle;
+}
+.middle .body .left{
+    width: 500px;
+    margin-right: 40px;
+}
+.middle .body .left .form{
+    width: 450px;
+    margin: 0 50px;
+}
+.middle .body .form .field{
+    font-family: 'Calibri';
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #979ba0;
+    margin: 0 0 60px;
+}
+.middle .body .form .field.valid{
+    box-shadow: 0 0 5px rgba(114, 152, 90, 0.4);
+    border: solid 1px #93c273;
+}
+.productList{
+    border: solid 1px #dcdbd2;
+    background: white;
+    padding: 0 12px;
+    width: 450px;
+    box-sizing: border-box;
+}
+.productList .item{
+    height: 40px;
+    padding: 17px 0 0;
+}
+.productList .item .checkbox,
+.productList .item .name,
+.productList .item .name .icon,
+.productList .item .name .text,
+.productList .item .name .count,
+.productList .item .buttons,
+.productList .item .buttons .del,
+.productList .item .buttons .edit{
+    display: inline-block;
+    vertical-align: middle;
+}
+.productList .item .checkbox{
+    border: solid 1px #e1e1e1;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.productList .item .checkbox.checked{
+    background-image: url("../../../img/user/check.png");
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+.productList .item .name{
+    border-bottom: solid 1px #d7d7d7;
+    margin: 0 12px;
+    padding: 0 0 5px;
+    width: 335px;
+}
+.productList .item .name .icon{
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+}
+.productList .item .name .text{
+    margin: 0 15px;
+    font-size: 20px;
+    color: #979ba0;
+    font-family: 'Calibri';
+    width: 175px;
+}
+.productList .item .name .count{
+    float: right;
+    color: #565656;
+    font-size: 14px;
+    font-family: 'Calibri-Light';
+}
+.productList .item .name .count .num{
+    font-size: 16px;
+    font-family: 'Calibri';
+    margin: 0 15px;
+}
+.productList .item .name .count .num .after,
+.productList .item .name .count .num .before{
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.productList .item .name .count .num .before{
+    background-image: url("../../../img/user/count-down.png");
+}
+.productList .item .name .count .num .after{
+    background-image: url("../../../img/user/count-up.png");
+}
+.productList .item .buttons{
+    vertical-align: top;
+    margin: 0;
+}
+.productList .item .buttons .del{
+    background-image: url("../../../img/user/del.png");
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+.productList .item .buttons .edit{
+    background-image: url("../../../img/user/edit.png");
+    width: 10px;
+    height: 14px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+.productList .item.disabled .name{
+    opacity: 0.4;
+}
+.productList .item.disabled .buttons,
+.productList .item.disabled .name .icon,
+.productList .item.disabled .name .count{
+    opacity: 0;
+}
+.productList .add{
+    margin: 60px 0 10px;
+}
+.productList .add .iconAdd{
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../../img/user/add-favorites.png");
+    width: 19px;
+    height: 19px;
+}
+.productList .add .name{
+    display: inline-block;
+    vertical-align: middle;
+    color: #39b54a;
+    font-size: 16px;
+    font-family: 'Calibri-Light';
+    cursor: pointer;
+    margin: 0 22px;
+}
+.myList{
+    width: 450px;
+}
+.myList .productList{
+    padding: 0 40px 90px;
+}
+.buttons{
+    margin: 20px 0;
+}
+.myList .buttons{
+    text-align: right;
+}
+.buttons .submit{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 17px;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Calibri-Bold';
+}
+.buttons .submit.save{
+    background: #39b54a;
+}
+.buttons .submit.print{
+    background: url("../../../img/user/print.png") no-repeat;
+    color: #acacac;
+    background-position: 4px 8px;
+    padding-left: 30px;
+    width: 100px;
+    box-sizing: border-box;
+}
+.buttons .submit.send{
+    background: #2ca0aa;
+}
+.middle .body .right{
+    position: relative;
+}
+.middle .body .right .calculate{
+    position: relative;
+    text-align: center;
+}
+.middle .body .right .calculate .text{
+    font-family: 'Calibri';
+    color: #979ba0;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.middle .body .right .calculate .button{
+    font-family: 'Calibri-Bold';
+    background: #2ca0aa;
+    color: white;
+    text-transform: uppercase;
+    width: 145px;
+    height: 45px;
+    line-height: 44px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.middle .body .right .calculate .arrow{
+    position: absolute;
+    font-size: 26px;
+    color: #2ca0aa;
+    font-family: 'CandaraBold';
+    right: 0;
+}
+.middle .body .right #label{
+    display: none;
+    position: absolute;
+    right: -280px;
+    top: -130px;
+    background: transparent;
+}
+.middle h1{
+    display: inline-block;
+    width: 500px;
+}
+.middle h1 .admin{
+    float: right;
+}
+.middle h1 .admin .del,
+.middle h1 .admin .edit{
+    font-size: 14px;
+    font-family: 'Calibri-Light';
+    opacity: 0.5;
+    text-decoration: none;
+}
+.middle h1 .admin .edit{
+    color: #565656;
+}
+.middle h1 .admin .del{
+    color: #ff0000;
+}
+.middle h1 .admin .del:hover,
+.middle h1 .admin .edit:hover{
+    opacity: 1;
+}
+.middle .body{
+    margin: 0 0 200px;
+}
+.middle .body.list{
+    margin: 0 50px 200px;
+}
+.middle .body.list .right{
+    min-height: 300px;
+}
+
+@media screen and (max-width: 1650px) {
+    .middle .body .left{
+        margin: 0 10px;
+    }
+    .middle .body.list{
+        margin: 0 0 200px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .middle .body .left {
+        display: block;
+        margin: 0 auto;
+    }
+    .middle .body .right{
+        display: block;
+        width: 300px;
+        margin: 30px auto;
+    }
+    .middle .body .right #label{
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 950px) {
+    .middle .body .left .form{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    .middle .body .left,
+    .middle .body .left .form,
+    .middle h1,
+    .myList{
+        width: 100%
+    }
+}
