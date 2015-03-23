@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700,500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pages/pages.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/func.js"></script>
+        <title>Энергия - Контакты</title>
+    </head>
+    <body>
+        <header class="center">
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" class="logo" alt="Energy">
+                <span class="logo_name">Энергия</span>
+            </a>
+            <nav>
+                <a href="about.html" class="nav_url">О компании</a>
+                <a href="#" class="nav_url">Наши услуги</a>
+                <a href="docs.html" class="nav_url">Документы</a>
+                <a href="contacts.html" class="nav_url active">Наши контакты</a>
+            </nav>
+        </header>
+        <div class="content center contacts">
+            <div class="top">
+                <div class="page_name">
+                    <img src="img/contacts-logo.png" alt="Контакты" class="page_logo">
+                    <div class="page_titles">
+                        <h1>Контакты</h1>
+                        <h4>Ответим на все вопросы</h4>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="item">
+                        <img class="icon" src="img/icons/phone_blue.png" alt="img">
+                        <div class="cont_info">
+                            <p class="big">8 (800) 300 22 58</p>
+                            <p class="title">Бесплатная консультация</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a title="Download" href="#"><img class="icon" src="img/icons/doc_download.png" alt="img"></a>
+                        <div class="cont_info">
+                            <p class="big">Наши</p>
+                            <p class="title">реквизиты</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form method="post" action="#" class="search_form">
+                <label>Поиск по сайту</label>
+                <input type="submit" class="submit" value="Поиск по сайту">
+                <input type="text" name="search" class="field">
+            </form>
+            <div class="text_body">
+                <form method="post" action="#" class="cont_form">
+                    <h2>Написать сообщение:</h2>
+                    <input type="text" name="name" class="field" placeholder="Имя и фамилия">
+                    <input type="email" name="email" class="field" placeholder="Ваш e-mail">
+                    <input type="text" name="phone" class="field" placeholder="Телефон">
+                    <textarea name="msg" class="area" placeholder="Текст сообщения"></textarea>
+                    <div class="bottom">
+                        <div class="checkbox">
+                            <input type="checkbox" class="none">
+                            <div class="check"></div>
+                            <label>Копию на мой e-mail</label>
+                        </div>
+                        <input type="submit" value="Отправить" class="submit">
+                        <div class="clear"></div>
+                    </div>
+                </form>
+                <div class="contact_info">
+                    <h2>Связаться с нами:</h2>
+                    <div class="address">
+                        <div class="line">
+                            <p class="title mobile">мобильный  телефон:</p>
+                            <p class="value">+7 985 773-13-01</p>
+                        </div>
+                        <div class="line">
+                            <p class="title static">городской  телефон:</p>
+                            <p class="value">+7 495 991-58-61</p>
+                        </div>
+                        <div class="line">
+                            <p class="title email">e-mail:</p>
+                            <a href="mailto:podachatoka@mail.ru" class="value">podachatoka@mail.ru</a>
+                        </div>
+                        <p class="mode">
+                            Режим работы: понедельник  -  пятница с 8.30 до 19.00,  суббота,  воскресенье  -  выходной.
+                        </p>
+                        <div class="line">
+                            <p class="title location">
+                                адрес: Москва,  Лужнецкая набережная  2/4
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+            <div class="share">
+                <p class="label">Поделиться в социальных сетях: </p>
+                <div class="socials"></div>
+            </div>
+        </div>
+        <footer class="center">
+            <div class="copyright item">
+                <p class="name"> &copy; 2001  -  2014 ООО «ЭНЕРГИЯ» </p>
+                <p class="info"> Электромонтажные работы в Москве </p>
+            </div>
+            <div class="phone item">
+                <p class="name">+7 (495) 648 82 10</p>
+                <p class="info">Бесплатная консультация</p>
+            </div>
+            <div class="navigation item">
+                <a href="about.html" class="url">О компании</a>
+                <a href="docs.html" class="url">Документы</a>
+                <a href="#" class="url">Наши услуги</a>
+                <a href="contacts.html" class="url">контакты</a>
+            </div>
+            <div class="kafehost item">
+                <p class="copy">
+                    Создание сайта
+                    <a href="#" target="_blank" class="url">Kafehost</a>
+                </p>
+                <a href="#" target="_blank" class="kafehost_logo"></a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    background: #0f1f36;
+    border-top: solid 3px #b81b2e;
+    text-align: center;
+}
+.center{
+    width: 1084px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+header{
+    height: 40px;
+}
+#logo{
+    background: #1e3f6c;
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    font-size: 31px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px 38px 3px 34px;
+}
+#logo .logo,
+#logo .logo_name{
+    display: inline-block;
+    vertical-align: middle;
+}
+nav{
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    margin: 0 0 0 -4px;
+    width: 860px;
+}
+nav .nav_url{
+    color: #0f1f36;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Calibri';
+    font-weight: bold;
+    margin: 0 53px;
+    line-height: 40px;
+}
+nav .nav_url.active,
+nav .nav_url:hover{
+    color: #b81b2e;
+}
+
+footer{
+    padding: 43px 0;
+}
+footer .item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    max-width: 215px;
+}
+footer .name{
+    color: #c7cacf;
+    display: block;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 5px;
+}
+footer .info{
+    color: #51607e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+}
+footer .phone.item{
+    margin: 0 50px 0 90px;
+}
+footer .url{
+    color: #b71b30;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+footer .url.active,
+footer .url:hover{
+    text-decoration: none;
+}
+footer .navigation{
+    margin: -5px 70px 0 30px;
+    line-height: 16px;
+}
+footer .navigation .url{
+    text-transform: lowercase;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+}
+footer .kafehost{
+    margin-top: -15px;
+}
+footer .kafehost .kafehost_logo,
+footer .kafehost .copy{
+    display: inline-block;
+    vertical-align: bottom;
+}
+footer .kafehost .kafehost_logo{
+    width: 53px;
+    height: 49px;
+    background: url("../img/kafehost.png") no-repeat;
+}
+footer .kafehost .copy{
+    font-size: 12px;
+    color: #bec2c8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: right;
+    line-height: 20px;
+}
+footer .kafehost .copy .url{
+    display: block;
+    text-transform: uppercase;
+}
