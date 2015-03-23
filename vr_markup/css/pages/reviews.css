@@ -1,0 +1,109 @@
+.rev_body h2{
+    text-transform: uppercase;
+    padding: 0 0 20px;
+    border-bottom: solid 3px #f3f3f4;
+}
+#reviews .review{
+    display: inline-block;
+    vertical-align: top;
+    background: #f3f3f4;
+    position: relative;
+    width: 31%;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    min-height: 370px;
+    margin: 0 0 30px;
+}
+#reviews .review:after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    background-image: url("../../img/quote.png");
+    background-repeat: no-repeat;
+    right: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+#reviews .review:nth-child(2),
+#reviews .review:nth-child(4n+2){
+    margin: 0 3% 20px;
+}
+#reviews .review .top{
+    margin: 0 0 25px;
+}
+#reviews .review .image,
+#reviews .review .us_info,
+#reviews .review:nth-child(4n) .top,
+#reviews .review:nth-child(4n) .rev_text{
+    display: inline-block;
+    vertical-align: middle;
+}
+#reviews .review .image{
+    width: 65px;
+    margin: 0 6px 0 0;
+}
+#reviews .review .us_info{
+    color: #3c4148;
+    font-family: 'Fira Sans', sans-serif;
+}
+#reviews .review .us_info .name{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+#reviews .review .us_info .date{
+    font-weight: 400;
+    font-size: 15px;
+}
+#reviews .review .rev_text{
+    color: #3c4148;
+    font-size: 14px;
+    font-family: 'Arial';
+    line-height: 23px;
+}
+#reviews .review:nth-child(4n){
+    display: block;
+    width: 100%;
+    padding: 65px 45px;
+    min-height: 200px;
+    margin: 0 0 20px;
+}
+#reviews .review:nth-child(4n) .top{
+    width: 25%;
+    /*margin: 0 65px 0 0;*/
+}
+#reviews .review:nth-child(4n) .rev_text{
+    width: 75%;
+    color: #3c4148;
+    font-size: 28px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    line-height: 38px;
+    margin: 0 0 0 -5px;
+}
+#reviews .review:nth-child(4n+1){
+    margin: 0 0 20px;
+}
+#reviews .review .logo{
+    text-align: center;
+    margin: 0 0 25px;
+}
+#reviews .review .comp_name{
+    font-size: 16px;
+    color: #3c4148;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    line-height: 23px;
+}
+#reviews .review .vacansy{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 23px;
+}
+#reviews .review .rev_text{
+    margin: 0 0 50px;
+}

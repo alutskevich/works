@@ -1,0 +1,188 @@
+#restoran{
+    position: relative;
+}
+#restoran .fons{
+    width: 100%;
+    height: 870px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#restoran .fons .l-t,
+#restoran .fons .r-t,
+#restoran .fons .l-b,
+#restoran .fons .r-b{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+}
+#restoran .fons .l-t{
+    /*width: 320px;
+    height: 217px;*/
+    width: 440px;
+    height: 225px;
+    top: 0;
+    left: 0;
+}
+#restoran .fons .rest_fons .l-t{
+    background-image: url("../../img/restoran/bg/1.jpg");
+}
+#restoran .fons .corp_fons .l-t{
+    background-image: url("../../img/restoran/bg/2.jpg");
+}
+#restoran .fons .wed_fons .l-t{
+    background-image: url("../../img/restoran/bg/3.jpg");
+}
+#restoran .fons .rest_fons .r-t{
+    background-image: url("../../img/restoran/bg/2.jpg");
+}
+#restoran .fons .corp_fons .r-t{
+    background-image: url("../../img/restoran/bg/3.jpg");
+}
+#restoran .fons .wed_fons .r-t{
+    background-image: url("../../img/restoran/bg/4.jpg");
+}
+#restoran .fons .rest_fons .l-b{
+    background-image: url("../../img/restoran/bg/3.jpg");
+}
+#restoran .fons .corp_fons .l-b{
+    background-image: url("../../img/restoran/bg/4.jpg");
+}
+#restoran .fons .wed_fons .l-b{
+    background-image: url("../../img/restoran/bg/1.jpg");
+}
+#restoran .fons .rest_fons .r-b{
+    background-image: url("../../img/restoran/bg/3.jpg");
+}
+#restoran .fons .corp_fons .r-b{
+    background-image: url("../../img/restoran/bg/1.jpg");
+}
+#restoran .fons .wed_fons .r-b{
+    background-image: url("../../img/restoran/bg/2.jpg");
+}
+#restoran .fons .r-t{
+    /*width: 639px;
+    height: 646px;*/
+    width: 760px;
+    height: 653px;
+    top: 0;
+    right: 0;
+}
+#restoran .fons .l-b{
+    width: 759px;
+    height: 651px;
+    bottom: 0;
+    left: 0;
+}
+#restoran .fons .r-b{
+    width: 440px;
+    height: 225px;
+    bottom: 0;
+    right: 0;
+}
+#restoran .fons .bl_fons{
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+#restoran .fons .corp_fons,
+#restoran .fons .wed_fons{
+    opacity: 0;
+}
+.rest{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 870px;
+    z-index: 2;
+    position: relative;
+}
+.rest .ch_block{
+    display: table-cell;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.rest .ch_block .list{
+    width: 320px;
+    height: 426px;
+    background: #3c4148;
+    margin: -5px auto 0;
+    box-sizing: border-box;
+    padding: 155px 0 0;
+}
+.rest .ch_block .list .item{
+    margin: 40px 0;
+}
+.rest .ch_block .list .item:first-child{
+    margin: 0 0 40px;
+}
+.rest .ch_block .list a{
+    color: #f3f3f4;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: color .3s;
+    -ms-transition: color .3s;
+    transition: color .3s;
+}
+.rest .ch_block .list a:hover,
+.rest .ch_block .list a.active{
+    color: #e23458;
+}
+.single .about_text .left,
+.single .text{
+    width: 575px;
+}
+.single .about_text .right{
+    width: 320px;
+    padding: 0 48px 28px;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: solid 1px #d4d4d4;
+}
+#wedding.single .about_text .right{
+    padding: 0 48px 100px;
+}
+.single .about_text .menu .red_href:nth-child(3){
+    margin: 0 0 25px;
+}
+.single .about_text .menu .info{
+    color: #3c4148;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    line-height: 23px;
+}
+.single .photo{
+    display: inline-block;
+    vertical-align: top;
+}
+.single .photo:nth-child(2){
+    margin: 0 8px;
+}
+.single .text .arial_text:not(:last-child){
+    margin: 0 0 35px;
+}
+.single .text .bold{
+    font-size: 16px;
+    color: #3c4148;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.single h2{
+    text-align: center;
+    margin: 0 0 25px;
+}

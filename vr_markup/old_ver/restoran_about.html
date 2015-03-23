@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300,500&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/pages/restoran.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.datetimepicker.js"></script>
+        <script src="js/func.js"></script>
+        <title>Velle Rossa - Ресторан</title>
+    </head>
+    <body id="main">
+        <header>
+            <div class="center">
+                <div class="left">
+                    <p class="phone">(048) 777-03-03 / 095-201-57-16</p>
+                </div>
+                <div class="right">
+                    <p class="address">Одесса, Улица Гаршина, 3</p>
+                    <div class="lang">
+                        <span class="url active" title="Русская версия">Рус</span>
+                        /
+                        <a href="#" class="url" title="English version">Eng</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div id="page_content">
+            <aside>
+                <a href="index.html" title="Hotel Vele Rosse" id="logo"></a>
+                <div class="reserve">
+                    <form method="post" action="#">
+                        <div class="line">
+                            <input type="datetime" class="field" placeholder="Прибытие" name="in">
+                        </div>
+                        <div class="line">
+                            <input type="datetime" class="field" placeholder="Выезд" name="out">
+                        </div>
+                        <div class="line">
+                            <input type="submit" class="submit" value="Забронировать">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <a href="index.html" class="url" title="Отель">Отель</a>
+                    <a href="restorant.html" class="url" title="Ресторан">Ресторан</a>
+                    <div class="sub_menu">
+                        <a href="restoran_about.html" class="url active" title="О ресторане">О ресторане</a>
+                        <a href="#" class="url" title="Корпоративы">Корпоративы</a>
+                        <a href="#" class="url" title="Дни рождения">Дни рождения</a>
+                        <a href="#" class="url" title="Свадьбы">Свадьбы</a>
+                    </div>
+                    <a href="wedding.html" class="url" title="Свадебные банкеты">Свадебные банкеты</a>
+                    <a href="numbers.html" class="url" title="Номера">Номера</a>
+                    <a href="services.html" class="url" title="Услуги">Услуги</a>
+                    <a href="actions.html" class="url" title="Акции">Акции</a>
+                    <a href="conferenc.html" class="url" title="Конференц-сервис">Конференц-сервис</a>
+                    <a href="reviews.html" class="url" title="Отзывы">Отзывы</a>
+                    <a href="contacts.html" class="url" title="Контакты">Контакты</a>
+                </nav>
+                <div class="socials">
+                    <p class="label">Мы в социальных сетях:</p>
+                    <div class="soc_block">
+                        <a href="#" target="_blank" title="Facebook" class="fb"></a>
+                        <a href="#" target="_blank" title="Google Plus" class="gp"></a>
+                        <a href="#" target="_blank" title="Twitter" class="tw"></a>
+                    </div>
+                </div>
+            </aside>
+            <article id="restoran" class="single">
+                <div class="main_slider">
+                    <ul class="slider">
+                        <li class="slide">
+                            <img src="img/main_slider/1.jpg" alt="Slide1">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/2.jpg" alt="Slide2">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/3.jpg" alt="Slide3">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/4.jpg" alt="Slide4">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/5.jpg" alt="Slide5">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/6.jpg" alt="Slide6">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/7.jpg" alt="Slide7">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/8.jpg" alt="Slide8">
+                        </li>
+                        <li class="slide">
+                            <img src="img/main_slider/9.jpg" alt="Slide9">
+                        </li>
+                    </ul>
+                </div>
+                <div class="about_text bot_bord m_30">
+                    <div class="left">
+                        <h1>О ресторане</h1>
+                        <p class="arial_text">
+                            Весь спектр удовольствий &mdash; отель Vele Rosse. Если вы отдыхаете в отеле Vele Rosse,
+                            вы гарантированно получаете дополнительное удовольствие благодаря нашему ресторану в Одессе.
+                            Вот вы расположились в уютном кресле с бокалом изысканного напитка, ожидаете подачу ужина и
+                            провожаете день, начинаете строить планы или просто мечтаете. Только здесь гости Vele Rosse
+                            почувствуют созданное ощущение теплоты и уюта, а если с вами любимый человек &mdash; гармоничная
+                            близость и романтическое умиротворение гарантировано!
+                        </p>
+                    </div>
+                    <div class="right menu">
+                        <a href="#" title="Банкетное меню" class="red_href">Банкетное меню</a>
+                        <a href="#" title="Фуршетное меню" class="red_href">Фуршетное меню</a>
+                        <a href="#" title="Меню ресторана" class="red_href">Меню ресторана</a>
+                        <p class="info">Площадь: 135 м<sup><small>2</small></sup></p>
+                        <p class="info">Вместимость: до 100 мест</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="photos bot_bord m_30">
+                    <img src="img/restoran/1.jpg" class="photo" alt="Photo1">
+                    <img src="img/restoran/2.jpg" class="photo" alt="Photo2">
+                    <img src="img/restoran/3.jpg" class="photo" alt="Photo3">
+                </div>
+                <div class="text m_30">
+                    <p class="arial_text">
+                        Уже со входа, ресторан сможет поразить особой изысканностью и шиком. Гость чувствует себя важной
+                        персоной, а доброжелательность персонала обеспечивает комфорт трапезы. Наше меню ресторана в Одессе
+                        представляет сочетание традиционной европейской рецептуры со средиземноморскими блюдами &mdash; это то,
+                        что сможет удовлетворить все прихоти гурманов.
+                    </p>
+                    <p class="arial_text">
+                        Квалификация барменов ресторана не только увлечет, но позволит продегустировать восхитительные
+                        коктейли по авторским рецептам &mdash; не все рестораны у моря смогут предложить хоть что-то подобное.
+                        Vele Rosse располагает всем необходимым для свадебного торжества, корпоративного праздника, выпускных
+                        и юбилейных торжеств,
+                    </p>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <div class="center">
+                <div class="address">
+                    Улица Гаршина, 3<br>
+                    12 cт. Б. Фонтана<br>
+                    Одесса 65016<br>
+                    Украина
+                </div>
+                <div class="f_body">
+                    <div class="menu_l">
+                        <a href="index.html" class="url" title="Отель">Отель</a>
+                        <a href="restorant.html" class="url active" title="Ресторан">Ресторан</a>
+                        <a href="wedding.html" class="url" title="Свадебные банкеты">Свадебные банкеты</a>
+                        <a href="numbers.html" class="url" title="Номера">Номера</a>
+                        <a href="services.html" class="url" title="Услуги">Услуги</a>
+                    </div>
+                    <div class="menu_r">
+                        <a href="actions.html" class="url" title="Акции">Акции</a>
+                        <a href="conferenc.html" class="url" title="Конференц-сервис">Конференц-сервис</a>
+                        <a href="reviews.html" class="url" title="Отзывы">Отзывы</a>
+                        <a href="contacts.html" class="url" title="Контакты">Контакты</a>
+                    </div>
+                    <div class="right review">
+                        <p class="label">Читайте отзывы на:</p>
+                        <a href="#" target="_blank" title="Tripadvisor" class="trip"></a>
+                        <a href="#" target="_blank" title="Booking" class="book"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

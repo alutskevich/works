@@ -1,0 +1,111 @@
+#actions_page{
+    padding: 20px 30px 0;
+}
+#actions_page h1{
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+}
+#actions_page .action_item:first-child{
+    padding: 0 0 40px;
+    margin: 0;
+}
+#actions_page .action_item:first-child .left{
+    width: 25%;
+}
+#actions_page .action_item:first-child .right{
+    padding: 10px 3% 0;
+    width: 75%;
+    box-sizing: border-box;
+}
+#actions_page .action_item:first-child .arial_text{
+    min-height: 119px;
+    margin: 0 0 5px;
+}
+#actions_page .action_item:first-child .red_href{
+    margin: 0;
+    padding: 7px 1%;
+    width: 172px;
+    text-align: center;
+}
+#actions_page .action_name{
+    font-size: 16px;
+    color: #3c4148;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+}
+#actions_page table{
+    width: 100%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+#actions_page table th,
+#actions_page table td{
+    background: white;
+    border: solid 1px #d6d6d6;
+    padding: 2% 3%;
+    vertical-align: middle;
+}
+#actions_page table tr th:first-child,
+#actions_page table tr td:first-child{
+    text-align: left;
+    padding: 2%;
+}
+#actions_page table th{
+    color: #3c4148;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+#actions_page table tr td{
+    color: #e23458;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+#actions_page table tr td:first-child{
+    color: #7e8286;
+    font-size: 14px;
+    font-family: 'Arial';
+    line-height: 23px;
+}
+#actions_page .action_item:first-child .mess{
+    color: #7e8286;
+    font-size: 14px;
+    font-family: 'Arial';
+    text-align: center;
+}
+#actions_page .action_item{
+    border-top: solid 1px #d6d6d6;
+    padding: 30px 0 0;
+    margin: 0 0 30px;
+}
+#actions_page .action_item:first-child{
+    border-top: none;
+}
+#actions_page .action_item img{
+    width: 25%;
+    float: left;
+}
+#actions_page .action_item .right{
+    width: 75%;
+    text-align: left;
+}
+#actions_page .action_item .action_name{
+    padding: 0 30px;
+}
+#actions_page .action_item .arial_text{
+    padding: 0 30px;
+    min-height: 119px;
+    margin: 0 0 5px;
+    box-sizing: border-box;
+}
+#actions_page .action_item .red_href{
+    margin: 0 0 0 30px;
+    width: 170px;
+    padding: 7px 1%;
+    text-align: center;
+}

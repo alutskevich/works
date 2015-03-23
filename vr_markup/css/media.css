@@ -1,0 +1,237 @@
+@media screen and (max-width: 1600px){
+    .center{
+        padding: 0 10px;
+    }
+    footer .address{
+        width: 25%;
+    }
+    footer .f_body{
+        width: 75%;
+        margin: 0 0 0 -10px;
+    }
+}
+@media screen and (max-width: 1340px){
+    #numbers .change_bg_slide .name{
+        margin: 0 20px 0 0;
+    }
+    #numbers .docs .downloads .pdf{
+        margin: 0 auto 15px;
+    }
+    #conferenc .text .block .line{
+        text-align: center;
+    }
+    #conferenc .text .block .red_href{
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .reserve{
+        box-sizing: border-box;
+        padding: 38px 5px 33px;
+    }
+    .reserve .line,
+    .reserve .field,
+    .reserve .submit,
+    #logo{
+        width: 95%;
+    }
+    #logo{
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    nav {
+        padding: 45px 10% 0;
+    }
+    .socials {
+        padding: 0 10%;
+    }
+    nav .url {
+        font-size: 15px;
+    }
+    .about .map,
+    .about .map .sign{
+        height: auto;
+    }
+    .about .map .sign{
+        padding: 0 20px 15px;
+    }
+    .about .map .sign .address{
+        float: none;
+        text-align: center;
+    }
+    .about .map .sign .button{
+        float: none;
+        margin: 0 auto;
+    }
+    footer .address{
+        padding: 0 0 0 2%;
+    }
+}
+@media screen and (max-width: 1160px){
+    #reviews .review:nth-child(2), #reviews .review:nth-child(3n+2), #reviews .review:nth-child(4n+2) {
+        margin: 0 2.7% 20px;
+    }
+}
+@media screen and (max-width: 1140px){
+    #numbers .change_bg_slide .name, .change_bg_slide .price {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    #numbers .rest .ch_block .list .item,
+    #numbers .rest .ch_block .list .item:first-child{
+        margin: 20px 0;
+    }
+    #numbers .rest .ch_block .list{
+        padding: 5px 10px;
+    }
+    #numbers .docs .downloads{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1100px){
+    .red_href{
+        font-size: 15px;
+    }
+    #reviews .review:nth-child(4n){
+        padding: 30px 15px;
+    }
+}
+@media screen and (max-width: 1030px){
+    #numbers.single .about_text .right{
+        padding: 0 18px 105px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+        bottom: -15%;
+    }
+    footer .f_body{
+        padding: 0 0 40px 30px;
+    }
+    #services .rest .ch_block .list{
+        padding: 63px 10px;
+    }
+    #services.single .about_text .right{
+        padding: 0 10px 105px;
+    }
+    #conferenc .rest .ch_block .list{
+        padding: 139px 10px;
+    }
+    #reviews .review:not(:nth-child(4n)) .image, #reviews .review:not(:nth-child(4n)) .us_info, #reviews .review:nth-child(4n) .top, #reviews .review:nth-child(4n) .rev_text{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #reviews .review:nth-child(4n) .top{
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+    #reviews .review .us_info:not(:nth-child(4n)),
+    #reviews .review:not(:nth-child(4n)) .image{
+        text-align: center;
+    }
+    #reviews .review:not(:nth-child(4n)) .image{
+        margin: 0 auto 10px;
+    }
+    .about .seo_text{
+        float: none;
+        width: 100%;
+    }
+    .about .map{
+        float: none;
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+    .about .map .sign{
+        padding: 20px;
+    }
+    .about .map .sign .address{
+        float: left;
+    }
+    .about .map .sign .button{
+        float: right;
+    }
+}
+@media screen and (max-width: 940px){
+    #restoran.single .about_text .right,
+    #wedding.single .about_text .right{
+        padding: 0 28px 28px;
+    }
+    #numbers .text .info, #numbers .text .time, #numbers .text .docs{
+        width: 44%;
+        margin: 0 0 30px;
+    }
+    #numbers .text .time{
+        margin: 0 0 30px 5%;
+    }
+    #numbers.single .photo{
+        width: 30%;
+    }
+    #numbers .condition .item{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 900px){
+    #logo{
+        margin: 0 auto;
+        background-size: contain;
+    }
+    .socials .label{
+        font-size: 13px;
+    }
+    footer .menu_l {
+        margin: 0 30px 0 0;
+    }
+    footer .url{
+        font-size: 15px;
+    }
+    #restoran.single .photo{
+        width: 30%;
+    }
+    #conferenc .text .block .red_href{
+        width: 150px;
+    }
+    #conferenc.single .about_text .right {
+        padding: 0 15px 40px;
+    }
+    #actions_page .left,
+    #actions_page .cur .left,
+    #actions_page .action_item img{
+        width: 40%;
+    }
+    #actions_page .right,
+    #actions_page .cur .right,
+    #actions_page .action_item .right{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 850px){
+    #actions_page table th{
+        font-size: 14px;
+    }
+    #actions_page table th, #actions_page table td{
+        padding: 1%;
+    }
+}
+@media screen and (max-width: 780px){
+    aside{
+        width: 195px;
+    }
+    footer .address{
+        width: 190px;
+    }
+    article{
+        width: 565px;
+    }
+    footer .f_body{
+        width: 555px;
+    }
+    .center,
+    #page_content,
+    header,
+    footer{
+        width: 760px;
+    }
+}

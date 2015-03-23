@@ -1,0 +1,506 @@
+#numbers,
+#services,
+#conferenc{
+    position: relative;
+}
+.fons{
+    width: 100%;
+    height: 870px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fons .l-t,
+.fons .r-t,
+.fons .l-b,
+.fons .r-b{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+}
+.fons .econom_fons .l-t{
+    background-image: url("../../img/numbers/econom/main/room_econom_1.jpg");
+}
+.fons .stand_fons .l-t{
+    background-image: url("../../img/numbers/standart/main/room_standart_1.jpg");
+}
+.fons .best3_fons .l-t{
+    background-image: url("../../img/numbers/standart-best/main/room_standart_better_1.jpg");
+}
+.fons .halflux_fons .l-t{
+    background-image: url("../../img/numbers/halflux/main/room_semi_lux_1.jpg");
+}
+.fons .lux_fons .l-t{
+    background-image: url("../../img/numbers/lux/main/room_lux_1.jpg");
+}
+.fons .vip_fons .l-t{
+    background-image: url("../../img/numbers/vip/main/room_vip_1.jpg");
+}
+.fons .bus_fons .l-t{
+    background-image: url("../../img/conference/conference_room_1.jpg");
+}
+.fons .zal_fons .l-t{
+    background-image: url("../../img/conference/conference_large_room_1.jpg");
+}
+.fons .conf_fons .l-t{
+    background-image: url("../../img/conference/conference_hall_1.jpg");
+}
+.fons .velo_fons .l-t{
+    background-image: url("../../img/services/service_bike_rent_1.jpg");
+}
+.fons .bil_fons .l-t{
+    background-image: url("../../img/services/service_billiards_1.jpg");
+}
+.fons .sauna_fons .l-t{
+    background-image: url("../../img/services/service_sauna_1.jpg");
+}
+.fons .fitness_fons .l-t{
+    background-image: url("../../img/services/service_fitnes_1.jpg");
+}
+
+.fons .econom_fons .r-t{
+    background-image: url("../../img/numbers/econom/main/room_econom_2.jpg");
+}
+.fons .stand_fons .r-t{
+    background-image: url("../../img/numbers/standart/main/room_standart_2.jpg");
+}
+.fons .best3_fons .r-t{
+    background-image: url("../../img/numbers/standart-best/main/room_standart_better_2.jpg");
+}
+.fons .halflux_fons .r-t{
+    background-image: url("../../img/numbers/halflux/main/room_semi_lux_2.jpg");
+}
+.fons .lux_fons .r-t{
+    background-image: url("../../img/numbers/lux/main/room_lux_2.jpg");
+}
+.fons .vip_fons .r-t{
+    background-image: url("../../img/numbers/vip/main/room_vip_2.jpg");
+}
+.fons .bus_fons .r-t{
+    background-image: url("../../img/conference/conference_room_2.jpg");
+}
+.fons .zal_fons .r-t{
+    background-image: url("../../img/conference/conference_large_room_2.jpg");
+}
+.fons .conf_fons .r-t{
+    background-image: url("../../img/conference/conference_hall_2.jpg");
+}
+.fons .velo_fons .r-t{
+    background-image: url("../../img/services/service_bike_rent_2.jpg");
+}
+.fons .bil_fons .r-t{
+    background-image: url("../../img/services/service_billiards_2.jpg");
+}
+.fons .sauna_fons .r-t{
+    background-image: url("../../img/services/service_sauna_2.jpg");
+}
+.fons .fitness_fons .r-t{
+    background-image: url("../../img/services/service_fitnes_2.jpg");
+}
+
+.fons .econom_fons .l-b{
+    background-image: url("../../img/numbers/econom/main/room_econom_3.jpg");
+}
+.fons .stand_fons .l-b{
+    background-image: url("../../img/numbers/standart/main/room_standart_3.jpg");
+}
+.fons .best3_fons .l-b{
+    background-image: url("../../img/numbers/standart-best/main/room_standart_better_3.jpg");
+}
+.fons .halflux_fons .l-b{
+    background-image: url("../../img/numbers/halflux/main/room_semi_lux_3.jpg");
+}
+.fons .lux_fons .l-b{
+    background-image: url("../../img/numbers/lux/main/room_lux_3.jpg");
+}
+.fons .vip_fons .l-b{
+    background-image: url("../../img/numbers/vip/main/room_vip_3.jpg");
+}
+.fons .bus_fons .l-b{
+    background-image: url("../../img/conference/conference_room_3.jpg");
+}
+.fons .zal_fons .l-b{
+    background-image: url("../../img/conference/conference_large_room_3.jpg");
+}
+.fons .conf_fons .l-b{
+    background-image: url("../../img/conference/conference_hall_3.jpg");
+}
+.fons .velo_fons .l-b{
+    background-image: url("../../img/services/service_bike_rent_3.jpg");
+}
+.fons .bil_fons .l-b{
+    background-image: url("../../img/services/service_billiards_3.jpg");
+}
+.fons .sauna_fons .l-b{
+    background-image: url("../../img/services/service_sauna_3.jpg");
+}
+.fons .fitness_fons .l-b{
+    background-image: url("../../img/services/service_fitnes_3.jpg");
+}
+
+.fons .econom_fons .r-b{
+    background-image: url("../../img/numbers/econom/main/room_econom_4.jpg");
+}
+.fons .stand_fons .r-b{
+    background-image: url("../../img/numbers/standart/main/room_standart_4.jpg");
+}
+.fons .best3_fons .r-b{
+    background-image: url("../../img/numbers/standart-best/main/room_standart_better_4.jpg");
+}
+.fons .halflux_fons .r-b{
+    background-image: url("../../img/numbers/halflux/main/room_semi_lux_4.jpg");
+}
+.fons .lux_fons .r-b{
+    background-image: url("../../img/numbers/lux/main/room_lux_4.jpg");
+}
+.fons .vip_fons .r-b{
+    background-image: url("../../img/numbers/vip/main/room_vip_4.jpg");
+}
+.fons .bus_fons .r-b{
+    background-image: url("../../img/conference/conference_room_4.jpg");
+}
+.fons .zal_fons .r-b{
+    background-image: url("../../img/conference/conference_large_room_4.jpg");
+}
+.fons .conf_fons .r-b{
+    background-image: url("../../img/conference/conference_hall_4.jpg");
+}
+.fons .velo_fons .r-b{
+    background-image: url("../../img/services/service_bike_rent_4.jpg");
+}
+.fons .bil_fons .r-b{
+    background-image: url("../../img/services/service_billiards_4.jpg");
+}
+.fons .sauna_fons .r-b{
+    background-image: url("../../img/services/service_sauna_4.jpg");
+}
+.fons .fitness_fons .r-b{
+    background-image: url("../../img/services/service_fitnes_4.jpg");
+}
+
+.fons .l-t{
+    width: 440px;
+    height: 225px;
+    top: 0;
+    left: 0;
+}
+.fons .r-t{
+    width: 760px;
+    height: 653px;
+    top: 0;
+    right: 0;
+}
+.fons .l-b{
+    width: 759px;
+    height: 651px;
+    bottom: 0;
+    left: 0;
+}
+.fons .r-b{
+    width: 440px;
+    height: 225px;
+    bottom: 0;
+    right: 0;
+}
+.fons .bl_fons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.fons .stand_fons,
+.fons .best3_fons,
+.fons .halflux_fons,
+.fons .lux_fons,
+.fons .vip_fons,
+.fons .zal_fons,
+.fons .conf_fons,
+.fons .velo_fons,
+.fons .sauna_fons,
+.fons .fitness_fons{
+    opacity: 0;
+}
+.rest{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 870px;
+    z-index: 2;
+    position: relative;
+}
+.rest .ch_block{
+    display: table-cell;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.rest .ch_block .list{
+    width: 320px;
+    height: 426px;
+    background: #3c4148;
+    margin: -5px auto 0;
+    box-sizing: border-box;
+    padding: 35px 40px 0;
+}
+#services .rest .ch_block .list{
+    padding: 55px 40px 0;
+}
+#conferenc .rest .ch_block .list{
+    padding: 115px 40px 0;
+}
+.rest .ch_block .list .title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    margin: 0 0 25px;
+}
+#conferenc .rest .ch_block .list .title{
+    margin: 0 0 35px;
+}
+.rest .ch_block .list .item{
+    margin: 30px 0;
+}
+.rest .ch_block .list .item:first-child{
+    margin: 0 0 30px;
+}
+.rest .ch_block .list .change_bg_slide{
+    color: #f3f3f4;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+    line-height: 20px;
+    text-transform: uppercase;
+    -webkit-transition: color .3s;
+    -ms-transition: color .3s;
+    transition: color .3s;
+}
+.rest .ch_block .list .change_bg_slide:hover,
+.rest .ch_block .list .change_bg_slide.active{
+    color: #e23458;
+}
+.change_bg_slide .name,
+.change_bg_slide .price{
+    display: inline-block;
+    vertical-align: top;
+}
+.change_bg_slide .name{
+    width: 110px;
+    margin: 0 55px 0 0;
+}
+.change_bg_slide .price{
+   width: 70px;
+}
+.single .about_text .left,
+.single .text{
+    width: 575px;
+}
+.single .about_text .right{
+    width: 345px;
+    padding: 0 48px 105px;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: solid 1px #d4d4d4;
+}
+#conferenc.single .about_text .right{
+    padding: 0 48px 40px;
+}
+.single .about_text .menu .red_href{
+    margin: 20px 0 0;
+}
+.single .about_text .menu .info{
+    color: #3c4148;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    line-height: 23px;
+}
+.single .about_text .menu .price{
+    color: #3c4148;
+    font-size: 33px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+#services.single .about_text .menu .price,
+#conferenc.single .about_text .menu .price{
+    margin: 0 0 40px;
+}
+.single .photo{
+    display: inline-block;
+    vertical-align: top;
+}
+.single .photo:nth-child(2){
+    margin: 0 8px;
+}
+#numbers .text .arial_text:not(:last-child){
+    margin: 0 0 35px;
+}
+.text .bold{
+    font-size: 16px;
+    color: #7e8286;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.single h2{
+    text-align: center;
+    margin: 0 0 25px;
+}
+#numbers .text{
+    padding: 45px 30px 85px;
+}
+#numbers .text .info,
+#numbers .text .time,
+#numbers .text .docs{
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+}
+#numbers .text .time{
+    margin: 0 70px;
+}
+#numbers .text .list{
+    margin: 0 0 30px;
+}
+.docs .downloads .pdf{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 13px;
+    color: #7e8286;
+    max-width: 115px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+}
+.docs .downloads .pdf:before{
+    content: "";
+    background: url("../../img/pdf.png");
+    width: 47px;
+    height: 66px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.condition .item{
+    display: inline-block;
+    vertical-align: middle;
+    width: 29%;
+    position: relative;
+    color: #3c4148;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.condition .item:before{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.condition .item.wifi:before{
+    background-image: url("../../img/numbers/wi_fi_room.svg");
+    height: 23px;
+}
+.condition .item.seif:before{
+    background-image: url("../../img/numbers/safe.svg");
+    height: 23px;
+}
+.condition .item.lupa:before{
+    background-image: url("../../img/numbers/mirror.svg");
+    height: 23px;
+}
+.condition .item.bar:before{
+    background-image: url("../../img/numbers/bar_room.svg");
+    height: 23px;
+}
+.condition .item.phone:before{
+    background-image: url("../../img/numbers/phone_room.svg");
+    height: 23px;
+}
+.condition .item.fen:before{
+    background-image: url("../../img/numbers/hair_dryer_room.svg");
+    height: 23px;
+}
+.condition .item.cond:before{
+    background-image: url("../../img/numbers/air_cond_room.svg");
+    height: 23px;
+}
+.condition .item.pol:before{
+    background-image: url("../../img/numbers/air_cond_room.svg");
+    height: 23px;
+}
+
+.another{
+    background: url("../../img/numbers/bg_select_room.jpg") no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+.another .variants .num{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 0 20px;
+}
+.another .variants .num a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #3c4148;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+.another .variants .num:nth-child(2),
+.another .variants .num:nth-child(3n+2){
+    margin: 0 20px 20px;
+}
+.another .variants .num .image{
+    max-width: 100%;
+}
+.another .variants .num .name{
+    background: white;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 15px;
+    margin: -2px 0 0;
+}
+
+#conferenc .text .block{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+#conferenc .text .block:nth-child(2){
+    margin: 0 50px;
+}
+#conferenc .text .block .line{
+    margin: 0 0 10px;
+}
+#conferenc .text .block .red_href{
+    display: inline-block;
+    margin: 0 20px 0 0;
+    width: 185px;
+    text-align: center;
+}
+#conferenc .text .block .download{
+    color: #8e8e8e;
+    font-size: 14px;
+    font-family: 'Arial';
+}

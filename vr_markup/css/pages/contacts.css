@@ -1,0 +1,30 @@
+#map{
+    height: 430px;
+    width: 100%;
+}
+.cont_block .block{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.cont_block .block:nth-child(2){
+    margin: 0 4%;
+}
+.bold{
+    font-size: 16px;
+    color: #3c4148;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+    line-height: 23px;
+}
+.arial_text{
+    text-decoration: none;
+    display: block;
+}
+.arial_text.address{
+    text-decoration: underline;
+}
+.line{
+    margin: 0 0 30px;
+}

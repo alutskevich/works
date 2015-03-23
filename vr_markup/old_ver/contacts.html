@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300,500&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/pages/contacts.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.datetimepicker.js"></script>
+        <script src="js/func.js"></script>
+        <title>Velle Rossa - Контакты</title>
+    </head>
+    <body id="main">
+        <header>
+            <div class="center">
+                <div class="left">
+                    <p class="phone">(048) 777-03-03 / 095-201-57-16</p>
+                </div>
+                <div class="right">
+                    <p class="address">Одесса, Улица Гаршина, 3</p>
+                    <div class="lang">
+                        <span class="url active" title="Русская версия">Рус</span>
+                        /
+                        <a href="#" class="url" title="English version">Eng</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div id="page_content">
+            <aside>
+                <a href="index.html" title="Hotel Vele Rosse" id="logo"></a>
+                <div class="reserve">
+                    <form method="post" action="#">
+                        <div class="line">
+                            <input type="datetime" class="field" placeholder="Прибытие" name="in">
+                        </div>
+                        <div class="line">
+                            <input type="datetime" class="field" placeholder="Выезд" name="out">
+                        </div>
+                        <div class="line">
+                            <input type="submit" class="submit" value="Забронировать">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <a href="index.html" class="url" title="Отель">Отель</a>
+                    <a href="restorant.html" class="url" title="Ресторан">Ресторан</a>
+                    <a href="wedding.html" class="url" title="Свадебные банкеты">Свадебные банкеты</a>
+                    <a href="numbers.html" class="url" title="Номера">Номера</a>
+                    <a href="services.html" class="url" title="Услуги">Услуги</a>
+                    <a href="actions.html" class="url" title="Акции">Акции</a>
+                    <a href="conferenc.html" class="url" title="Конференц-сервис">Конференц-сервис</a>
+                    <a href="reviews.html" class="url" title="Отзывы">Отзывы</a>
+                    <a href="contacts.html" class="url active" title="Контакты">Контакты</a>
+                </nav>
+                <div class="socials">
+                    <p class="label">Мы в социальных сетях:</p>
+                    <div class="soc_block">
+                        <a href="#" target="_blank" title="Facebook" class="fb"></a>
+                        <a href="#" target="_blank" title="Google Plus" class="gp"></a>
+                        <a href="#" target="_blank" title="Twitter" class="tw"></a>
+                    </div>
+                </div>
+            </aside>
+            <article id="contacts">
+                <div id="map"></div>
+                <div class="cont_block m_30">
+                    <div class="block">
+                        <div class="line">
+                            <p class="bold">Телефон (круглосуточно):</p>
+                            <a href="tel:+380487770303" class="arial_text">+3 8(048) 777-03-03</a>
+                        </div>
+                        <div class="line">
+                            <p class="bold">Факс:</p>
+                            <a href="fax:+380487770494" class="arial_text">+3 8(048) 777-04-94</a>
+                        </div>
+                        <div class="line">
+                            <p class="bold">Мобильная связь:</p>
+                            <a href="tel:+380975000050" class="arial_text">+3 8 097-500-00-50</a>
+                            <a href="tel:+380952015716" class="arial_text">+3 8 095-201-57-16</a>
+                            <a href="tel:+380930890544" class="arial_text">+3 8 093-089-05-44</a>
+                        </div>
+                        <div class="line">
+                            <p class="bold">Скайп:</p>
+                            <a href="skype:vele_rosse?chat" class="arial_text">vele_rosse</a>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="line">
+                            <p class="bold">Как к нам проехать:</p>
+                            <span class="arial_text address">– от ЖД Вокзала маршрутка № 223;</span>
+                            <span class="arial_text address">– от ЖД Вокзала маршрутка № 185;</span>
+                            <span class="arial_text address">– от ЖД Вокзала трамвай № 18;</span>
+                            <span class="arial_text address">– от автовокзала</span>
+                        </div>
+                        <div class="line">
+                            <p class="bold">Бизнес-Отель «Vele Rosse» находится на расстоянии:</p>
+                            <span class="arial_text km">7,2 км. от ж/д вокзала</span>
+                            <span class="arial_text km">10 км. от автовокзала</span>
+                            <span class="arial_text km">7,2 км. от аэропорта</span>
+                            <span class="arial_text km">10 км. от Дерибасовской улицы</span>
+                            <span class="arial_text km">6 км. от  аллеи Аркадии</span>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="line">
+                            <p class="bold">Отдел бронирования:</p>
+                            <a href="mailto:velerosse.od@gmail.com" class="arial_text">velerosse.od@gmail.com</a>
+                        </div>
+                        <div class="line">
+                            <p class="bold">Отдел маркетинга и рекламы:</p>
+                            <a href="mailto:velerosse.office@gmail.com" class="arial_text">velerosse.office@gmail.com</a>
+                        </div>
+                        <div class="line">
+                            <p class="bold">Бухгалтерия:</p>
+                            <a href="mailto:velerosse.office@gmail.com" class="arial_text">velerosse.office@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <div class="center">
+                <div class="address">
+                    Улица Гаршина, 3<br>
+                    12 cт. Б. Фонтана<br>
+                    Одесса 65016<br>
+                    Украина
+                </div>
+                <div class="f_body">
+                    <div class="menu_l">
+                        <a href="index.html" class="url" title="Отель">Отель</a>
+                        <a href="restorant.html" class="url" title="Ресторан">Ресторан</a>
+                        <a href="wedding.html" class="url" title="Свадебные банкеты">Свадебные банкеты</a>
+                        <a href="numbers.html" class="url" title="Номера">Номера</a>
+                        <a href="services.html" class="url" title="Услуги">Услуги</a>
+                    </div>
+                    <div class="menu_r">
+                        <a href="actions.html" class="url" title="Акции">Акции</a>
+                        <a href="conferenc.html" class="url" title="Конференц-сервис">Конференц-сервис</a>
+                        <a href="reviews.html" class="url" title="Отзывы">Отзывы</a>
+                        <a href="contacts.html" class="url active" title="Контакты">Контакты</a>
+                    </div>
+                    <div class="right review">
+                        <p class="label">Читайте отзывы на:</p>
+                        <a href="#" target="_blank" title="Tripadvisor" class="trip"></a>
+                        <a href="#" target="_blank" title="Booking" class="book"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

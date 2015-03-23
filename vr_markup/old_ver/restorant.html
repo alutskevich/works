@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300,500&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/pages/restoran.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.datetimepicker.js"></script>
+        <script src="js/func.js"></script>
+        <title>Velle Rossa - Ресторан</title>
+    </head>
+    <body id="main">
+        <header>
+            <div class="center">
+                <div class="left">
+                    <p class="phone">(048) 777-03-03 / 095-201-57-16</p>
+                </div>
+                <div class="right">
+                    <p class="address">Одесса, Улица Гаршина, 3</p>
+                    <div class="lang">
+                        <span class="url active" title="Русская версия">Рус</span>
+                        /
+                        <a href="#" class="url" title="English version">Eng</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <div id="page_content">
+            <aside>
+                <a href="index.html" title="Hotel Vele Rosse" id="logo"></a>
+                <div class="reserve">
+                    <form method="post" action="#">
+                        <div class="line">
+                            <input type="datetime" class="field" placeholder="Прибытие" name="in">
+                        </div>
+                        <div class="line">
+                            <input type="datetime" class="field" placeholder="Выезд" name="out">
+                        </div>
+                        <div class="line">
+                            <input type="submit" class="submit" value="Забронировать">
+                        </div>
+                    </form>
+                </div>
+                <nav>
+                    <a href="index.html" class="url" title="Отель">Отель</a>
+                    <a href="restorant.html" class="url active" title="Ресторан">Ресторан</a>
+                    <a href="wedding.html" class="url" title="Свадебные банкеты">Свадебные банкеты</a>
+                    <a href="numbers.html" class="url" title="Номера">Номера</a>
+                    <a href="services.html" class="url" title="Услуги">Услуги</a>
+                    <a href="actions.html" class="url" title="Акции">Акции</a>
+                    <a href="conferenc.html" class="url" title="Конференц-сервис">Конференц-сервис</a>
+                    <a href="reviews.html" class="url" title="Отзывы">Отзывы</a>
+                    <a href="contacts.html" class="url" title="Контакты">Контакты</a>
+                </nav>
+                <div class="socials">
+                    <p class="label">Мы в социальных сетях:</p>
+                    <div class="soc_block">
+                        <a href="#" target="_blank" title="Facebook" class="fb"></a>
+                        <a href="#" target="_blank" title="Google Plus" class="gp"></a>
+                        <a href="#" target="_blank" title="Twitter" class="tw"></a>
+                    </div>
+                </div>
+            </aside>
+            <article id="restoran">
+                <div class="fons">
+                    <div class="bl_fons rest_fons">
+                        <div class="l-t"></div>
+                        <div class="r-t"></div>
+                        <div class="l-b"></div>
+                        <div class="r-b"></div>
+                    </div>
+                    <div class="bl_fons corp_fons">
+                        <div class="l-t"></div>
+                        <div class="r-t"></div>
+                        <div class="l-b"></div>
+                        <div class="r-b"></div>
+                    </div>
+                    <div class="bl_fons wed_fons">
+                        <div class="l-t"></div>
+                        <div class="r-t"></div>
+                        <div class="l-b"></div>
+                        <div class="r-b"></div>
+                    </div>
+                </div>
+                <div class="rest">
+                    <div class="ch_block">
+                        <ul class="list">
+                            <li class="item">
+                                <a class="change_bg_slide" data-target="rest_fons" href="restoran_about.html" title="О ресторане">О ресторане</a>
+                            </li>
+                            <li class="item">
+                                <a class="change_bg_slide" data-target="corp_fons" href="#" title="Корпоративы и дни рождения">Корпоративы и дни рождения</a>
+                            </li>
+                            <li class="item">
+                                <a class="change_bg_slide" data-target="wed_fons" href="#" title="Свадьбы">Свадьбы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <div class="center">
+                <div class="address">
+                    Улица Гаршина, 3<br>
+                    12 cт. Б. Фонтана<br>
+                    Одесса 65016<br>
+                    Украина
+                </div>
+                <div class="f_body">
+                    <div class="menu_l">
+                        <a href="index.html" class="url" title="Отель">Отель</a>
+                        <a href="restorant.html" class="url active" title="Ресторан">Ресторан</a>
+                        <a href="wedding.html" class="url" title="Свадебные банкеты">Свадебные банкеты</a>
+                        <a href="numbers.html" class="url" title="Номера">Номера</a>
+                        <a href="services.html" class="url" title="Услуги">Услуги</a>
+                    </div>
+                    <div class="menu_r">
+                        <a href="actions.html" class="url" title="Акции">Акции</a>
+                        <a href="conferenc.html" class="url" title="Конференц-сервис">Конференц-сервис</a>
+                        <a href="reviews.html" class="url" title="Отзывы">Отзывы</a>
+                        <a href="contacts.html" class="url" title="Контакты">Контакты</a>
+                    </div>
+                    <div class="right review">
+                        <p class="label">Читайте отзывы на:</p>
+                        <a href="#" target="_blank" title="Tripadvisor" class="trip"></a>
+                        <a href="#" target="_blank" title="Booking" class="book"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
