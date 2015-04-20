@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/roboto.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/material-fullpalette.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/ripples.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/jquery.dropdown.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/screens/children.css">
+        <script src="assets/js/lib/jquery-1.11.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/ripples.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/material.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+        <script src="assets/js/plugins/jquery.dropdown.js"></script>
+        <script src="assets/js/func.js"></script>
+        <title>Keepvision - Add children</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="back table-cell"></div>
+            <p class="pagename table-cell">Add Children</p>
+            <!--
+                In the func.js  -> $(".select").dropdown({ "autoinit" : ".select" });
+
+            <form method="post" action="#" class="header_actions table-cell">
+                <select name="actions" class="select">
+                    <option value="pass">Change password</option>
+                    <option value="exit">Exit</option>
+                </select>
+            </form> -->
+            <div class="header_actions table-cell">
+                <div class="circle"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="main-content">
+            <form method="post" action="#" class="add_child">
+                <div class="line need_height">
+                    <label>Add photo:</label>
+                    <div class="child_photo empty"></div>
+                </div>
+                <div class="line">
+                    <input class="form-control" placeholder="Name" type="text" name="name">
+                </div>
+                <div class="line need_height select_male">
+                    <label>Select male:</label>
+                    <div class="radios">
+                        <div class="radio_group">
+                            <input type="radio" name="male" value='male' class="radio_input none">
+                            <div class="radio_block male" data-target="male"></div>
+                        </div>
+                        <div class="radio_group">
+                            <input type="radio" name="male" value='female' class="radio_input none">
+                            <div class="radio_block female" data-target="female"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <input class="form-control" placeholder="Birthday date" type="text" name="birthday">
+                </div>
+                <div class="line need_margin">
+                    <div class="checkbox">
+                        <label>
+                            <input checked="" type="checkbox" name="parents">
+                            Parents have the desease of vision
+                        </label>
+                    </div>
+                </div>
+                <div class="line">
+                    <p class="name">
+                        Sharpness of vision:
+                        <span id="count">0,8</span>
+                    </p>
+                    <div class="slider shor slider-material-blue"></div>
+                </div>
+                <button type="submit" class="btn btn-primary orange">Add</button>
+            </form>
+        </div>
+    </body>
+</html>

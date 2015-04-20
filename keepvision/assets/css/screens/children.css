@@ -1,0 +1,89 @@
+.main-content{
+    padding: 5% 0 0;
+    height: 85%;
+}
+.add_child{
+    height: 100%;
+    padding: 0 15% 0;
+}
+.add_child .line{
+    margin: 0 0 5%;
+}
+.add_child .line.need_height{
+    height: 13%;
+    margin: 0 0 2%;
+}
+.add_child .line.need_height.select_male{
+    margin: 0 0 4%;
+}
+.add_child label{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+.child_photo{
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25%;
+    height: 100%;
+    margin: 0 0 0 5%;
+}
+.child_photo.empty{
+    background-image: url("../../img/photo.png");
+}
+.add_child .form-control,
+.add_child .form-control:focus{
+    height: auto;
+    font-size: 1.2em;
+    padding: 0 0 3%;
+}
+.radios{
+    width: 55%;
+}
+.radio_group{
+    width: 43%;
+}
+.radios,
+.radio_group{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 0 0 5%;
+}
+.radio_block{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.radio_input:checked + .radio_block{
+    opacity: 1;
+}
+.radio_block.male{
+    background-image: url("../../img/male.png");
+}
+.radio_block.female{
+    background-image: url("../../img/female.png");
+}
+.add_child .need_margin{
+    margin: 13% 0;
+}
+.add_child .need_margin label{
+    text-transform: none;
+}
+.add_child .name{
+    font-size: 1.2em;
+}
+.add_child .slider {
+    margin: 10% 0 18%;
+}
+.add_child .btn{
+    width: 100%;
+    height: 10%;
+    font-size: 1.2em;
+}

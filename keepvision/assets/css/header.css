@@ -1,0 +1,30 @@
+#header{
+    height: 10%;
+    background: #14b5ff;
+    color: white;
+    padding: 0 4%;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    table-layout: fixed;
+}
+#header .back{
+    background-image: url("../img/back.png");
+    background-repeat: no-repeat;
+    background-size: auto 35%;
+    background-position: left center;
+    height: 100%;
+    width: 15%;
+}
+#header .pagename{
+    width: 65%;
+    font-size: 2.2em;
+}
+#header .header_actions{
+    width: 20%;
+    text-align: right;
+    background-image: url("../img/actions.png");
+    background-repeat: no-repeat;
+    background-size: auto 25%;
+    background-position: right center;
+}

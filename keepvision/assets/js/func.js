@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    var $tabs = $("#tabs");
+    var $tabs = $("#tabs"),
+        $header = $("#header");
 
     $.material.init();
 
@@ -28,4 +29,23 @@ $(document).ready(function(){
         $(".forgot-form").fadeIn();
         $(".screen.signup").fadeOut();
     });
+
+    /*if($header.length != 0){
+        $(".select").dropdown({ "autoinit" : ".select" });
+    }*/
+
+    $(".shor").noUiSlider({
+        start: 40,
+        connect: "lower",
+        range: {
+            min: 0,
+            max: 100
+        }
+    });
+
+    $(".radio_block").on("click", function(){
+        var self = $(this);
+        self.siblings(".radio_input").prop("checked", true);
+    });
+
 });
