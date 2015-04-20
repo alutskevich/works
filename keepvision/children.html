@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/roboto.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/material-fullpalette.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/ripples.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/jquery.dropdown.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/screens/children.css">
+        <script src="assets/js/lib/jquery-1.11.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/ripples.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/material.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+        <script src="assets/js/plugins/jquery.dropdown.js"></script>
+        <script src="assets/js/func.js"></script>
+        <title>Keepvision - Your children</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="back table-cell no-vis"></div>
+            <p class="pagename table-cell">Your Children</p>
+            <!--
+                In the func.js  -> $(".select").dropdown({ "autoinit" : ".select" });
+
+            <form method="post" action="#" class="header_actions table-cell">
+                <select name="actions" class="select">
+                    <option value="pass">Change password</option>
+                    <option value="exit">Exit</option>
+                </select>
+            </form> -->
+            <div class="header_actions table-cell">
+                <div class="circle"></div>
+            </div>
+            <div class="clear"></div>
+            <button class="fl_action_button btn btn-fab btn-raised btn-material-orange"><i class="mdi-content-add"></i></button>
+        </div>
+        <div class="main-content no-padding">
+            <div class="head table">
+                <div class="col_name table-cell">Name</div>
+                <div class="col_lvl table-cell">Rysk lvl</div>
+            </div>
+            <div class="child_list">
+                <div class="child_item table">
+                    <div class="edit table-cell">
+                        <i class="mdi-content-create"></i>
+                    </div>
+                    <div class="avatar table-cell">
+                        <div class="image" style="background-image: url('assets/img/test_1.png');"></div>
+                    </div>
+                    <div class="name_status table-cell">
+                        <p class="name">Anastasia-Savanna</p>
+                        <p class="status">4 min ago</p>
+                    </div>
+                    <div class="lvl_now table-cell">
+                        <!-- All classes:
+                          -> ok
+                          -> warning
+                          -> danger
+                          -> grey
+                        -->
+                        <div class="lvl_color ok"></div>
+                    </div>
+                    <div class="remove table-cell">
+                        <i class="mdi-action-delete"></i>
+                    </div>
+                </div>
+                <div class="child_item table">
+                    <div class="edit table-cell">
+                        <i class="mdi-content-create"></i>
+                    </div>
+                    <div class="avatar table-cell">
+                        <div class="image" style="background-image: url('assets/img/male.png');"></div>
+                    </div>
+                    <div class="name_status table-cell">
+                        <p class="name">Anastasia-Savanna</p>
+                        <p class="status online">Online</p>
+                    </div>
+                    <div class="lvl_now table-cell">
+                        <div class="lvl_color warning"></div>
+                    </div>
+                    <div class="remove table-cell">
+                        <i class="mdi-action-delete"></i>
+                    </div>
+                </div>
+                <div class="child_item table removable">
+                    <div class="edit table-cell">
+                        <i class="mdi-content-create"></i>
+                    </div>
+                    <div class="avatar table-cell">
+                        <div class="image" style="background-image: url('assets/img/female.png');"></div>
+                    </div>
+                    <div class="name_status table-cell">
+                        <p class="name">Anastasia-Savanna</p>
+                        <p class="status online">Online</p>
+                    </div>
+                    <div class="lvl_now table-cell">
+                        <div class="lvl_color danger"></div>
+                    </div>
+                    <div class="remove table-cell">
+                        <i class="mdi-action-delete"></i>
+                    </div>
+                </div>
+                <div class="child_item table editable">
+                    <div class="edit table-cell">
+                        <i class="mdi-content-create"></i>
+                    </div>
+                    <div class="avatar table-cell">
+                        <div class="image" style="background-image: url('assets/img/female.png');"></div>
+                    </div>
+                    <div class="name_status table-cell">
+                        <p class="name">Anastasia-Savanna</p>
+                        <p class="status online">Online</p>
+                    </div>
+                    <div class="lvl_now table-cell">
+                        <div class="lvl_color grey"></div>
+                    </div>
+                    <div class="remove table-cell">
+                        <i class="mdi-action-delete"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -34,14 +34,16 @@ $(document).ready(function(){
         $(".select").dropdown({ "autoinit" : ".select" });
     }*/
 
-    $(".shor").noUiSlider({
-        start: 40,
-        connect: "lower",
-        range: {
-            min: 0,
-            max: 100
-        }
-    });
+    if($(".shor").length != 0){
+        $(".shor").noUiSlider({
+            start: 40,
+            connect: "lower",
+            range: {
+                min: 0,
+                max: 100
+            }
+        });
+    }
 
     $(".radio_block").on("click", function(){
         var self = $(this);

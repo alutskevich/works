@@ -2,6 +2,9 @@
     padding: 5% 0 0;
     height: 85%;
 }
+.main-content.no-padding{
+    padding: 0;
+}
 .add_child{
     height: 100%;
     padding: 0 15% 0;
@@ -86,4 +89,109 @@
     width: 100%;
     height: 10%;
     font-size: 1.2em;
+}
+.head.table{
+    height: 7%;
+    margin: 0;
+}
+.col_name{
+    width: 85%;
+    text-align: center;
+}
+.col_lvl,
+.col_name{
+    opacity: 0.55;
+    border-bottom: solid 1px #ebebeb;
+}
+.child_list{
+    width: 150%;
+}
+.child_item{
+    height: 8.5em;
+    width: 100%;
+    position: relative;
+    left: -14%;
+    margin: 0;
+}
+.child_item .table-cell{
+    border-bottom: solid 1px #ebebeb;
+    box-sizing: border-box;
+    height: 100%;
+}
+.child_item .edit,
+.child_item .remove{
+    width: 8%;
+    background: #eeeeee;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.33) inset;
+    text-align: center;
+}
+.child_item .avatar{
+    width: 15%;
+    height: 100%;
+    text-align: center;
+}
+.child_item .avatar .image{
+    width: 85%;
+    height: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+.child_item .name_status{
+    padding: 0;
+    color: #727272;
+    width: 25%;
+}
+.child_item .name_status .name{
+    font-size: 1.3em;
+}
+.child_item .name_status .name{
+    font-size: 1.3em;
+}
+.child_item .name_status .status{
+    font-size: 1em;
+    height: 15%;
+}
+.child_item .name_status .status:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 10%;
+    height: 100%;
+}
+.child_item .name_status .status:not(.online):before{
+    background-image: url("../../img/offline.png");
+}
+.child_item .name_status .status:before{
+    background-image: url("../../img/online.png");
+}
+.lvl_now{
+    width: 10%;
+}
+.lvl_now .lvl_color{
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+.lvl_now .lvl_color.ok{
+    background: #8bc34a;
+}
+.lvl_now .lvl_color.warning{
+    background: #ffeb3b;
+}
+.lvl_now .lvl_color.danger{
+    background: #ff5722;
+}
+.lvl_now .lvl_color.grey{
+    background: #9e9e9e;
+}
+.editable{
+    left: 0;
+}
+.removable{
+    left: -32%;
 }
