@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/roboto.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/material-fullpalette.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/ripples.min.css">
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/ripples.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/material.min.js"></script>
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/screens/login.css">
+        <script src="assets/js/func.js"></script>
+        <title>Keepvision - Login, Signup, Forgot password</title>
+    </head>
+    <body>
+        <div id="login-header" class="container-fluid">
+            <img src="assets/img/logo.svg" class="logo">
+            <ul id="tabs">
+                <li class="tab active col-md-6 col-xs-6 col-sm-6 col-lg-6" data-target="login">Login</li>
+                <li class="tab col-md-6 col-xs-6 col-sm-6 col-lg-6" data-target="screen">Signup</li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+        <div class="main-content login-content">
+            <div class="screen login">
+                <div class="login-form">
+                    <form method="post" action="#">
+                        <input class="form-control" placeholder="Email" type="email" name="email">
+                        <input class="form-control" placeholder="Password" type="password" name="password">
+                        <button type="submit" class="btn btn-primary orange">Log in</button>
+                    </form>
+                    <div class="btn btn-default btn-flat forgot_password">Forgot?</div>
+                </div>
+                <div class="forgot-form">
+                    <h2>Forgot?</h2>
+                    <form method="post" action="#">
+                        <label>Please, type e-mail you entered when registered account</label>
+                        <input class="form-control" placeholder="Password" type="password" name="password">
+                        <button type="submit" class="btn btn-primary orange">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="screen signup">
+                <div class="login-form">
+                    <form method="post" action="#">
+                        <input class="form-control" placeholder="Your name" type="text" name="name">
+                        <input class="form-control" placeholder="Email" type="email" name="email">
+                        <input class="form-control" placeholder="Password" type="password" name="password">
+                        <button type="submit" class="btn btn-primary orange">Go</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
