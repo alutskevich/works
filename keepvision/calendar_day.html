@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/roboto.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/material-fullpalette.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/ripples.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/jquery.dropdown.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/screens/calendar.css">
+        <script src="assets/js/lib/jquery-1.11.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/ripples.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/material.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+        <script src="assets/js/plugins/jquery.dropdown.js"></script>
+        <script src="assets/js/func.js"></script>
+        <title>Keepvision - Calendar day</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="back table-cell"></div>
+            <p class="pagename table-cell">Anastasia-Savanna</p>
+            <div class="header_actions table-cell">
+                <div class="circle"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="main-content">
+            <div id="tabs" class="table">
+                <div class="tab active table-cell" data-target="day">Day</div>
+                <div class="tab table-cell" data-target="month">Month</div>
+            </div>
+            <div class="tab_panel day">
+                <div class="day_block">
+                    <div class="head table">
+                        <div class="prev table-cell"></div>
+                        <p class="month_name table-cell">Jan-1-2015</p>
+                        <div class="next table-cell"></div>
+                    </div>
+                    <div class="day_content">
+                        <div class="day_hour">
+                            <span class="hour">00:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">1:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">2:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">3:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">4:00</span>
+                            <div class="day_active yellow"></div>
+                            <div class="day_active red"></div>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">5:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">6:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">7:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">8:00</span>
+                            <div class="day_active yellow"></div>
+                            <div class="day_active green"></div>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">9:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">10:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">11:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">12:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">13:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">14:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">15:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">16:00</span>
+                            <div class="day_active yellow"></div>
+                            <div class="day_active green"></div>
+                            <div class="day_active red"></div>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">17:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">18:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">19:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">20:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">21:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">22:00</span>
+                        </div>
+                        <div class="day_hour">
+                            <span class="hour">23:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_panel month">
+                <div class="head table">
+                    <div class="prev table-cell"></div>
+                    <p class="month_name table-cell">January 2015</p>
+                    <div class="next table-cell"></div>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">1</span>
+                    <div class="day_active yellow"></div>
+                    <div class="day_active green"></div>
+                    <div class="day_active red"></div>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">2</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">3</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">4</span>
+                    <div class="day_active yellow"></div>
+                    <div class="day_active green"></div>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">5</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">6</span>
+                    <div class="button eye"></div>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">7</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">8</span>
+                    <div class="button more"></div>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">9</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">10</span>
+                    <div class="button eye-more"></div>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">11</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">12</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">13</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">14</span>
+                </div>
+                <div class="day_hour">
+                    <span class="hour">15</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+.doctor{
+    height: 100%;
+}
+.doc_header{
+    height: 40%;
+    background-image: url("../../img/logo-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 5% 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.doc_header .image{
+    border-radius: 50%;
+    height: 65%;
+    width: 75%;
+    margin: 0 auto 3%;
+    text-align: center;
+}
+.doc_header .image.blue{
+    background: #14b5ff;
+}
+.doc_header .image img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.empty_photo,
+.doc_header .image.blue img{
+    display: none;
+}
+.doc_header .image.blue .empty_photo{
+    font-size: 2em;
+    position: relative;
+    top: 21%;
+    color: white;
+    display: block;
+}
+.doc_name{
+    font-size: 1.6em;
+}
+.stat{
+    font-size: 1.3em;
+    opacity: 0.5;
+}
+.doc_call.btn.btn-fab{
+    width: 3.5em;
+    height: 3.5em;
+    float: right;
+    right: 10%;
+    position: absolute;
+    bottom: -10%;
+    text-align: center;
+}
+.doc_call .call{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/but_phone.png");
+    background-repeat: no-repeat;
+    background-size: auto 75%;
+    background-position: center;
+}
+.doc_contacts{
+    background: #e8ebed;
+    padding: 5% 0;
+    height: 60%;
+}
+.doc_contacts .list{
+    width: 90%;
+    margin: 5% auto 0;
+}
+.doc_contacts .list .item{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    height: 2.5em;
+}
+.doc_contacts .list .item:before{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 8%;
+    height: 50%;
+    vertical-align: middle;
+}
+.doc_contacts .list .item.address:before{
+    background-image: url("../../img/address.png");
+}
+.doc_contacts .list .item.map:before{
+    background-image: url("../../img/map.png");
+}
+.doc_contacts .list .item.web:before{
+    background-image: url("../../img/web.png");
+}
+.doc_contacts .list .item.phone:before{
+    background-image: url("../../img/phone.png");
+}
+.doc_contacts .list .item.clock:before{
+    background-image: url("../../img/clock.png");
+}
+.doc_contacts .list .item.non-stop:before{
+    background-image: url("../../img/non-stop.png");
+}
+.btn.btn-flat.view_location{
+    float: right;
+    font-size: 1.2em;
+    color: #5c5c5c;
+    font-weight: 400;
+    margin: 10% 0 0;
+}

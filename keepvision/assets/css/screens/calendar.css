@@ -1,0 +1,99 @@
+#tabs{
+    background: #14b5ff;
+    height: 10%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+#tabs .tab{
+    opacity: 0.5;
+}
+#tabs .tab.active{
+    opacity: 1;
+    border-bottom: solid 4px white;
+}
+.tab_panel{
+    width: 75%;
+    margin: 0 auto;
+}
+.tab_panel.month{
+    display: none;
+}
+.tab_panel .head{
+    background: #14b5ff;
+    text-align: center;
+    color: white;
+    padding: 5% 0;
+    margin: 0;
+}
+.tab_panel .head .prev,
+.tab_panel .head .next{
+    width: 15%;
+    background-image: url("../../img/back.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    height: 100%;
+}
+.tab_panel .head .next{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.tab_panel .head .month_name{
+    font-size: 1.5em;
+}
+.day_hour{
+    border-bottom: solid 2px #f1f1f1;
+    border-left: solid 2px #e8e8e8;
+    border-right: solid 2px #e8e8e8;
+    position: relative;
+    height: 4em;
+    line-height: 4em;
+    padding: 0 0 0 5%;
+}
+.day_hour .hour{
+    font-size: 1.4em;
+}
+.day_active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    display: block;
+}
+.day_active.yellow{
+    background: #ffeb3b;
+    left: 30%;
+}
+.day_active.green{
+    background: #8bc34a;
+    left: 40%;
+}
+.day_active.red{
+    background: #ff5722;
+    left: 40%;
+    width: 3%;
+}
+.day_active.blue{
+    background: #0187d0;
+}
+.day_hour .button{
+    position: absolute;
+    top: -25%;
+    left: 35%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50%;
+}
+.day_hour .button.eye{
+    background-image: url("../../img/eye.png");
+}
+.day_hour .button.eye-more{
+    background-image: url("../../img/eye-more.png");
+}
+.day_hour .button.more{
+    background-image: url("../../img/more.png");
+}
