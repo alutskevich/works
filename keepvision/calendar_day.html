@@ -3,16 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false">
-        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/roboto.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/material-fullpalette.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/css/ripples.min.css">
         <link rel="stylesheet" href="assets/css/plugins/jquery.dropdown.css">
-        <link rel="stylesheet" href="assets/css/custom.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/screens/calendar.css">
         <script src="assets/js/lib/jquery-1.11.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="//cdn.jsdelivr.net/bootstrap.material-design/0.3.0/js/ripples.min.js"></script>
@@ -31,7 +27,7 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="main-content">
+        <div class="main-content no-padding">
             <div id="tabs" class="table">
                 <div class="tab active table-cell" data-target="day">Day</div>
                 <div class="tab table-cell" data-target="month">Month</div>
@@ -58,8 +54,10 @@
                         </div>
                         <div class="day_hour">
                             <span class="hour">4:00</span>
-                            <div class="day_active yellow"></div>
-                            <div class="day_active red"></div>
+                            <div class="actives">
+                                <div class="day_active yellow"></div>
+                                <div class="day_active red"></div>
+                            </div>
                         </div>
                         <div class="day_hour">
                             <span class="hour">5:00</span>
@@ -72,8 +70,10 @@
                         </div>
                         <div class="day_hour">
                             <span class="hour">8:00</span>
-                            <div class="day_active yellow"></div>
-                            <div class="day_active green"></div>
+                            <div class="actives">
+                                <div class="day_active yellow"></div>
+                                <div class="day_active green"></div>
+                            </div>
                         </div>
                         <div class="day_hour">
                             <span class="hour">9:00</span>
@@ -98,9 +98,11 @@
                         </div>
                         <div class="day_hour">
                             <span class="hour">16:00</span>
-                            <div class="day_active yellow"></div>
-                            <div class="day_active green"></div>
-                            <div class="day_active red"></div>
+                            <div class="actives">
+                                <div class="day_active yellow"></div>
+                                <div class="day_active green"></div>
+                                <div class="day_active red"></div>
+                            </div>
                         </div>
                         <div class="day_hour">
                             <span class="hour">17:00</span>
@@ -134,9 +136,11 @@
                 </div>
                 <div class="day_hour">
                     <span class="hour">1</span>
-                    <div class="day_active yellow"></div>
-                    <div class="day_active green"></div>
-                    <div class="day_active red"></div>
+                    <div class="actives">
+                        <div class="day_active yellow"></div>
+                        <div class="day_active green"></div>
+                        <div class="day_active red"></div>
+                    </div>
                 </div>
                 <div class="day_hour">
                     <span class="hour">2</span>
@@ -146,8 +150,10 @@
                 </div>
                 <div class="day_hour">
                     <span class="hour">4</span>
-                    <div class="day_active yellow"></div>
-                    <div class="day_active green"></div>
+                    <div class="actives">
+                        <div class="day_active yellow"></div>
+                        <div class="day_active green"></div>
+                    </div>
                 </div>
                 <div class="day_hour">
                     <span class="hour">5</span>
