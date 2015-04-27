@@ -70,11 +70,13 @@ input{
     position: relative;
 }
 #header .back{
-    background-image: url("../img/back.png");
     background-repeat: no-repeat;
     background-position: left center;
     height: 100%;
     width: 15%;
+}
+#header.box-shadow{
+    box-shadow: 0 2px 4px rgba(189, 189, 189, 1);
 }
 #header .pagename{
     width: 65%;
@@ -86,7 +88,6 @@ input{
 #header .header_actions{
     width: 20%;
     text-align: right;
-    background-image: url("../img/actions.png");
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -97,6 +98,7 @@ input{
     width: 3em;
     height: 3em;
     color: white;
+    z-index: 10;
 }
 #header .fl_action_button i{
     font-size: 2em;
@@ -216,14 +218,15 @@ h3{
     font-size: 1.3em;
     margin: 0 0 20%;
 }
-.doctor{
-    height: 100%;
+.main-content.doctor{
+    height: 90%;
+    background: #e8ebed;
 }
 .doc_header{
     height: 40%;
-    background-image: url("../img/logo-bg.jpg");
+    background-color: white;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -13px;
     background-size: cover;
     text-align: center;
     padding: 5% 0;
@@ -242,7 +245,7 @@ h3{
 }
 .doc_header .image img{
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
     display: block;
     border-radius: 50%;
     margin: 0 auto;
@@ -278,19 +281,17 @@ h3{
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("../img/but_phone.png");
     background-repeat: no-repeat;
     background-size: auto 75%;
     background-position: center;
 }
 .doc_contacts{
-    background: #e8ebed;
     padding: 5% 0;
-    height: 60%;
 }
 .doc_contacts .list{
     width: 90%;
     margin: 5% auto 0;
+    list-style: none;
 }
 .doc_contacts .list .item{
     font-size: 1.2em;
@@ -304,24 +305,6 @@ h3{
     width: 8%;
     height: 50%;
     vertical-align: middle;
-}
-.doc_contacts .list .item.address:before{
-    background-image: url("../img/address.png");
-}
-.doc_contacts .list .item.map:before{
-    background-image: url("../img/map.png");
-}
-.doc_contacts .list .item.web:before{
-    background-image: url("../img/web.png");
-}
-.doc_contacts .list .item.phone:before{
-    background-image: url("../img/phone.png");
-}
-.doc_contacts .list .item.clock:before{
-    background-image: url("../img/clock.png");
-}
-.doc_contacts .list .item.non-stop:before{
-    background-image: url("../img/non-stop.png");
 }
 .btn.btn-flat.view_location{
     float: right;
@@ -418,7 +401,10 @@ h3{
     margin: 0;
 }
 .col_name{
-    width: 85%;
+    width: 80%;
+    text-align: center;
+}
+.col_lvl{
     text-align: center;
 }
 .col_lvl,
@@ -426,27 +412,48 @@ h3{
     opacity: 0.55;
     border-bottom: solid 1px #ebebeb;
 }
-.child_list{
-    width: 150%;
-}
 .child_item{
     height: 8.5em;
     width: 100%;
     position: relative;
-    left: -14%;
     margin: 0;
+}
+.child_item .behind{
+    position: relative;
+    height: 100%;
+}
+.child_item .ahead{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: white;
+    left: 0;
 }
 .child_item .table-cell{
     border-bottom: solid 1px #ebebeb;
     box-sizing: border-box;
     height: 100%;
 }
+.child_item .edit{
+    float: left;
+}
+.child_item .remove{
+    float: right;
+}
 .child_item .edit,
 .child_item .remove{
     width: 8%;
+    height: 100%;
     background: #eeeeee;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.33) inset;
     text-align: center;
+}
+.child_item .edit i,
+.child_item .remove i{
+    top: 35%;
+    position: relative;
 }
 .child_item .avatar{
     width: 15%;
@@ -454,8 +461,8 @@ h3{
     text-align: center;
 }
 .child_item .avatar .image{
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -464,7 +471,7 @@ h3{
 .child_item .name_status{
     padding: 0;
     color: #727272;
-    width: 25%;
+    width: 33%;
 }
 .child_item .name_status .name{
     font-size: 1.3em;
@@ -479,21 +486,15 @@ h3{
 .child_item .name_status .status:before{
     content: "";
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: text-top;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     width: 10%;
     height: 100%;
 }
-.child_item .name_status .status:not(.online):before{
-    background-image: url("../img/offline.png");
-}
-.child_item .name_status .status:before{
-    background-image: url("../img/online.png");
-}
 .lvl_now{
-    width: 10%;
+    width: 6%;
 }
 .lvl_now .lvl_color{
     width: 1.3em;
@@ -511,12 +512,6 @@ h3{
 }
 .lvl_now .lvl_color.grey{
     background: #9e9e9e;
-}
-.editable{
-    left: 0;
-}
-.removable{
-    left: -32%;
 }
 #tabs{
     background: #14b5ff;
@@ -623,15 +618,6 @@ h3{
     background-size: contain;
     height: 50%;
 }
-.day_hour .button.eye{
-    background-image: url("../img/eye.png");
-}
-.day_hour .button.eye-more{
-    background-image: url("../img/eye-more.png");
-}
-.day_hour .button.more{
-    background-image: url("../img/more.png");
-}
 @media (max-width: 2000px){
     body{font-size: 4em;}
 }
@@ -695,6 +681,99 @@ h3{
         height: 200px;
         margin: 0 0 20px;
     }
+    #header .fl_action_button {
+        width: 173px;
+        height: 173px;
+        left: 20px;
+    }
+    #header .fl_action_button i {
+        font-size: 5em;
+        top: -5px;
+        left: 1px;
+    }
+    .col_lvl, .col_name{
+        font-size: 1.3em;
+    }
+    .child_item .name_status .name {
+        font-size: 1.5em;
+    }
+    .child_item .name_status .status {
+        font-size: 1.2em;
+    }
+    .head.table {
+        height: 135px;
+    }
+    .child_item{
+        height: 300px;
+    }
+    .child_item .edit,
+    .child_item .remove{
+        width: 184px;
+    }
+    .editable .ahead{
+        left: 184px;
+    }
+    .removable .ahead{
+        left: -184px;
+    }
+    .child_item .avatar .image.male{
+        background-image: url('../img/s1080/male.png');
+    }
+    .child_item .avatar .image.female{
+        background-image: url('../img/s1080/female.png');
+    }
+    .child_item .name_status .status:not(.online):before{
+        background-image: url("../img/s1080/offline.png");
+    }
+    .child_item .name_status .status:before{
+        background-image: url("../img/s1080/online.png");
+    }
+    .lvl_now .lvl_color{
+        width: 50px;
+        height: 50px;
+    }
+    .doc_header{
+        background-image: url("../img/s1080/logo-bg.png");
+        height: 700px;
+    }
+    .doc_call.btn.btn-fab{
+        width: 170px;
+        height: 170px;
+    }
+    .doc_call .call{
+        background-image: url("../img/s1080/but_phone.png");
+    }
+    .doc_call.btn.btn-fab .call{
+        background-image: url("../img/s1080/but_phone.png");
+        top: 0;
+    }
+    .doc_contacts .list .item.address:before{
+        background-image: url("../img/s1080/address.png");
+    }
+    .doc_contacts .list .item.map:before{
+        background-image: url("../img/s1080/map.png");
+    }
+    .doc_contacts .list .item.web:before{
+        background-image: url("../img/s1080/web.png");
+    }
+    .doc_contacts .list .item.phone:before{
+        background-image: url("../img/s1080/phone.png");
+    }
+    .doc_contacts .list .item.clock:before{
+        background-image: url("../img/s1080/clock.png");
+    }
+    .doc_contacts .list .item.non-stop:before{
+        background-image: url("../img/s1080/non-stop.png");
+    }
+    .day_hour .button.eye{
+        background-image: url("../img/s1080/eye.png");
+    }
+    .day_hour .button.eye-more{
+        background-image: url("../img/s1080/eye-more.png");
+    }
+    .day_hour .button.more{
+        background-image: url("../img/s1080/more.png");
+    }
 }
 @media (max-width: 780px){
     .radio_group {
@@ -706,15 +785,6 @@ h3{
 }
 @media (max-width: 720px){
     body{font-size: 2.1em;}
-    #header .fl_action_button{
-        width: 4em;
-        height: 4em;
-    }
-    #header .fl_action_button i {
-        font-size: 3em;
-        top: -4px;
-        left: 1px;
-    }
     .screen form .btn,
     .add_child .btn{
         height: 105px;
@@ -761,25 +831,116 @@ h3{
         height: 130px;
         margin: 0 0 20px;
     }
+    #header .fl_action_button {
+        width: 115px;
+        height: 115px;
+        left: 20px;
+    }
+    .col_lvl, .col_name{
+        font-size: 1.3em;
+    }
+    .child_item .name_status .name {
+        font-size: 1.5em;
+    }
+    .child_item .name_status .status {
+        font-size: 1.2em;
+    }
+    .head.table {
+        height: 91px;
+    }
+    .child_item{
+        height: 200px;
+    }
+    .child_item .edit,
+    .child_item .remove{
+        width: 122px;
+    }
+    .editable .ahead{
+        left: 122px;
+    }
+    .removable .ahead{
+        left: -122px;
+    }
+    .child_item .avatar .image.male{
+        background-image: url('../img/s720/male.png');
+    }
+    .child_item .avatar .image.female{
+        background-image: url('../img/s720/female.png');
+    }
+    #header .fl_action_button i {
+        font-size: 3em;
+        top: -1px;
+        left: 2px;
+    }
+    .child_item .name_status .status:not(.online):before{
+        background-image: url("../img/s720/offline.png");
+    }
+    .child_item .name_status .status:before{
+        background-image: url("../img/s720/online.png");
+    }
+    .lvl_now .lvl_color{
+        width: 35px;
+        height: 35px;
+    }
+    .doc_header{
+        background-image: url("../img/s720/logo-bg.png");
+        height: 465px;
+    }
+    .doc_call.btn.btn-fab{
+        width: 115px;
+        height: 115px;
+    }
+    .doc_call .call{
+        background-image: url("../img/s720/but_phone.png");
+    }
+    .doc_call.btn.btn-fab .call{
+        background-image: url("../img/s720/but_phone.png");
+        top: 0;
+    }
+    .doc_contacts .list .item.address:before{
+        background-image: url("../img/s720/address.png");
+    }
+    .doc_contacts .list .item.map:before{
+        background-image: url("../img/s720/map.png");
+    }
+    .doc_contacts .list .item.web:before{
+        background-image: url("../img/s720/web.png");
+    }
+    .doc_contacts .list .item.phone:before{
+        background-image: url("../img/s720/phone.png");
+    }
+    .doc_contacts .list .item.clock:before{
+        background-image: url("../img/s720/clock.png");
+    }
+    .doc_contacts .list .item.non-stop:before{
+        background-image: url("../img/s720/non-stop.png");
+    }
+    .btn.btn-flat.view_location{
+        margin: 110px 0 0;
+    }
+    .day_hour .button.eye{
+        background-image: url("../img/s720/eye.png");
+    }
+    .day_hour .button.eye-more{
+        background-image: url("../img/s720/eye-more.png");
+    }
+    .day_hour .button.more{
+        background-image: url("../img/s720/more.png");
+    }
 }
-@media (max-width: 540px){
+@media (max-width: 540px) {
     body{font-size: 1.7em;}
     .screen form .btn,
     .add_child .btn{
         height: 65px;
     }
-}
-@media (max-width: 540px) {
-    body {
-        font-size: 1.5em;
-    }
-    .screen form .btn,
-    .add_child .btn{
-        height: 65px;
-    }
-    #login-header {
+    #login-header{
         background-image: url("../img/s480/logo-bg.png");
         height: 230px;
+    }
+    .doc_header{
+        background-image: url("../img/s480/logo-bg.png");
+        height: 290px;
     }
     .screen input, .screen input:focus {
         height: 40px;
@@ -821,6 +982,95 @@ h3{
     .add_child .line.need_height {
         height: 85px;
         margin: 0 0 15px;
+    }
+    #header .fl_action_button {
+        width: 72px;
+        height: 72px;
+        left: 20px;
+    }
+    #header .fl_action_button i {
+        font-size: 2em;
+        top: -7px;
+        left: -4px;
+    }
+    .head.table {
+        height: 56px;
+    }
+    .child_item{
+        height: 124px;
+    }
+    .child_item .edit,
+    .child_item .remove{
+        width: 71px;
+    }
+    .editable .ahead{
+        left: 71px;
+    }
+    .removable .ahead{
+        left: -71px;
+    }
+    .child_item .avatar .image.male{
+        background-image: url('../img/s480/male.png');
+    }
+    .child_item .avatar .image.female{
+        background-image: url('../img/s480/female.png');
+    }
+    .child_item .name_status .status:not(.online):before{
+        background-image: url("../img/s480/offline.png");
+    }
+    .child_item .name_status .status:before{
+        background-image: url("../img/s480/online.png");
+    }
+    .lvl_now .lvl_color{
+        width: 20px;
+        height: 20px;
+    }
+    .stat {
+        font-size: 1.2em;
+    }
+    .doc_call.btn.btn-fab{
+        width: 70px;
+        height: 70px;
+    }
+    .doc_call.btn.btn-fab .call{
+        background-image: url("../img/s480/but_phone.png");
+        top: 0;
+    }
+    .doc_contacts .list .item.address:before{
+        background-image: url("../img/s480/address.png");
+    }
+    .doc_contacts .list .item.map:before{
+        background-image: url("../img/s480/map.png");
+    }
+    .doc_contacts .list .item.web:before{
+        background-image: url("../img/s480/web.png");
+    }
+    .doc_contacts .list .item.phone:before{
+        background-image: url("../img/s480/phone.png");
+    }
+    .doc_contacts .list .item.clock:before{
+        background-image: url("../img/s480/clock.png");
+    }
+    .doc_contacts .list .item.non-stop:before{
+        background-image: url("../img/s480/non-stop.png");
+    }
+    .doc_contacts .list .item{
+        height: 40px;
+    }
+    .doc_contacts{
+        padding: 36px 0;
+    }
+    .btn.btn-flat.view_location {
+        margin: 50px 0 0;
+    }
+    .day_hour .button.eye{
+        background-image: url("../img/s480/eye.png");
+    }
+    .day_hour .button.eye-more{
+        background-image: url("../img/s480/eye-more.png");
+    }
+    .day_hour .button.more{
+        background-image: url("../img/s480/more.png");
     }
 }
 @media (max-width: 400px){
