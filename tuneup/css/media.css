@@ -1,0 +1,128 @@
+@media screen and (max-width: 1000px){
+    .center{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .short_info h1{
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .short_info .text_block {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 860px){
+    .pc_block{
+        padding: 55px 0 0;
+    }
+    .pc_block .block_name{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 750px){
+    .supp_block .table-cell{
+        display: block;
+        width: 100%;
+        margin: 0 0 50px;
+    }
+    .supp_block .table-cell:not(:last-child):after {
+        bottom: -20px;
+        top: auto;
+        width: 100%;
+        height: 1px;
+    }
+    .supp_block .icon{
+        margin: 0 auto 20px;
+    }
+    .supp_block .block_name{
+        height: auto;
+        margin: 0 0 20px;
+    }
+    .supp_block .desc{
+        height: auto;
+        margin: 0 0 20px;
+    }
+}
+@media screen and (max-width: 740px){
+    .pc_block .block_name {
+        font-size: 24px;
+    }
+    .pc_block {
+        padding: 30px 0 0;
+    }
+    .pc_block .chat{
+        margin: 0 0 110px;
+    }
+}
+@media screen and (max-width: 675px){
+    #logo{
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+    header .contacts{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .pc_block{
+        height: 200px;
+    }
+    .pc_block .pc{
+        display: none;
+    }
+    .install_support {
+        padding: 40px 0;
+    }
+    .install_support h2{
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 570px){
+    .how_it_works .table-cell{
+        display: block;
+        margin: 0 0 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 530px){
+    header .contacts{
+        line-height: 40px;
+    }
+    header .contacts .chat{
+        display: block;
+    }
+    .short_info{
+        height: 300px;
+        padding: 30px 0 0;
+    }
+    .short_info h1 {
+        font-size: 30px;
+    }
+    .short_info .text {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 410px){
+    .pc_block .chat{
+        font-size: 20px;
+    }
+    .pc_block .chat:before{
+        width: 43px;
+        height: 44px;
+    }
+    .pc_block .block_name {
+        font-size: 20px;
+    }
+    footer .top{
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width: 350px){
+    .short_info h1 {
+        font-size: 27px;
+        line-height: 30px;
+    }
+}

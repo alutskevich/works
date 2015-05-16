@@ -1,0 +1,188 @@
+@media screen and (max-width: 1190px){
+    .center{
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .list .block.phone_slider {
+        margin: 0 55px;
+    }
+}
+@media screen and (max-width: 1160px){
+    .list .feature_item .info {
+        width: 220px;
+    }
+    .list .block{
+        width: 29%;
+    }
+}
+@media screen and (max-width: 1060px){
+    .list .left_side.block, .list .right_side.block{
+        top: 45px;
+    }
+    .list .block.phone_slider {
+        margin: 0 40px;
+    }
+    .list .feature_item .icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 980px){
+    .list .block {
+        width: 25%;
+    }
+    .list .block.phone_slider {
+        margin: 0 7%;
+    }
+}
+@media screen and (max-width: 920px){
+    .short_info{
+        height: 740px;
+    }
+    .short_info .info .name{
+        margin: 100px 0 45px;
+    }
+    .short_info .phone_hand{
+        margin: 0;
+        height: 678px;
+    }
+    .list .block{
+        display: block;
+        width: 100%;
+    }
+    .list .feature_item {
+        margin: 0 1% 85px -3px;
+        display: inline-block;
+        vertical-align: top;
+        width: 31%;
+        text-align: center;
+    }
+    .list .block.phone_slider {
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 850px){
+    #video{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 770px){
+    .list .feature_item{
+        margin: 0 auto 40px;
+        display: block;
+        width: 100%;
+    }
+    .list .feature_item .info {
+        width: 100%;
+    }
+    .list .block.phone_slider {
+        margin: 80px auto 40px;
+    }
+}
+@media screen and (max-width: 740px){
+    .short_info {
+        height: 580px;
+    }
+    .short_info .info{
+        width: 100%;
+        text-align: center;
+    }
+    .short_info .phone_hand{
+        display: none;
+    }
+    .google_play{
+        margin: 0 auto;
+    }
+    .short_info .arrow{
+        top: 75px;
+    }
+}
+@media screen and (max-width: 620px){
+    .short_info {
+        height: 500px;
+    }
+    .short_info .info .name {
+        margin: 50px 0 45px;
+        font-size: 50px;
+    }
+    .short_info .info .desc {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .short_info .arrow {
+        top: 80px;
+    }
+}
+@media screen and (max-width: 520px){
+    #top{
+        height: auto;
+    }
+    #logo{
+        float: none;
+        margin: 10px auto;
+    }
+    #top .buttons{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .short_info .info .name {
+        margin: 50px 0 25px;
+        font-size: 35px;
+    }
+    .short_info .info .desc {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .google_play{
+        width: 245px;
+    }
+    .short_info {
+        height: 430px;
+    }
+    h2{
+      font-size: 35px;
+    }
+}
+@media screen and (max-width: 380px){
+    .short_info {
+        height: 335px;
+    }
+    .short_info .info .name {
+        font-size: 25px;
+    }
+    .short_info .info .desc {
+        font-size: 19px;
+        line-height: 25px;
+        margin: 0 0 30px;
+    }
+    .google_play {
+        width: 200px;
+    }
+    .short_info .arrow {
+        top: 40px;
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .description{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    #video{
+        height: 250px;
+    }
+    footer .link:nth-child(2) {
+        margin: 0 18px;
+    }
+}
+@media screen and (max-width: 340px){
+    #top .buttons .button.get{
+        margin: 0 20px 0 0;
+    }
+    .list .block.phone_slider{
+        display: none;
+    }
+}
