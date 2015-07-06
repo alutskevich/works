@@ -1,0 +1,178 @@
+#navigation{
+    position: fixed;
+    top: 0;
+    right: -410px;
+    background: #25455e;
+    width: 410px;
+    height: 100%;
+    z-index: 20;
+    box-sizing: border-box;
+    padding: 30px 70px 20px 20px;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#navigation .header{
+    margin: 0 0 40px;
+}
+#navigation .user_profile{
+    text-decoration: none;
+}
+#navigation .image{
+    width: 39px;
+    height: 37px;
+    background: #557995;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#navigation .image img{
+    width: 31px;
+    border-radius: 3px;
+    max-height: 30px;
+}
+#navigation .user_name{
+    color: #739dbe;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#navigation .user_profile:hover .user_name{
+    color: #00a788;
+}
+#navigation .user_profile:hover .image{
+    background: #00a788;
+}
+#navigation .menu{
+    top: 7px;
+}
+#navigation .menu .line{
+    background: #557995;
+}
+#navigation .menu:hover .line{
+    background: white;
+}
+#navigation .nav{
+    margin: 0 0 30px;
+}
+#navigation .nav .item{
+    width: 100%;
+    display: block;
+    height: 43px;
+    background: white;
+    border-radius: 4px;
+    margin: 0 0 4px;
+    box-sizing: border-box;
+    padding: 7px;
+    text-decoration: none;
+}
+#navigation .nav .item .icon{
+    width: 30px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: #25455e;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 17px 0 0;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#navigation .nav .item .icon.application{
+    background-image: url("../../img/application.png");
+}
+#navigation .nav .item .icon.trips{
+    background-image: url("../../img/trips.png");
+}
+#navigation .nav .item .icon.messages{
+    background-image: url("../../img/messages.png");
+}
+#navigation .nav .item .item_name{
+    font-size: 14px;
+    color: #25455e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#navigation .nav .item .notification{
+    float: right;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    line-height: 22px;
+    box-sizing: border-box;
+}
+#navigation .nav .item .notification:not(.empty){
+    background: #00c6a6;
+    border-bottom: solid 2px #00a788;
+}
+#navigation .nav .item .notification.empty{
+    border: dashed 1px #d4dbdf;
+}
+#navigation .nav .item:hover .item_name{
+    color: #00a788;
+}
+#navigation .nav .item:hover .icon{
+    background-color: #00a788;
+}
+#navigation .buttons .but{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 43px;
+    line-height: 39px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: dashed 1px #516a7e;
+    border-radius: 4px;
+    padding: 0 15px;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#navigation .buttons .but:first-child{
+    margin: 0 13px 0 0;
+}
+#navigation .buttons .but:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin: 0 17px 0 0;
+}
+#navigation .buttons .but.profile:before{
+    background-image: url("../../img/profile.png");
+    width: 11px;
+    height: 12px;
+}
+#navigation .buttons .but.exit:before{
+    background-image: url("../../img/exit.png");
+    width: 13px;
+    height: 13px;
+}
+#navigation .buttons .but:hover{
+    border: solid 1px #516a7e;
+}

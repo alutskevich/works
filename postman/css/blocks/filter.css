@@ -1,0 +1,114 @@
+.filter-head{
+    margin: 0 0 10px;
+    padding: 0 9px;
+}
+.filter-head .filter{
+    display: inline-block;
+    vertical-align: top;
+    border-top: solid 2px #d5dbe0;
+    border-radius: 4px;
+    color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0 5px;
+    padding: 8px 12px 0;
+    box-sizing: border-box;
+}
+.filter-head .filter:first-child{
+    margin: 0 5px 0 0;
+}
+.filter-head .filter:last-child{
+    margin: 0 0 0 5px;
+}
+.filter-head .filter.what{
+    width: 210px;
+    padding: 0;
+}
+.filter-head .filter.way{
+    width: 760px;
+}
+.filter-head .filter.quoter{
+    width: 72px;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.filter-head .filter.quoter.two{
+    width: 150px;
+}
+.filter-head .select_block:after{
+    background-color: transparent;
+    background-image: url("../../img/arrow-blue.png");
+    top: 13px;
+    width: 10px;
+    height: 6px;
+    right: 10px;
+}
+.filter-head .select_block{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.filter-head .select_block .list{
+    background: #d5dbe0;
+    border-radius: 0 0 4px 4px;
+    padding: 10px 5px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+.filter-head .select_block .list .item{
+    margin: 0 0 5px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #25455e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+.filter-head .select_block .list .item:hover,
+.filter-head .select_block .list .item.active{
+    background: white;
+}
+.filter-head .select_block.open .value{
+    color: white;
+}
+.filter-head .select_block.open {
+    background: #d5dbe0;
+}
+.filter-head .filter .field{
+    border: none;
+    border-bottom: solid 1px #d3dadf;
+    height: 15px;
+    font-size: 13px;
+    color: #25455e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.filter-head .filter .field:focus{
+    outline: none;
+}
+.filter-head .filter.way{
+    padding: 0 7px;
+}
+.filter-head .filter.way .subfilter:first-child .field{
+    margin: 0 0 0 10px;
+}
+.filter-head .filter.way .subfilter:last-child .field{
+    margin: 0 10px 0 0;
+    width: 250px;
+}
+.filter-head .filter.way .subfilter:first-child,
+.filter-head .filter.way .subfilter:last-child{
+    width: 295px;
+}
+.filter-head .filter.way .subfilter .field{
+    width: 230px;
+}
+.filter-head .filter.way .subfilter:nth-child(2){
+    width: 130px;
+    margin: 0 9px;
+}

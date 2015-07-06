@@ -1,0 +1,455 @@
+.my-trip {
+    padding: 0 0 75px;
+    position: relative;
+    border-bottom: solid 2px #cacaca;
+    box-shadow: 0 2px 2px #e7e7e7;
+    margin: 0 0 65px;
+    text-align: center;
+}
+.my-trip .left-block{
+    width: 825px;
+    margin: 0 25px 0 0;
+    text-align: left;
+}
+.my-trip .right-block{
+    width: 307px;
+    text-align: left;
+}
+.left .block-body{
+    margin: 50px 0 0;
+}
+.block-body .label{
+    color: #989898;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+.form-body{
+    box-sizing: border-box;
+    border: dashed 1px #dedede;
+    padding: 15px;
+    position: relative;
+    margin: 0 0 25px;
+    border-radius: 3px;
+}
+.form-body:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 65px;
+    bottom: -9px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-right: dashed 1px #dedede;
+    border-bottom: dashed 1px #dedede;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.my-trip.inside-form .line.geo{
+    margin: 0 0 15px;
+}
+.my-trip.inside-form .line.geo .field{
+    width: 300px;
+    margin: 0;
+}
+.my-trip.inside-form  .main-trip .line.geo .field{
+    width: 320px;
+}
+.my-trip.inside-form .main-trip .line.geo.to .field{
+    width: 255px;
+}
+.my-trip.inside-form .main-trip .line.geo.to{
+    width: 300px;
+}
+.my-trip.inside-form .line.geo label{
+    margin: 0 5px 0 0;
+}
+.my-trip .line.geo.to:before{
+    /*left: -69px;*/
+    left: -75px;
+}
+.my-trip.inside-form .period-block{
+    text-align: right;
+    margin: 0 0 0 auto;
+    display: block;
+    /*width: 230px;*/
+    width: 100%;
+}
+.my-trip.inside-form .period-block:before{
+    display: none;
+}
+.my-trip.inside-form .period-block .field{
+    width: 105px;
+}
+.add_line{
+    margin: 30px 0 0;
+    background: #d7d7d7;
+    width: 115px;
+    height: 25px;
+    box-sizing: border-box;
+    padding: 3px 5px 0 17px;
+    cursor: pointer;
+    line-height: 20px;
+    border-radius: 3px;
+    position: relative;
+}
+.add_line .label{
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.add_line .label:after{
+    content: "+";
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    background: white;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0 0 0 17px;
+    color: #d6d6d6;
+}
+.add_line .tooltip{
+    display: none;
+    width: 267px;
+    top: -50px;
+}
+.add_line .tooltip:after{
+    left: 15px;
+}
+.add_line:hover{
+    background: #00c6a6;
+}
+.add_line:hover .label:after{
+    color: #00c6a6;
+}
+.add_line:hover .tooltip{
+    display: block;
+}
+.optional-trip{
+    margin: 20px 0 0;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    padding: 13px;
+    border-radius: 3px;
+    display: none;
+}
+.optional-trip .field{
+    background: transparent;
+}
+.optional-trip .area{
+    width: 370px;
+    height: 75px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 2px #dadada;
+    padding: 5px 10px 10px;
+    color: #989898;
+    font-size: 13px;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+.my-trip .form-footer .button{
+    margin: 0;
+    background: #25455e;
+    font-size: 14px;
+    width: 223px;
+    height: 35px;
+    text-transform: none;
+}
+.my-trip .form-footer .button:hover{
+    background: #00a788;
+}
+.button.search-submit{
+    margin: 40px 0 0;
+    line-height: 43px;
+}
+.download-app{
+    margin: 20px 0 45px;
+}
+.params-block{
+    background: #f4f4f4;
+    border-radius: 6px;
+    padding: 5px 0 14px 14px;
+}
+.params-block .line{
+    margin: 0 0 10px;
+}
+.params-block .field{
+    width: 65px;
+    background: transparent;
+    text-align: right;
+}
+.params-block label{
+    margin: 0 5px 0 0;
+    font-size: 13px;
+    width: 150px;
+}
+.params-block label.block{
+    display: block;
+    margin: 0 0 10px;
+}
+.params-block label.block + select + .select_block{
+    width: 97%;
+}
+.params-block .select_block{
+    display: inline-block;
+    vertical-align: middle;
+    width: 58px;
+    box-sizing: border-box;
+}
+.params-block .select_block .value{
+    padding: 0 0 0 5px;
+    background: white;
+}
+.params-block .select_block:after{
+    top: 13px;
+    right: 10px;
+}
+.packages-list .block-name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #25455e;
+    margin: 0 0 35px;
+}
+.packages-list .packages-header .right{
+    width: 400px;
+    position: relative;
+    right: 95px;
+    text-align: right;
+}
+.packages-list .packages-header .right .select_block{
+    width: 240px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.package-block .left-block {
+    width: 190px;
+    padding: 10px;
+}
+.package-block .pack-user-info{
+    width: 95px;
+}
+.package-block .left-block .image{
+    width: 70px;
+    height: 70px;
+}
+.package-block .center-block {
+    width: 740px;
+}
+.point-city {
+    width: 235px;
+}
+.way-block:after {
+    margin: -20px 0 0 10px;
+}
+.package-block .right-block{
+    text-align: left;
+}
+.package-block .right-block .left-block{
+    width: 195px;
+    margin: 0 8px 0 0;
+}
+.package-block .right-block .left-block .pack-user-info{
+    width: 90px;
+}
+.package-block .right-block.no-bg{
+    width: 280px;
+}
+.package-block .right-block.no-bg .count{
+    line-height: 85px;
+    padding: 0;
+    letter-spacing: -2px;
+}
+.my-trip.inside-form .line.geo:after{
+    right: 0px;
+}
+.my-trip-page.my-package .trip-name{
+    font-size: 20px;
+    color: #444c56;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    background: white;
+    padding: 0 15px;
+    left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.my-trip-page.my-package .left-block{
+    width: 650px;
+}
+.my-trip-page.my-package .center-block{
+    width: 240px;
+    margin: 0 10px;
+}
+.my-trip-page.my-package .right-block{
+    width: 275px;
+}
+.my-trip-page.my-package .point-city{
+    width: 248px;
+}
+.my-trip-page.my-package .doc-info.semi-border{
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 25px 10px 25px 20px;
+}
+.my-trip-page.my-package .date-trip{
+    width: 210px;
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+    background: #f4f4f4;
+    margin: 0 0 20px;
+    padding: 5px 20px 0;
+    box-sizing: border-box;
+}
+.my-trip-page.my-package .date-trip.right{
+    text-align: right;
+}
+.my-trip-page.my-package .date-trip .label{
+    position: relative;
+    color: #00c6a6;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.my-trip-page.my-package .date-trip .label:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../../img/input-date.png");
+    background-repeat: no-repeat;
+    background-position: 0 -22px;
+    width: 21px;
+    height: 22px;
+    margin: 0 5px 0 0;
+}
+.my-trip-page.my-package .date-trip .date{
+    color: #25455e;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.way-block.space-city .space-label{
+    color: #a3a3a3;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 15px 0 0;
+}
+.way-block.space-city .point-city{
+    width: 395px;
+}
+.way-block.space-city .point-city .full-address{
+    padding: 0 0 0 175px;
+}
+.my-trip-page.my-package .date-trip.incom{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 180px;
+    padding: 0;
+    line-height: 40px;
+    text-align: right;
+}
+.doc-info.sm-padding{
+    padding: 25px 15px 25px 20px;
+}
+.my-trip-page.my-package .date-trip.incom .label{
+    margin: 0 27px 0 5px;
+}
+.my-trip-page.my-package .edit-buttons .but.ib{
+    margin: 0 25px 10px 0;
+}
+.my-trip-page.my-package .doc-desc{
+    height: 125px;
+    margin: 0 0 25px;
+}
+.my-trip-page.my-package.edit .doc-desc .text{
+    display: none;
+}
+.my-trip-page.my-package .doc-desc .text{
+    overflow: overlay;
+    background-image: url("../../img/area-lines.png");
+    background-position: 0 25px;
+    line-height: 26px;
+}
+.my-trip-page.my-package .doc-information{
+    height: 240px;
+    padding: 30px 17px 14px;
+}
+.my-trip-page.my-package .doc-information .info{
+    margin: 0 0 10px;
+    line-height: 22px;
+}
+.my-trip-page .package-block .left-block .image.green-bg,
+.my-trip-page .package-block .left-block .image.navy-bg{
+    width: 90px;
+    height: 70px;
+}
+.my-trip-page .package-block .left-block{
+    width: 230px;
+}
+.my-trip-page .package-block .center-block {
+    width: 720px;
+}
+.my-trip-page .package-block .point-city{
+    width: 230px;
+}
+.my-trip-page .package-block .right-block.no-bg {
+    width: 260px;
+}
+.my-trip-page .package-block .right-block .right-block{
+    width: 175px;
+    padding: 25px 15px;
+}
+.my-trip-page .package-block.deal .deal-accept{
+    text-align: center;
+    width: 85px;
+}
+.my-trip-page .package-block.deal .deal-accept .text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+}
+.my-trip-page .package-block.deal .deal-accept .decline{
+    margin: 10px 0 0;
+}
+.my-trip-page .package-block .right-block .accept{
+    width: 85px;
+    font-size: 13px;
+    border-bottom: solid 2px #00a788;
+}
+.my-trip-page .package-block .right-block .accept:hover{
+    border-bottom: solid 2px #0b2b41;
+}
+.my-trip-page.my-package.edit .doc-desc:after{
+    right: 20px;
+}
+.my-trip-page .add_line{
+    display: none;
+    margin: -5px 0 0;
+    width: auto;
+    background: #00c6a6;
+}
+.my-trip-page .add_line .label:after {
+    color: #00c6a6;
+}
+.my-trip-page.edit .add_line{
+    display: block;
+}

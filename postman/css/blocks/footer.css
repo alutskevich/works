@@ -1,0 +1,87 @@
+footer{
+    height: 70px;
+    line-height: 70px;
+    background: #171d27;
+    width: 100%;
+    padding: 0 70px;
+    box-sizing: border-box;
+    min-width: 1280px;
+    text-align: center;
+}
+footer .copy,
+footer .urls,
+footer .socials,
+footer .socials .social,
+footer .copy .foot_logo,
+footer .copy .copyright{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .copy .copyright{
+    color: #25455e;
+    font-size: 13px;
+    font-family: 'Tahoma', 'Arial' sans-serif;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+}
+footer .urls .url{
+    color: #566d80;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 35px 0 0;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+footer .urls .url:hover{
+    color: #00a788;
+}
+footer .socials .social{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0 20px 0 0;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+footer .socials .social.vk{
+    background-image: url("../../img/footer/vk.png");
+    width: 27px;
+    height: 15px;
+}
+footer .socials .social.vk:hover{
+    background-position: 0 -15px;
+}
+footer .socials .social.fb{
+    background-image: url("../../img/footer/fb.png");
+    width: 13px;
+    height: 24px;
+}
+footer .socials .social.fb:hover{
+    background-position: 0 -24px;
+}
+footer .socials .social.tw{
+    background-image: url("../../img/footer/tw.png");
+    width: 23px;
+    height: 20px;
+}
+footer .socials .social.tw:hover{
+    background-position: 0 -20px;
+}
+footer .socials .social.gp{
+    background-image: url("../../img/footer/gp.png");
+    width: 28px;
+    height: 27px;
+}
+footer .socials .social.gp:hover{
+    background-position: 0 -27px;
+}
+footer .socials .social.in{
+    background-image: url("../../img/footer/in.png");
+    width: 19px;
+    height: 20px;
+}
+footer .socials .social.in:hover{
+    background-position: 0 -20px;
+}

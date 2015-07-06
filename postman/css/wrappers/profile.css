@@ -1,0 +1,373 @@
+#profile{
+    width: 735px;
+    margin: 80px auto 0;
+    box-sizing: border-box;
+    border: dashed 1px #c9c9c9;
+    border-radius: 40px;
+    padding: 35px;
+}
+#profile.edit{
+    border: solid 2px #00c7a5;
+}
+#profile .left-block{
+    width: 225px;
+    margin: 0 25px 0 0;
+    vertical-align: top;
+}
+#profile .image{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 220px;
+    position: relative;
+}
+#profile .image .cell{
+    display: table-cell;
+    table-layout: fixed;
+    vertical-align: middle;
+    background: #00c6a6;
+    padding: 3px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+}
+#profile.edit .image .cell{
+    background: white;
+    border: solid 2px #00c6a6;
+    padding: 2px;
+}
+#profile .image img{
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+#profile .image .profile-ava-block,
+#profile.block .image .profile-ava,
+#profile .form-image{
+    display: none;
+}
+#profile.block .image .profile-ava-block{
+    display: block;
+    border-radius: 0;
+}
+#profile .preload{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 198, 166, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+#profile.edit .preload{
+    display: block;
+}
+#profile.edit .wrapper{
+    position: relative;
+}
+#profile.edit .upload-close{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    background: url("../../img/close-upload.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#profile.edit .download-image{
+    display: inline-block;
+    font-size: 14px;
+    background: none;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+    line-height: 22px;
+    margin: 80px auto 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#profile.edit .download-image:after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    border-bottom: dashed 1px white;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#profile.edit .download-image:before{
+    content: "";
+    display: block;
+    background: url("../../img/upload.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 15px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#profile.edit .download-image:hover:after{
+    width: 0;
+}
+#profile .actions{
+    margin: 25px 0 0;
+}
+#profile .actions .text{
+    color: #989898;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#profile .actions .act{
+    padding: 0 0 6px;
+    border-bottom: solid 1px #c9c9c9;
+}
+#profile .actions .count{
+    font-size: 16px;
+    color: #43789c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#profile .actions .act .right{
+    width: 17px;
+    height: 17px;
+    color: white;
+    text-align: center;
+    background: #00c6a6;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+#profile .actions .act .right:hover{
+    background: #00a788;
+}
+#profile .actions .reg{
+    padding: 6px 0 0;
+}
+#profile .total{
+    margin: 30px 0 0;
+}
+#profile .total .requests,
+#profile .total .trips{
+    margin: 0 0 2px;
+    background: #f4f4f4;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    padding: 0 15px;
+}
+#profile .total .label{
+    color: #25455e;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#profile .total .count{
+    position: relative;
+    color: #43789c;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+#profile .total .count:after{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 13px;
+    margin: 0 0 0 8px;
+}
+#profile .total .requests .count:after{
+    background-image: url("../../img/profile_basket.png");
+    height: 13px;
+}
+#profile .total .trips .count:after{
+    background-image: url("../../img/profile_car.png");
+    height: 10px;
+}
+#profile .right-block{
+    width: 405px;
+    vertical-align: top;
+    position: relative;
+}
+#profile .line{
+    border-bottom: solid 2px #e4e4e4;
+    border-radius: 5px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+}
+#profile .line .label{
+    color: #989898;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 60px;
+    margin: 0 15px 0 0;
+}
+#profile .line .value{
+    color: #444c55;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#profile .info{
+    margin: 35px 0 0;
+}
+#profile .info .info-line{
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #989898;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#profile .info .info-line .value{
+    color: #43789c;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#profile.block .value,
+#profile.block .info .info-line .value{
+    color: #d9d9d9;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+#profile.block .info .info-line .value{
+    margin: 0 0 0 15px;
+}
+#profile .write-mess{
+    width: 205px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 13px;
+    text-align: left;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+    margin: 130px 0 0 auto;
+    position: relative;
+    border-bottom: solid 2px #00a788;
+}
+#profile .write-mess:after{
+    content: "";
+    display: inline-block;
+    background: url("../../img/mail.png") no-repeat;
+    width: 17px;
+    height: 15px;
+    margin: 0 0 0 20px;
+    vertical-align: text-top;
+}
+#profile .tooltip{
+    width: 270px;
+    left: 0;
+    text-align: left;
+    top: -65px;
+}
+#profile .tooltip:after{
+    left: 90px;
+}
+#profile .edit-profile{
+    margin: 135px 0 0 auto;
+    font-size: 14px;
+    color: #00c6a6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: right;
+}
+#profile .edit-profile:hover{
+    color: #00a788;
+}
+#profile.edit .edit-profile{
+    margin: 40px 0 0 auto;
+    position: absolute;
+    right: -37px;
+    background: #00c6a6;
+    color: white;
+    padding: 0 35px 0 20px;
+    border-radius: 20px 0 0 20px;
+}
+#profile .edit-profile:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #00c6a6;
+    background-image: url("../../img/edit-white.png");
+    background-repeat: no-repeat;
+    background-position: center 7px;
+}
+#profile .edit-profile:hover:after{
+    background-color: #00a788;
+}
+#profile.edit .stat-info{
+    display: none;
+}
+#profile .edit-info{
+    display: none;
+}
+#profile.edit .edit-info{
+    display: block;
+}
+#profile.edit .edit-info label{
+    width: 65px;
+    line-height: 18px;
+}
+#profile.edit .line{
+    padding: 0;
+    border: none;
+    text-align: left;
+    margin: 0 0 15px;
+    position: relative;
+}
+#profile.edit .line:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    background: url("../../img/edit.png");
+    width: 14px;
+    height: 14px;
+}
+#profile.edit .line.active:after{
+    background: url("../../img/edit-active.png");
+}
+#profile.edit .field{
+    width: 320px;
+    height: 40px;
+    border: solid 2px #dfdfdf;
+    border-radius: 5px;
+}
+#profile.edit .field:focus{
+    border: solid 2px #00c7a5;
+    box-shadow: 1px 0 7px rgba(0,0,0,0.12);
+}
